@@ -1,4 +1,4 @@
 conference-map
 ==============
 
-2015 MN GIS/LIS Conference Map
+The 2015 MN GIS/LIS Conference <a href="http://geospatialem.github.io/conference-map">Map<a/>
