@@ -157,12 +157,20 @@
 		var attractions = L.layerGroup([bridge, tower, rose, estate, visitor, museum, spirit, aqua, zoo]); //attractions
 		var establishments = L.layerGroup([grill, waters, canal, fitger]); //establishments (food and drink)
 
+	//Define the map bounds constraint
+	var southWest = L.latLng(46.708517, -92.261366),
+		    	northEast = L.latLng(46.849116, -92.002575),
+		    	bounds = L.latLngBounds(southWest, northEast);
 		
         map = new L.Map('map', { 	//set up the map constraints
             layers: [grayscale, cc, hotels, attractions, establishments],
-            center: [46.7830,-92.1005],
+            //center: [46.7830,-92.1005], //not applicable when maxBounds is used
+            maxBounds: bounds, //set the bounding box
             zoom: 16
             });
+            
+        // Zoom the map to the defined bounding box
+	map.fitBounds(bounds);
 
         var baseMaps = {         //legend: basemaps
         		"Grayscale": grayscale,
