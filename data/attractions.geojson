@@ -19,5 +19,6 @@
 { "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr" }, "geometry": { "type": "Point", "coordinates": [ 46.779278, -92.100309 ] } }
 ,
 { "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St" }, "geometry": { "type": "Point", "coordinates": [ 46.725798, -92.190494 ] } }
+
 ]
 }
