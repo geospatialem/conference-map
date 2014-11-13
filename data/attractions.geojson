@@ -2,23 +2,23 @@
 "type": "FeatureCollection",
 
 "features": [
-{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Life Bridge", "ADDRESS": "601 S Lake Ave" }, "geometry": { "type": "Point", "coordinates": [ -92.093058, 46.779232 ] } }
+{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Life Bridge", "ADDRESS": "601 S Lake Ave", "IMG-URL": "http://upload.wikimedia.org/wikipedia/commons/9/97/Aerial_lift_bridge_duluth_mn.jpg", "IMG-HEIGHT": "112.5px", "IMG-WIDTH": "244.5px" }, "geometry": { "type": "Point", "coordinates": [ -92.093058, 46.779232 ] } }
 ,
-{ "type": "Feature", "id": 1, "properties": { "NAME": "Enger Park and Tower", "ADDRESS": "16th Ave W & Skyline Drive" }, "geometry": { "type": "Point", "coordinates": [ -92.125000, 46.776097 ] } }
+{ "type": "Feature", "id": 1, "properties": { "NAME": "Enger Park and Tower", "ADDRESS": "16th Ave W & Skyline Drive", "IMG-URL": "http://www.northernimages.com/Duluth/Duluth-Parks-and-Trails/Enger-Park/i-fMn77f6/1/L/PE-08698-L.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "225px" }, "geometry": { "type": "Point", "coordinates": [ -92.125000, 46.776097 ] } }
 ,
-{ "type": "Feature", "id": 2, "properties": { "NAME": "Leif Erickson Park & Rose Garden", "ADDRESS": "12th Ave E & London Road" }, "geometry": { "type": "Point", "coordinates": [ -92.080993, 46.797795 ] } }
+{ "type": "Feature", "id": 2, "properties": { "NAME": "Leif Erickson Park & Rose Garden", "ADDRESS": "12th Ave E & London Road", "IMG-URL": "http://media-cdn.tripadvisor.com/media/photo-s/02/1a/36/40/leif-erickson-park-rose.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "225px" }, "geometry": { "type": "Point", "coordinates": [ -92.080993, 46.797795 ] } }
 ,
-{ "type": "Feature", "id": 3, "properties": { "NAME": "Glensheen Estate", "ADDRESS": "3300 London Rd" }, "geometry": { "type": "Point", "coordinates": [ -92.051791 , 46.815161 ] } }
+{ "type": "Feature", "id": 3, "properties": { "NAME": "Glensheen Estate", "ADDRESS": "3300 London Rd", "IMG-URL": "http://www.duluthhotelrestaurant.com/images/apg_1356732196.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "204px" }, "geometry": { "type": "Point", "coordinates": [ -92.051791 , 46.815161 ] } }
 ,
-{ "type": "Feature", "id": 4, "properties": { "NAME": "Lake Superior Maritime Visitor Center", "ADDRESS": "600 S Lake Ave" }, "geometry": { "type": "Point", "coordinates": [ -92.092425, 46.779825 ] } }
+{ "type": "Feature", "id": 4, "properties": { "NAME": "Lake Superior Maritime Visitor Center", "ADDRESS": "600 S Lake Ave", "IMG-URL": "http://www.lakesuperior.com/downloads/2027/download/351marinehd.jpg?cb=9be75471f323b3b6ce8e8f5938dd7ee1", "IMG-HEIGHT": "150px", "IMG-WIDTH": "245px" }, "geometry": { "type": "Point", "coordinates": [ -92.092425, 46.779825 ] } }
 ,
-{ "type": "Feature", "id": 5, "properties": { "NAME": "Lake Superior Railroad Museum", "ADDRESS": "506 W Michigan St" }, "geometry": { "type": "Point", "coordinates": [ -92.103879, 46.781702 ] } }
+{ "type": "Feature", "id": 5, "properties": { "NAME": "Lake Superior Railroad Museum", "ADDRESS": "506 W Michigan St", "IMG-URL": "https://kiddohub.com/sites/default/files/joomla-business-image--175_image_4.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "202px" }, "geometry": { "type": "Point", "coordinates": [ -92.103879, 46.781702 ] } }
 ,
-{ "type": "Feature", "id": 6, "properties": { "NAME": "Spirit Mountain", "ADDRESS": "9500 Spirit Mountain Pl" }, "geometry": { "type": "Point", "coordinates": [ -92.217740, 46.720187 ] } }
+{ "type": "Feature", "id": 6, "properties": { "NAME": "Spirit Mountain", "ADDRESS": "9500 Spirit Mountain Pl", "IMG-URL": "http://www.mtvillas.com/photos/wizardslide1008_300px.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "203px" }, "geometry": { "type": "Point", "coordinates": [ -92.217740, 46.720187 ] } }
 ,
-{ "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr" }, "geometry": { "type": "Point", "coordinates": [ -92.100309, 46.779278 ] } }
+{ "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr", "IMG-URL": "http://aquaviews.net/wp-content/uploads/2009/09/Duluth.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "225px" }, "geometry": { "type": "Point", "coordinates": [ -92.100309, 46.779278 ] } }
 ,
-{ "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St" }, "geometry": { "type": "Point", "coordinates": [ -92.190494, 46.725798 ] } }
+{ "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St", "IMG-URL": "http://media-cdn.tripadvisor.com/media/photo-s/05/fb/a0/67/lake-superior-zoo-zoological.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "225px" }, "geometry": { "type": "Point", "coordinates": [ -92.190494, 46.725798 ] } }
 
 ]
 }
