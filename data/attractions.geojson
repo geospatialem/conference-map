@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Life Bridge", "ADDRESS": "601 S Lake Ave" }, "geometry": { "type": "Point", "coordinates": [ 46.779232, -92.093058 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "NAME": "Enger Park and Tower", "ADDRESS": "16th Ave W & Skyline Drive" }, "geometry": { "type": "Point", "coordinates": [ 46.776097, -92.125000 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "NAME": "Leif Erickson Park & Rose Garden", "ADDRESS": "12th Ave E & London Road" }, "geometry": { "type": "Point", "coordinates": [ 46.797795, -92.080993 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "NAME": "Glensheen Estate", "ADDRESS": "3300 London Rd" }, "geometry": { "type": "Point", "coordinates": [ 46.815161, -92.051791 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "NAME": "Lake Superior Maritime Visitor Center", "ADDRESS": "600 S Lake Ave" }, "geometry": { "type": "Point", "coordinates": [ 46.779825, -92.092425 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "NAME": "Lake Superior Railroad Museum", "ADDRESS": "506 W Michigan St" }, "geometry": { "type": "Point", "coordinates": [ 46.781702, -92.103879 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "NAME": "Spirit Mountain", "ADDRESS": "9500 Spirit Mountain Pl" }, "geometry": { "type": "Point", "coordinates": [ 46.720187, -92.217740 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr" }, "geometry": { "type": "Point", "coordinates": [ 46.779278, -92.100309 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St" }, "geometry": { "type": "Point", "coordinates": [ 46.725798, -92.190494 ] } }
+]
+}
