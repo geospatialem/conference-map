@@ -2,7 +2,7 @@
 "type": "FeatureCollection",
 
 "features": [
-{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Life Bridge", "ADDRESS": "601 S Lake Ave", "IMG-URL": "http://upload.wikimedia.org/wikipedia/commons/9/97/Aerial_lift_bridge_duluth_mn.jpg", "IMG-HEIGHT": "112.5px", "IMG-WIDTH": "244.5px" }, "geometry": { "type": "Point", "coordinates": [ -92.093058, 46.779232 ] } }
+{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Lift Bridge", "ADDRESS": "601 S Lake Ave", "IMG-URL": "http://upload.wikimedia.org/wikipedia/commons/9/97/Aerial_lift_bridge_duluth_mn.jpg", "IMG-HEIGHT": "112.5px", "IMG-WIDTH": "244.5px" }, "geometry": { "type": "Point", "coordinates": [ -92.093058, 46.779232 ] } }
 ,
 { "type": "Feature", "id": 1, "properties": { "NAME": "Enger Park and Tower", "ADDRESS": "16th Ave W & Skyline Drive", "IMG-URL": "http://www.northernimages.com/Duluth/Duluth-Parks-and-Trails/Enger-Park/i-fMn77f6/1/L/PE-08698-L.jpg", "IMG-HEIGHT": "150px", "IMG-WIDTH": "225px" }, "geometry": { "type": "Point", "coordinates": [ -92.125000, 46.776097 ] } }
 ,
