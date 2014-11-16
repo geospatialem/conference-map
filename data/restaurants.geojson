@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "NAME": "Duluth Grill", "ADDRESS": "118 S 27th Ave W", "HOURS": "7:00 am - 9:00 pm", "URL": "http://www.duluthgrill.com" }, "geometry": { "type": "Point", "coordinates": [ -92.130050, 46.760614 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "NAME": "Northern Waters Smokehaus", "ADDRESS": "394 Lake Avenue South, Suite 106", "HOURS": "10:00 am - 8:00 pm", "URL": "http://www.northernwaterssmokehaus.com" }, "geometry": { "type": "Point", "coordinates": [ -92.094636, 46.781948 ] } }
+
+]
+}
