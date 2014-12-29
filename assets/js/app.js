@@ -269,6 +269,7 @@ var establishments = L.geoJson(null, {
 });
 $.getJSON("data/establishments.geojson", function (data) {
   establishments.addData(data);
+  map.addLayer(establishmentsLayer);
 });
 
 //Define the map bounds constraint
