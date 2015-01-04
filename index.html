@@ -43,7 +43,7 @@
             <li class="dropdown">
               <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"><i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;Zoom To Full Extent</a></li>
+                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"><i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;Zoom To Original Extent</a></li>
                   <li><a href="data/mngislis15.zip" download="mngislis15.zip" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;Download Data</a></li>                </ul>
             </li>
             <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;POI List</a></li>
@@ -69,12 +69,16 @@
             <div class="panel-body">
               <p>
                 <div class="row">
-                  <div class="col-xs-8 col-md-8">
-                    <input type="text" class="form-control search" placeholder="Filter" />
+                 <div class="col-md-10"> 
+                 <div class="search-filter">
+                    <input type="text" id="sidebar-search" class="form-control search" placeholder="Search" />
+                    <span id="searchclear" class="glyphicon glyphicon-remove"></span>
                   </div>
-                  <div class="col-xs-4 col-md-4">
-                    <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+                  </div>               
+                  <div class="col-md-2">
+                    <span class="sr-only">Sort</span><button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i></button>
                   </div>
+
                 </div>
               </p>
             </div>

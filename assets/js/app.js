@@ -11,7 +11,10 @@ $("#about-btn").click(function() {
 });
 
 $("#full-extent-btn").click(function() {
-  map.fitBounds(attractions.getBounds());
+	map.fitBounds([
+	               [46.7786733259, -92.1083088853],
+	               [46.786163129, -92.0913457505]
+	           ]);
   $(".navbar-collapse.in").collapse("hide");
   return false;
 });
@@ -45,7 +48,7 @@ $("#sidebar-hide-btn").click(function() {
 });
 
 function sidebarClick(id) {
-  map.addLayer(hotelsLayer).addLayer(attractionsLayer).addLayer(establishmentsLayer);
+  map.addLayer(hotelsLayer).addLayer(attractionsLayer).addLayer(establishmentsLayer).addLayer(mainLayer);
   var layer = markerClusters.getLayer(id);
   map.setView([layer.getLatLng().lat, layer.getLatLng().lng], 17);
   layer.fire("click");
@@ -280,7 +283,7 @@ var southWest = L.latLng(46.6491584, -92.3011919),
 map = L.map("map", {
   zoom: 16,
   center: [46.7830,-92.1005],
-  layers: [grayscale, main, markerClusters, highlight],
+  layers: [grayscale, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
@@ -297,6 +300,9 @@ map.on("overlayadd", function(e) {
   if (e.layer === establishmentsLayer) {
     markerClusters.addLayer(establishments);
   }
+  if (e.layer === mainLayer) {
+	    markerClusters.addLayer(main);
+	  }
 });
 
 map.on("overlayremove", function(e) {
@@ -309,6 +315,9 @@ map.on("overlayremove", function(e) {
   if (e.layer === establishmentsLayer) {
     markerClusters.removeLayer(establishments);
   }
+  if (e.layer === mainLayer) {
+	    markerClusters.removeLayer(main);
+	  }
 });
 
 /* Clear feature highlight when map is clicked */
@@ -387,17 +396,22 @@ var baseLayers = {
 };
 
 var groupedOverlays = {
-  "Places of Interest": {
-	"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-suitcase fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
-	"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
-	"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-beer fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer
+  "": {
+	"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #9E3235;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;DECC": mainLayer
+
   },
-  "Reference": {
-    //"Subway Lines": subwayLines
+  "Places of Interest": {
+		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-suitcase fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
+		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
+		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-beer fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
   }
 };
 
-var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, {
+var options = { exclusiveGroups: [""],
+		collapsed: isCollapsed 
+};
+
+var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, options, {
   collapsed: isCollapsed
 }).addTo(map);
 

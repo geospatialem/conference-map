@@ -8,6 +8,8 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 
 #sidebar { width: 250px; height: 100%; max-width: 100%; float: left; -webkit-transition: all 0.25s ease-out; -moz-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
 
+#searchclear{position:absolute;right:25px;top:0;bottom:0;height:14px;font-size:14px;cursor:pointer;color:#ccc;margin:auto;}
+
 #loading { position: absolute; width: 220px; height: 19px; top: 50%; left: 50%; margin: -10px 0 0 -110px; z-index: 20001; }
   
 #features { margin: 0px; border: none; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; }
@@ -61,6 +63,13 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 .info { width: 150px; padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,1); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; }
 
 .awesome-marker i { font-size: 14px; margin-top: 12px; }
+
+@media (min-width: 800px) {
+  button.sidebar-toggle {display:none;}
+}
+@media (max-width: 800px) {
+  button.sidebar-toggle {display:block;}
+}
 
 @media (max-width: 992px) { 
 	.navbar .navbar-brand { font-size: 18px; }
