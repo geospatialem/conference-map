@@ -476,6 +476,16 @@ $(document).one("ajaxStop", function () {
     local: establishmentsSearch,
     limit: 10
   });
+  
+  var mainBH = new Bloodhound({
+	    name: "Main",
+	    datumTokenizer: function (d) {
+	      return Bloodhound.tokenizers.whitespace(d.name);
+	    },
+	    queryTokenizer: Bloodhound.tokenizers.whitespace,
+	    local: mainSearch,
+	    limit: 10
+  });
 
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
@@ -510,6 +520,7 @@ $(document).one("ajaxStop", function () {
   attractionsBH.initialize();
   hotelsBH.initialize();
   establishmentsBH.initialize();
+  mainBH.initialize();
   geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -526,6 +537,14 @@ $(document).one("ajaxStop", function () {
     	suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
     }
   }, {
+	    name: "Main",
+	    displayKey: "name",
+	    source: mainBH.ttAdapter(),
+	    templates: {
+	      header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #9e3235;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;Main Sites</h4>",
+	      suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
+	    }
+	  }, {
 	    name: "Hotels",
 	    displayKey: "name",
 	    source: hotelsBH.ttAdapter(),
@@ -576,6 +595,15 @@ $(document).one("ajaxStop", function () {
         map._layers[datum.id].fire("click");
       }
     }
+    if (datum.source === "Main") {
+        if (!map.hasLayer(mainLayer)) {
+          map.addLayer(mainLayer);
+        }
+        map.setView([datum.lat, datum.lng], 17);
+        if (map._layers[datum.id]) {
+          map._layers[datum.id].fire("click");
+        }
+      }
     if (datum.source === "GeoNames") {
       map.setView([datum.lat, datum.lng], 14);
     }
