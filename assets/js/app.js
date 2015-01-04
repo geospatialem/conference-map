@@ -68,6 +68,19 @@ var mbAttr = 	'Map data &copy; <a target="_blank" href="http://openstreetmap.org
 var grayscale = L.tileLayer(mbUrl, {id: 'examples.map-20v6611k', 	attribution: mbAttr}),
 	streets = 	L.tileLayer(mbUrl, {id: 'examples.map-i875mjb7',	attribution: mbAttr});
 	satellite = L.tileLayer(mbUrl, {id: 'examples.map-igb471ik',	attribution: mbAttr});
+	
+	/*Accessible Basemaps*/
+	grayscale.on('tileload', function (tileEvent) {
+	    tileEvent.tile.setAttribute('alt', 'Map tile image');
+	});
+	
+	streets.on('tileload', function (tileEvent) {
+		tileEvent.tile.setAttribute('alt', 'Map tile image');
+	});
+	
+	satellite.on('tileload', function (tileEvent) {
+		tileEvent.tile.setAttribute('alt', 'Map tile image');		    
+	});    
 
 /* Overlay Layers */
 var highlight = L.geoJson(null);
@@ -418,6 +431,14 @@ var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, options,
 /* Highlight search box text on click */
 $("#searchbox").click(function () {
   $(this).select();
+});
+
+//TODO: Results are cleared when the text is cleared
+//Clear Search with clicking close
+$("#searchclear").on("click", function(e){
+    e.preventDefault();
+    $("#sidebar-search").val("");
+    sidebarSearch();
 });
 
 /* Typeahead search functionality */

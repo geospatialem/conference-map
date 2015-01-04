@@ -50,6 +50,7 @@
           </ul>
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group has-feedback">
+                <label class="sr-only" for="searchbox">Search</label>
                 <input id="searchbox" type="text" placeholder="Search" class="form-control">
                 <span id="searchicon" class="fa fa-search form-control-feedback"></span>
             </div>
@@ -64,19 +65,21 @@
           <div class="panel panel-default" id="features">
             <div class="panel-heading">
               <h3 class="panel-title">Places of Interest
-              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
+              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><span class="sr-only">Hide</span><i class="fa fa-chevron-left"></i></button></h3>
             </div>
             <div class="panel-body">
               <p>
                 <div class="row">
                  <div class="col-md-10"> 
                  <div class="search-filter">
+                    <label class="sr-only" for="sidebar-search">Search</label>
                     <input type="text" id="sidebar-search" class="form-control search" placeholder="Search" />
-                    <span id="searchclear" class="glyphicon glyphicon-remove"></span>
+                    <!-- TODO -->
+                    <!-- <span id="searchclear" class="glyphicon glyphicon-remove"></span>-->
                   </div>
                   </div>               
                   <div class="col-md-2">
-                    <span class="sr-only">Sort</span><button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i></button>
+                    <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><span class="sr-only">Sort</span><i class="fa fa-sort"></i></button>
                   </div>
 
                 </div>
@@ -86,13 +89,13 @@
               <table class="table table-hover" id="feature-list">
                 <thead class="hidden">
                   <tr>
-                    <th>Icon</th>
+                    <th scope="col">Icon</th>
                   <tr>
                   <tr>
-                    <th>Name</th>
+                    <th scope="col">Name</th>
                   <tr>
                   <tr>
-                    <th>Chevron</th>
+                    <th scope="col">Chevron</th>
                   <tr>
                 </thead>
                 <tbody class="list"></tbody>
@@ -153,7 +156,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title text-primary" id="feature-title"></h4>
+            <h4 class="modal-title text-primary" id="feature-title">Feature Title</h4>
           </div>
           <div class="modal-body" id="feature-info"></div>
           <div class="modal-footer">
@@ -173,6 +176,7 @@
           <div class="modal-body">
             <ul>
             <li>Bootleaf Template Developed by <a target="_blank" href="http://bryanmcbride.com">Bryan McBride</a></li>
+            <li>Content and design by Kitty Hurley</li>
             <li><div id="attribution"></div></li>
           </div>
         </div><!-- /.modal-content -->
