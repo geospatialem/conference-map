@@ -93,7 +93,7 @@ var starMarker = L.AwesomeMarkers.icon({
 	});
 
 var hotelMarker = L.AwesomeMarkers.icon({
-	icon: 'suitcase', 
+	icon: 'bed', 
 	prefix: 'fa', 
 	markerColor: 'cadetblue', 
 	});
@@ -186,7 +186,7 @@ var hotels = L.geoJson(null, {
           }));
         }
       });
-      $("#feature-list tbody").append('<tr class="feature-row" id="'+L.stamp(layer)+'"><td style="vertical-align: middle;"><span class="fa-stack"><i class="fa fa-square fa-stack-2x" style="color: #406573;"></i><i class="fa fa-suitcase fa-stack-1x" style="color: white;"></i></span></td><td class="feature-name">'+layer.feature.properties.NAME+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+      $("#feature-list tbody").append('<tr class="feature-row" id="'+L.stamp(layer)+'"><td style="vertical-align: middle;"><span class="fa-stack"><i class="fa fa-square fa-stack-2x" style="color: #406573;"></i><i class="fa fa-bed fa-stack-1x" style="color: white;"></i></span></td><td class="feature-name">'+layer.feature.properties.NAME+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       hotelSearch.push({
         name: layer.feature.properties.NAME,
         address: layer.feature.properties.ADDRESS,
@@ -414,7 +414,7 @@ var groupedOverlays = {
 
   },
   "Places of Interest": {
-		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-suitcase fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
+		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-beer fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
   }
@@ -549,7 +549,7 @@ $(document).one("ajaxStop", function () {
 	    displayKey: "name",
 	    source: hotelsBH.ttAdapter(),
 	    templates: {
-	      header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-suitcase fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels</h4>",
+	      header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels</h4>",
 	      suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
 	    }
 	  }, {
