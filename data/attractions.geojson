@@ -19,6 +19,13 @@
 { "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr" }, "geometry": { "type": "Point", "coordinates": [ -92.100309, 46.779278 ] } }
 ,
 { "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St" }, "geometry": { "type": "Point", "coordinates": [ -92.190494, 46.725798 ] } }
-
+,
+{ "type": "Feature", "id": 9, "properties": { "NAME": "Thompson Hill Information Center", "ADDRESS": "8525 W Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.2056, 46.7295 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "NAME": "Park Point", "ADDRESS": "45th St & Minnesota Ave" }, "geometry": { "type": "Point", "coordinates": [ -92.0724, 46.7516 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "NAME": "S.S. William A. Irvin Ore Boat Museum", "ADDRESS": "350 Harbor Drive" }, "geometry": { "type": "Point", "coordinates": [ -92.0971, 46.7827 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "NAME": "Hawk Ridge Bird Observatory", "ADDRESS": "3980 E Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.0316, 46.8469 ] } }
 ]
 }
