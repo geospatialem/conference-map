@@ -289,8 +289,8 @@ $.getJSON("data/establishments.geojson", function (data) {
 });
 
 //Define the map bounds constraint
-var southWest = L.latLng(46.6491584, -92.3011919),
-	northEast = L.latLng(46.880571, -91.9201779),
+var southWest = L.latLng(46.6300, -92.5000),
+	northEast = L.latLng(46.8805, -91.9201),
 	bounds = L.latLngBounds(southWest, northEast);
 
 map = L.map("map", {

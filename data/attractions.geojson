@@ -27,5 +27,8 @@
 { "type": "Feature", "id": 11, "properties": { "NAME": "S.S. William A. Irvin Ore Boat Museum", "ADDRESS": "350 Harbor Drive" }, "geometry": { "type": "Point", "coordinates": [ -92.0971, 46.7827 ] } }
 ,
 { "type": "Feature", "id": 12, "properties": { "NAME": "Hawk Ridge Bird Observatory", "ADDRESS": "3980 E Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.0316, 46.8469 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "NAME": "Jay Cooke State Park", "ADDRESS": "3980 E Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.3712, 46.6543 ] } }
+
 ]
 }
