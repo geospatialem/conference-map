@@ -160,6 +160,55 @@ $.getJSON("data/main.geojson", function (data) {
   map.addLayer(mainLayer);
 });
 
+var funRunWalkRoute = L.geoJson(null, {
+	  style: function (feature) {
+	      return {
+	        color: "#ff3135",
+	        dashArray: 2,
+	        weight: 3,
+	        opacity: 0.6
+	      };
+	  },
+	  onEachFeature: function (feature, layer) {
+	    if (feature.properties) {
+	      var content = 
+	      "<table class='table table-striped table-bordered table-condensed'>" + 
+	      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" + 
+	      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" + 
+	      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" + 
+	      "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
+	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a>." + "</td></tr>" + "<table>";	      
+	      layer.on({
+	        click: function (e) {
+	          $("#feature-title").html("Official 5k Fun Run/Walk Route");
+	          $("#feature-info").html(content);
+	          $("#featureModal").modal("show");
+
+	        }
+	      });
+	    }
+	    layer.on({
+	      mouseover: function (e) {
+	        var layer = e.target;
+	        layer.setStyle({
+	          weight: 3,
+	          color: "#00FFFF",
+	          opacity: 1
+	        });
+	        if (!L.Browser.ie && !L.Browser.opera) {
+	          layer.bringToFront();
+	        }
+	      },
+	      mouseout: function (e) {
+	        funRunWalkRoute.resetStyle(e.target);
+	      }
+	    });
+	  }
+	});
+	$.getJSON("data/funRoute.geojson", function (data) {
+	  funRunWalkRoute.addData(data);
+	});
+
 /* Empty layer placeholder to add to layer control for listening when to add/remove attractions to markerClusters layer */
 var hotelsLayer = L.geoJson(null);
 var hotels = L.geoJson(null, {
@@ -411,9 +460,9 @@ var baseLayers = {
 var groupedOverlays = {
   "": {
 	"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #9E3235;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;DECC": mainLayer
-
   },
   "Places of Interest": {
+		"&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-beer fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
