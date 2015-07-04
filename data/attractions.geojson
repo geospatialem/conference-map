@@ -2,33 +2,33 @@
 "type": "FeatureCollection",
 
 "features": [
-{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Lift Bridge", "ADDRESS": "601 S Lake Ave" }, "geometry": { "type": "Point", "coordinates": [ -92.093058, 46.779232 ] } }
+{ "type": "Feature", "id": 0, "properties": { "NAME": "Aerial Lift Bridge", "ADDRESS": "601 S Lake Ave", "HOURS": "10:00 am - 4:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.093058, 46.779232 ] } }
 ,
-{ "type": "Feature", "id": 1, "properties": { "NAME": "Enger Park and Tower", "ADDRESS": "16th Ave W & Skyline Drive" }, "geometry": { "type": "Point", "coordinates": [ -92.125000, 46.776097 ] } }
+{ "type": "Feature", "id": 1, "properties": { "NAME": "Enger Park and Tower", "ADDRESS": "16th Ave W & Skyline Drive", "HOURS": "6:00 am - 10:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.125000, 46.776097 ] } }
 ,
-{ "type": "Feature", "id": 2, "properties": { "NAME": "Leif Erickson Park & Rose Garden", "ADDRESS": "12th Ave E & London Road" }, "geometry": { "type": "Point", "coordinates": [ -92.080993, 46.797795 ] } }
+{ "type": "Feature", "id": 2, "properties": { "NAME": "Leif Erickson Park & Rose Garden", "ADDRESS": "12th Ave E & London Road", "HOURS": "6:00 am - 10:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.080993, 46.797795 ] } }
 ,
-{ "type": "Feature", "id": 3, "properties": { "NAME": "Glensheen Estate", "ADDRESS": "3300 London Rd" }, "geometry": { "type": "Point", "coordinates": [ -92.051791 , 46.815161 ] } }
+{ "type": "Feature", "id": 3, "properties": { "NAME": "Glensheen Estate", "ADDRESS": "3300 London Rd", "HOURS": "9:30 am - 4:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.051791 , 46.815161 ] } }
 ,
-{ "type": "Feature", "id": 4, "properties": { "NAME": "Lake Superior Maritime Visitor Center", "ADDRESS": "600 S Lake Ave" }, "geometry": { "type": "Point", "coordinates": [ -92.092425, 46.779825 ] } }
+{ "type": "Feature", "id": 4, "properties": { "NAME": "Lake Superior Maritime Visitor Center", "ADDRESS": "600 S Lake Ave", "HOURS": "10:00 am - 9:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.092425, 46.779825 ] } }
 ,
-{ "type": "Feature", "id": 5, "properties": { "NAME": "Lake Superior Railroad Museum", "ADDRESS": "506 W Michigan St" }, "geometry": { "type": "Point", "coordinates": [ -92.103879, 46.781702 ] } }
+{ "type": "Feature", "id": 5, "properties": { "NAME": "Lake Superior Railroad Museum", "ADDRESS": "506 W Michigan St", "HOURS": "9:00 am - 6:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.103879, 46.781702 ] } }
 ,
-{ "type": "Feature", "id": 6, "properties": { "NAME": "Spirit Mountain", "ADDRESS": "9500 Spirit Mountain Pl" }, "geometry": { "type": "Point", "coordinates": [ -92.217740, 46.720187 ] } }
+{ "type": "Feature", "id": 6, "properties": { "NAME": "Spirit Mountain", "ADDRESS": "9500 Spirit Mountain Pl", "HOURS": "11:00 am - 7:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.217740, 46.720187 ] } }
 ,
-{ "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr" }, "geometry": { "type": "Point", "coordinates": [ -92.100309, 46.779278 ] } }
+{ "type": "Feature", "id": 7, "properties": { "NAME": "Great Lakes Aquarium", "ADDRESS": "353 Harbor Dr", "HOURS": "10:00 am - 6:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.100309, 46.779278 ] } }
 ,
-{ "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St" }, "geometry": { "type": "Point", "coordinates": [ -92.190494, 46.725798 ] } }
+{ "type": "Feature", "id": 8, "properties": { "NAME": "Lake Superior Zoo", "ADDRESS": "7210 Fremont St", "HOURS": "9:00 am - 5:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.190494, 46.725798 ] } }
 ,
-{ "type": "Feature", "id": 9, "properties": { "NAME": "Thompson Hill Information Center", "ADDRESS": "8525 W Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.2056, 46.7295 ] } }
+{ "type": "Feature", "id": 9, "properties": { "NAME": "Thompson Hill Information Center", "ADDRESS": "8525 W Skyline Pkwy", "HOURS": "9:00 am - 5:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.2056, 46.7295 ] } }
 ,
-{ "type": "Feature", "id": 10, "properties": { "NAME": "Park Point", "ADDRESS": "45th St & Minnesota Ave" }, "geometry": { "type": "Point", "coordinates": [ -92.0724, 46.7516 ] } }
+{ "type": "Feature", "id": 10, "properties": { "NAME": "Park Point", "ADDRESS": "45th St & Minnesota Ave", "HOURS": "6:00 am - 10:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.0724, 46.7516 ] } }
 ,
-{ "type": "Feature", "id": 11, "properties": { "NAME": "S.S. William A. Irvin Ore Boat Museum", "ADDRESS": "350 Harbor Drive" }, "geometry": { "type": "Point", "coordinates": [ -92.0971, 46.7827 ] } }
+{ "type": "Feature", "id": 11, "properties": { "NAME": "S.S. William A. Irvin Ore Boat Museum", "ADDRESS": "350 Harbor Drive", "HOURS": "Tours are unavailable" }, "geometry": { "type": "Point", "coordinates": [ -92.0971, 46.7827 ] } }
 ,
-{ "type": "Feature", "id": 12, "properties": { "NAME": "Hawk Ridge Bird Observatory", "ADDRESS": "3980 E Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.0316, 46.8469 ] } }
+{ "type": "Feature", "id": 12, "properties": { "NAME": "Hawk Ridge Bird Observatory", "ADDRESS": "3980 E Skyline Pkwy", "HOURS": "9:00 am - 4:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.0316, 46.8469 ] } }
 ,
-{ "type": "Feature", "id": 13, "properties": { "NAME": "Jay Cooke State Park", "ADDRESS": "3980 E Skyline Pkwy" }, "geometry": { "type": "Point", "coordinates": [ -92.3712, 46.6543 ] } }
+{ "type": "Feature", "id": 13, "properties": { "NAME": "Jay Cooke State Park", "ADDRESS": "3980 E Skyline Pkwy", "HOURS": "9:00 am - 9:00 pm" }, "geometry": { "type": "Point", "coordinates": [ -92.3712, 46.6543 ] } }
 
 ]
 }

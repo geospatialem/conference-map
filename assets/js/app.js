@@ -164,7 +164,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	  style: function (feature) {
 	      return {
 	        color: "#ff3135",
-	        dashArray: 2,
+	        dashArray: '4',
 	        weight: 3,
 	        opacity: 0.6
 	      };
@@ -263,7 +263,10 @@ var attractions = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" + "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" + "<table>";
+      var content = "<table class='table table-striped table-bordered table-condensed'>" + 
+      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" + 
+      "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
+      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" + "<table>";
       layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.NAME);
