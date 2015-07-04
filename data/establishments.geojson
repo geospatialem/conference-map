@@ -4,12 +4,18 @@
 "features": [
 { "type": "Feature", "id": 0, "properties": { "NAME": "Duluth Grill", "ADDRESS": "118 S 27th Ave W", "HOURS": "7:00 am - 9:00 pm", "URL": "http://www.duluthgrill.com" }, "geometry": { "type": "Point", "coordinates": [ -92.130050, 46.760614 ] } }
 ,
-{ "type": "Feature", "id": 1, "properties": { "NAME": "Northern Waters Smokehaus", "ADDRESS": "394 Lake Avenue South, Suite 106", "HOURS": "10:00 am - 8:00 pm", "URL": "http://www.northernwaterssmokehaus.com" }, "geometry": { "type": "Point", "coordinates": [ -92.094636, 46.781948 ] } }
+{ "type": "Feature", "id": 1, "properties": { "NAME": "Northern Waters Smokehaus", "ADDRESS": "394 Lake Ave S, Suite 106", "HOURS": "10:00 am - 8:00 pm", "URL": "http://www.northernwaterssmokehaus.com" }, "geometry": { "type": "Point", "coordinates": [ -92.094636, 46.781948 ] } }
 ,
-{ "type": "Feature", "id": 2, "properties": { "NAME": "Canal Park Brewing Company", "ADDRESS": "300 Canal Park Drive", "HOURS": "11:00 am - 11:00 pm", "URL": "http://www.canalparkbrewery.com" }, "geometry": { "type": "Point", "coordinates": [ -92.093830, 46.784832 ] } }
+{ "type": "Feature", "id": 2, "properties": { "NAME": "Canal Park Brewing Company", "ADDRESS": "300 Canal Park Dr", "HOURS": "11:00 am - 11:00 pm", "URL": "http://www.canalparkbrewery.com" }, "geometry": { "type": "Point", "coordinates": [ -92.093830, 46.784832 ] } }
 ,
 { "type": "Feature", "id": 3, "properties": { "NAME": "Fitgers Brewhouse Brewery", "ADDRESS": "600 E Superior St", "HOURS": "11:00 am - 1:00 am", "URL": "http://brewhouse.net" }, "geometry": { "type": "Point", "coordinates": [ -92.090600, 46.792376 ] } }
 ,
-{ "type": "Feature", "id": 3, "properties": { "NAME": "Bent Paddle Brewing Company", "ADDRESS": "1912 West Michigan St", "HOURS": "3:00 pm - 10:00 pm", "URL": "http://www.bentpaddlebrewing.com" }, "geometry": { "type": "Point", "coordinates": [ -92.1218, 46.7676 ] } }
+{ "type": "Feature", "id": 4, "properties": { "NAME": "Bent Paddle Brewing Company", "ADDRESS": "1912 W Michigan St", "HOURS": "3:00 pm - 10:00 pm", "URL": "http://www.bentpaddlebrewing.com" }, "geometry": { "type": "Point", "coordinates": [ -92.1218, 46.7676 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "NAME": "Lake Superior Brewing Company", "ADDRESS": "2711 W Superior St", "HOURS": "4:00 pm - 9:00 pm", "URL": "http://www.lakesuperiorbrewing.com" }, "geometry": { "type": "Point", "coordinates": [ -92.1325, 46.7606 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "NAME": "Duhb Linn Irish Brew Pub", "ADDRESS": "109 W Superior St", "HOURS": "11:00 am - 2:00 am", "URL": "http://www.dubhlinnpub.com" }, "geometry": { "type": "Point", "coordinates": [ -92.1001, 46.7858 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "NAME": "Tycoons Zenith Alehouse", "ADDRESS": "132 E Superior St", "HOURS": "11:00 am - 1:00 am", "URL": "http://tycoonsalehouse.com" }, "geometry": { "type": "Point", "coordinates": [ -92.0955, 46.7885 ] } }
 ]
 }
