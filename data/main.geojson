@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",                                                                          
 "features": [
-{ "type": "Feature", "id": 3, "properties": { "NAME": "Duluth Entertainment Convention Center (DECC)", "ADDRESS": "350 Harbor Drive" }, "geometry": { "type": "Point", "coordinates": [ -92.097675, 46.781194 ] } }
+{ "type": "Feature", "id": 3, "properties": { "NAME": "Duluth Entertainment Convention Center (DECC)", "ADDRESS": "350 Harbor Drive", "HOURS": "10:00 am - 5:00 pm", "WEBSITE": "http://www.decc.org" }, "geometry": { "type": "Point", "coordinates": [ -92.097675, 46.781194 ] } }
 ]
 }
