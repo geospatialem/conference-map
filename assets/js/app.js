@@ -181,7 +181,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" + 
 	      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" + 
 	      "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a>." + "</td></tr>" + "<table>";	      
+	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";	      
 	      layer.on({
 	        click: function (e) {
 	          $("#feature-title").html("Official 5k Fun Run/Walk Route");
