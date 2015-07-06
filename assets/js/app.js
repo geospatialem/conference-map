@@ -164,6 +164,7 @@ $.getJSON("data/main.geojson", function (data) {
   map.addLayer(mainLayer);
 });
 
+//Fun run route geojson layer
 var funRunWalkRoute = L.geoJson(null, {
 	  style: function (feature) {
 	      return {
@@ -211,6 +212,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	});
 	$.getJSON("data/funRoute.geojson", function (data) {
 	  funRunWalkRoute.addData(data);
+	  map.almostOver.addLayer(funRunWalkRoute);
 	});
 
 /* Empty layer placeholder to add to layer control for listening when to add/remove attractions to markerClusters layer */
@@ -313,8 +315,8 @@ var establishments = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
     return L.marker(latlng, {
     	icon: establishmentMarker,
-      title: feature.properties.NAME,
-      riseOnHover: true
+    	title: feature.properties.NAME,
+    	riseOnHover: true
     });
   },
   onEachFeature: function (feature, layer) {
@@ -685,4 +687,40 @@ $(document).one("ajaxStop", function () {
   });
   $(".twitter-typeahead").css("position", "static");
   $(".twitter-typeahead").css("display", "block");
+});
+
+//AlmostOver: Define a circle 
+var circle = L.circleMarker([0, 0], {radius: 5, fillColor: 'white', fillOpacity: 1});
+
+//AlmostOver: Map functionality that displays the circle and makes it seem like the user is hovering over the polyline
+map.on('almost:over', function (e) { 
+  map.addLayer(circle);
+  e.layer.setStyle({weight: 3, color: "#00FFFF"});
+});
+
+//AlmostOver: Map functionality to have the circle displayed along the line (using the lat/long of the polyline)
+map.on('almost:move', function (e) {
+  circle.setLatLng(e.latlng);
+});
+
+//AlmostOver: Once the user has gone 'off' the line, reset the feature
+//TODO: Add mobile functionality that displays the original style
+map.on('almost:out', function (e) {
+  map.removeLayer(circle);
+  e.layer.setStyle({weight: 3, color: "#FF3135", dashArray: 4, opacity: 0.6});  
+});
+
+//AlmostOver: When the user is almost clicking on the polyline, show the attribute table
+map.on('almost:click', function (e) {
+  e.layer.setStyle({weight: 3, color: "#00FFFF"});
+      var content = 
+      "<table class='table table-striped table-bordered table-condensed'>" + 
+      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" + 
+      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" + 
+      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" + 
+      "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
+      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";	      
+          $("#feature-title").html("Official 5k Fun Run/Walk Route");
+          $("#feature-info").html(content);
+          $("#featureModal").modal("show");
 });
