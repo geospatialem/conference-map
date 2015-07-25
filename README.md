@@ -12,8 +12,14 @@ The map includes: The Duluth Entertainment Convention Center (DECC), Hotels with
 3. Uses the [Leaflet.GeometryUtil](https://github.com/makinacorpus/Leaflet.GeometryUtil) and [Leaflet.AlmostOver](https://github.com/makinacorpus/Leaflet.AlmostOver) plugins, allowing the detection of mouse click and overing events on lines, with a tolerance distance. It is useful if paths are drawn with a very small weight, or for clicks detection on mobile devices, for which finger precision can be a problem.
 
 
-## Future Enhnacements
+## Future Enhancements
 
 - More effective [Leaflet.AlmostOver](https://github.com/makinacorpus/Leaflet.AlmostOver) mobile support to ensure mobile device experience is the same as desktop browsers.
 
 - An indoor map of the DECC using the [Leaflet-indoor](https://github.com/cbaines/leaflet-indoor) plugin to provide a layer intended for displaying indoor data (rooms, corridors, etc.) with an accompanying control component to change the floor level displayed.
+
+## Embedding the Map
+To embed the map on a page add in the following HTML content to the page:
+
+``` <iframe src="http://geospatialem.github.io/conference-map" frameborder="0" width="600" height="400"></iframe>   
+```
