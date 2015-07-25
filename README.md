@@ -21,5 +21,6 @@ The map includes: The Duluth Entertainment Convention Center (DECC), Hotels with
 ## Embedding the Map
 To embed the map on a page add in the following HTML content to the page:
 
-``` <iframe src="http://geospatialem.github.io/conference-map" frameborder="0" width="600" height="400"></iframe>   
+```html 
+<iframe src="http://geospatialem.github.io/conference-map" frameborder="0" width="600" height="400"></iframe>   
 ```
