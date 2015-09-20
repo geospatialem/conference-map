@@ -7,7 +7,8 @@
       "properties": {
         "NAME": "Aerial Lift Bridge",
         "ADDRESS": "601 S Lake Ave",
-        "HOURS": "10:00 am - 4:00 pm"
+        "HOURS": "10:00 am - 4:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -23,7 +24,8 @@
       "properties": {
         "NAME": "Enger Park and Tower",
         "ADDRESS": "16th Ave W & Skyline Drive",
-        "HOURS": "6:00 am - 10:00 pm"
+        "HOURS": "6:00 am - 10:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +41,8 @@
       "properties": {
         "NAME": "Leif Erickson Park & Rose Garden",
         "ADDRESS": "12th Ave E & London Road",
-        "HOURS": "6:00 am - 10:00 pm"
+        "HOURS": "6:00 am - 10:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -55,7 +58,8 @@
       "properties": {
         "NAME": "Glensheen Estate",
         "ADDRESS": "3300 London Rd",
-        "HOURS": "9:30 am - 4:00 pm"
+        "HOURS": "9:30 am - 4:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -71,7 +75,8 @@
       "properties": {
         "NAME": "Lake Superior Maritime Visitor Center",
         "ADDRESS": "600 S Lake Ave",
-        "HOURS": "10:00 am - 9:00 pm"
+        "HOURS": "10:00 am - 9:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -87,7 +92,8 @@
       "properties": {
         "NAME": "Lake Superior Railroad Museum",
         "ADDRESS": "506 W Michigan St",
-        "HOURS": "9:00 am - 6:00 pm"
+        "HOURS": "9:00 am - 6:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -103,7 +109,8 @@
       "properties": {
         "NAME": "Spirit Mountain",
         "ADDRESS": "9500 Spirit Mountain Pl",
-        "HOURS": "11:00 am - 7:00 pm"
+        "HOURS": "11:00 am - 7:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -119,7 +126,8 @@
       "properties": {
         "NAME": "Great Lakes Aquarium",
         "ADDRESS": "353 Harbor Dr",
-        "HOURS": "10:00 am - 6:00 pm"
+        "HOURS": "10:00 am - 6:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +143,8 @@
       "properties": {
         "NAME": "Lake Superior Zoo",
         "ADDRESS": "7210 Fremont St",
-        "HOURS": "9:00 am - 5:00 pm"
+        "HOURS": "9:00 am - 5:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -151,7 +160,8 @@
       "properties": {
         "NAME": "Thompson Hill Information Center",
         "ADDRESS": "8525 W Skyline Pkwy",
-        "HOURS": "9:00 am - 5:00 pm"
+        "HOURS": "9:00 am - 5:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -167,7 +177,8 @@
       "properties": {
         "NAME": "Park Point",
         "ADDRESS": "45th St & Minnesota Ave",
-        "HOURS": "6:00 am - 10:00 pm"
+        "HOURS": "6:00 am - 10:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -183,7 +194,8 @@
       "properties": {
         "NAME": "S.S. William A. Irvin Ore Boat Museum",
         "ADDRESS": "350 Harbor Drive",
-        "HOURS": "Tours are unavailable"
+        "HOURS": "Tours are unavailable",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -199,7 +211,8 @@
       "properties": {
         "NAME": "Hawk Ridge Bird Observatory",
         "ADDRESS": "3980 E Skyline Pkwy",
-        "HOURS": "9:00 am - 4:00 pm"
+        "HOURS": "9:00 am - 4:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
@@ -215,7 +228,8 @@
       "properties": {
         "NAME": "Jay Cooke State Park",
         "ADDRESS": "3980 E Skyline Pkwy",
-        "HOURS": "9:00 am - 9:00 pm"
+        "HOURS": "9:00 am - 9:00 pm",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
         "type": "Point",
