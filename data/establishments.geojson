@@ -149,7 +149,7 @@
       "type": "Feature",
       "id": 8,
       "properties": {
-        "NAME": "Grizzly's Wood-fire Grilly Canal Park",
+        "NAME": "Grizzly's Wood-fire Grill Canal Park",
         "ADDRESS": "310 S Lake Ave",
         "HOURS": "11:00 am - 2:00 am",
         "URL": "http://grizzlysgrill.com",
@@ -158,7 +158,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -92.0960,
+          -92.096,
           46.7838
         ]
       }
@@ -195,7 +195,7 @@
         "type": "Point",
         "coordinates": [
           -92.0941,
-          46.7820
+          46.782
         ]
       }
     },
@@ -213,7 +213,7 @@
         "type": "Point",
         "coordinates": [
           -92.0947,
-          46.7820
+          46.782
         ]
       }
     },

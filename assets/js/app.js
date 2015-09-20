@@ -86,28 +86,29 @@ var highlight = L.geoJson(null);
 
 /* Symbology */
 var starMarker = L.AwesomeMarkers.icon({
-	icon: 'star',
-	prefix: 'fa',
-	markerColor: 'darkred',
+  	icon: 'star',
+  	prefix: 'fa',
+  	markerColor: 'darkred',
 	});
 
 var hotelMarker = L.AwesomeMarkers.icon({
-	icon: 'bed',
-	prefix: 'fa',
-	markerColor: 'cadetblue',
+  	icon: 'bed',
+  	prefix: 'fa',
+  	markerColor: 'cadetblue',
 	});
 
 var attractionMarker = L.AwesomeMarkers.icon({
-	icon: 'binoculars',
-	prefix: 'fa',
-	markerColor: 'green',
+  	icon: 'binoculars',
+  	prefix: 'fa',
+  	markerColor: 'green',
 	});
 
+/* Establishments marker symbolization based on the 'ICON' field */
 var establishmentMarker = L.AwesomeMarkers.icon({
-	icon: 'beer',
-	prefix: 'fa',
-	markerColor: 'orange',
-	});
+    icon: 'cutlery',
+    prefix: 'fa',
+    markerColor: 'orange'
+});
 
 /* Single marker cluster layer to hold all clusters */
 var markerClusters = new L.MarkerClusterGroup({
