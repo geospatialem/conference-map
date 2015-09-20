@@ -133,10 +133,7 @@ var main = L.geoJson(null, {
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" +
-      //if (feature.properties.DISCOUNT === "TRUE") {
-      "<tr><th>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" +
-      //}
-      "<table>";
+      "<tr><th>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" + "<table>";
 
       layer.on({
         click: function (e) {
