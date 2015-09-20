@@ -342,7 +342,7 @@ var establishments = L.geoJson(null, {
           }));
         }
       });
-      $("#feature-list tbody").append('<tr class="feature-row" id="'+L.stamp(layer)+'"><td style="vertical-align: middle;"><span class="fa-stack"><i class="fa fa-square fa-stack-2x" style="color: #EB902E;"></i><i class="fa fa-beer fa-stack-1x" style="color: white;"></i></span></td><td class="feature-name">'+layer.feature.properties.NAME+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+      $("#feature-list tbody").append('<tr class="feature-row" id="'+L.stamp(layer)+'"><td style="vertical-align: middle;"><span class="fa-stack"><i class="fa fa-square fa-stack-2x" style="color: #EB902E;"></i><i class="fa fa-cutlery fa-stack-1x" style="color: white;"></i></span></td><td class="feature-name">'+layer.feature.properties.NAME+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       establishmentsSearch.push({
         name: layer.feature.properties.NAME,
         address: layer.feature.properties.ADDRESS,
@@ -487,7 +487,7 @@ var groupedOverlays = {
 		"&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
 		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
-		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-beer fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
+		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
   }
 };
 
@@ -628,7 +628,7 @@ $(document).one("ajaxStop", function () {
     displayKey: "name",
     source: establishmentsBH.ttAdapter(),
     templates: {
-      header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-beer fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments</h4>",
+      header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments</h4>",
       suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
     }
   }, {
