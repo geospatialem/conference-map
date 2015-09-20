@@ -232,9 +232,9 @@ var hotels = L.geoJson(null, {
         "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
         "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
         "<tr><th>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
-        "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-        "<tr><th>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" +
-        "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + "Reservations</a></td></tr>" + "<table>";
+        "<tr><th>Cost</th><td><strike>" + feature.properties.COST + "</strike></td></tr>" +
+        "<tr><th>Group Code</th><td><strike>" + feature.properties.GROUPCODE + "</strike></td></tr>" +
+        "<tr><th>Website</th><td> <strike>Reservations</strike> </td></tr>" + "<table>";
       layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.NAME);
