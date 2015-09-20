@@ -279,8 +279,7 @@ var attractions = L.geoJson(null, {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
       "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
-      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
-      "<tr><th>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" + "<table>";
+      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" + "<table>";
       layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.NAME);
