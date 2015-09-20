@@ -59,7 +59,7 @@ function sidebarClick(id) {
   }
 }
 
-/* Basemap Layers */	
+/* Basemap Layers */
 var streets = L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
 	  maxZoom: 19,
 	  subdomains: ["otile1", "otile2", "otile3", "otile4"],
@@ -86,27 +86,27 @@ var highlight = L.geoJson(null);
 
 /* Symbology */
 var starMarker = L.AwesomeMarkers.icon({
-	icon: 'star', 
-	prefix: 'fa', 
-	markerColor: 'darkred', 
+	icon: 'star',
+	prefix: 'fa',
+	markerColor: 'darkred',
 	});
 
 var hotelMarker = L.AwesomeMarkers.icon({
-	icon: 'bed', 
-	prefix: 'fa', 
-	markerColor: 'cadetblue', 
+	icon: 'bed',
+	prefix: 'fa',
+	markerColor: 'cadetblue',
 	});
 
 var attractionMarker = L.AwesomeMarkers.icon({
-	icon: 'binoculars', 
-	prefix: 'fa', 
-	markerColor: 'green', 
+	icon: 'binoculars',
+	prefix: 'fa',
+	markerColor: 'green',
 	});
 
-var establishmentMarker = L.AwesomeMarkers.icon({ 
-	icon: 'beer', 
-	prefix: 'fa', 
-	markerColor: 'orange', 
+var establishmentMarker = L.AwesomeMarkers.icon({
+	icon: 'beer',
+	prefix: 'fa',
+	markerColor: 'orange',
 	});
 
 /* Single marker cluster layer to hold all clusters */
@@ -129,10 +129,15 @@ var main = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + 
-      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" + 
+      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
-      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";      
+      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" +
+      if (feature.properties.DISCOUNT === "TRUE") {
+            "<tr><th>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" +
+      }
+      "<table>";
+
       layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.NAME);
@@ -175,13 +180,13 @@ var funRunWalkRoute = L.geoJson(null, {
 	  },
 	  onEachFeature: function (feature, layer) {
 	    if (feature.properties) {
-	      var content = 
-	      "<table class='table table-striped table-bordered table-condensed'>" + 
-	      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" + 
-	      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" + 
-	      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" + 
+	      var content =
+	      "<table class='table table-striped table-bordered table-condensed'>" +
+	      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" +
+	      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
+	      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
 	      "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";	      
+	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";
 	      layer.on({
 	        click: function (e) {
 	          $("#feature-title").html("Official 5k Fun Run/Walk Route");
@@ -226,12 +231,12 @@ var hotels = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
-        var content = "<table class='table table-striped table-bordered table-condensed'>" + 
-        "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" + 
-        "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" + 
-        "<tr><th>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" + 
-        "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" + 
-        "<tr><th>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" + 
+        var content = "<table class='table table-striped table-bordered table-condensed'>" +
+        "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
+        "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
+        "<tr><th>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
+        "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
+        "<tr><th>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" +
         "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + "Reservations</a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
@@ -274,8 +279,8 @@ var attractions = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" + 
-      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" + 
+      var content = "<table class='table table-striped table-bordered table-condensed'>" +
+      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" + "<table>";
       layer.on({
@@ -320,10 +325,10 @@ var establishments = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" + 
-      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" + 
-      "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" + 
-      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" + 
+      var content = "<table class='table table-striped table-bordered table-condensed'>" +
+      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
+      "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
+      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
@@ -488,7 +493,7 @@ var groupedOverlays = {
 };
 
 var options = { exclusiveGroups: [""],
-		collapsed: isCollapsed 
+		collapsed: isCollapsed
 };
 
 var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, options, {
@@ -523,7 +528,7 @@ $(document).one("ajaxStop", function () {
     local: attractionsSearch,
     limit: 10
   });
-  
+
   var hotelsBH = new Bloodhound({
 	    name: "Hotels",
 	    datumTokenizer: function (d) {
@@ -543,7 +548,7 @@ $(document).one("ajaxStop", function () {
     local: establishmentsSearch,
     limit: 10
   });
-  
+
   var mainBH = new Bloodhound({
 	    name: "Main",
 	    datumTokenizer: function (d) {
@@ -688,11 +693,11 @@ $(document).one("ajaxStop", function () {
   $(".twitter-typeahead").css("display", "block");
 });
 
-//AlmostOver: Define a circle 
+//AlmostOver: Define a circle
 var circle = L.circleMarker([0, 0], {radius: 5, fillColor: 'white', fillOpacity: 1});
 
 //AlmostOver: Map functionality that displays the circle and makes it seem like the user is hovering over the polyline
-map.on('almost:over', function (e) { 
+map.on('almost:over', function (e) {
   map.addLayer(circle);
   e.layer.setStyle({weight: 3, color: "#00FFFF"});
 });
@@ -706,19 +711,19 @@ map.on('almost:move', function (e) {
 //TODO: Add mobile functionality that displays the original style
 map.on('almost:out', function (e) {
   map.removeLayer(circle);
-  e.layer.setStyle({weight: 3, color: "#FF3135", dashArray: 4, opacity: 0.6});  
+  e.layer.setStyle({weight: 3, color: "#FF3135", dashArray: 4, opacity: 0.6});
 });
 
 //AlmostOver: When the user is almost clicking on the polyline, show the attribute table
 map.on('almost:click', function (e) {
   e.layer.setStyle({weight: 3, color: "#00FFFF"});
-      var content = 
-      "<table class='table table-striped table-bordered table-condensed'>" + 
-      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" + 
-      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" + 
-      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" + 
+      var content =
+      "<table class='table table-striped table-bordered table-condensed'>" +
+      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" +
+      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
+      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
       "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";	      
+      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";
           $("#feature-title").html("Official 5k Fun Run/Walk Route");
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
