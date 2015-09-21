@@ -235,7 +235,7 @@ var hotels = L.geoJson(null, {
         "<tr><th>Cost</th><td><strike>" + feature.properties.COST + "</strike></td></tr>" +
         "<tr><th>Group Code</th><td><strike>" + feature.properties.GROUPCODE + "</strike></td></tr>" +
         "<tr><th>Website</th><td> <strike>Reservations</strike> </td></tr>" + "<table>";
-      layer.on({
+    layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.NAME);
           $("#feature-info").html(content);
@@ -279,7 +279,9 @@ var attractions = L.geoJson(null, {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
       "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
-      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" + "<table>";
+      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
+      "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
+      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
           $("#feature-title").html(feature.properties.NAME);
