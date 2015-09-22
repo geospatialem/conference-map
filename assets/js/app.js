@@ -277,14 +277,13 @@ var attractions = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
-      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";
+   	  "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
-          $("#feature-title").html(feature.properties.NAME);
+	      $("#feature-title").html(feature.properties.NAME);
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
           highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
