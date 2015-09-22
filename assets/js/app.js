@@ -130,7 +130,6 @@ var main = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
-      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";
@@ -229,7 +228,6 @@ var hotels = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
         var content = "<table class='table table-striped table-bordered table-condensed'>" +
-        "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
         "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
         "<tr><th>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
         "<tr><th>Cost</th><td><strike>" + feature.properties.COST + "</strike></td></tr>" +
@@ -324,7 +322,6 @@ var establishments = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
-      "<tr><th>Name</th><td>" + feature.properties.NAME + "</td></tr>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" +
