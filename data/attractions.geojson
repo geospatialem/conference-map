@@ -9,7 +9,7 @@
         "ADDRESS": "601 S Lake Ave",
         "HOURS": "10:00 am - 4:00 pm",
         "COST": "Free",
-        "WEBSITE": ""
+        "WEBSITE": "http://duluthmn.gov"
       },
       "geometry": {
         "type": "Point",
@@ -27,7 +27,7 @@
         "ADDRESS": "16th Ave W & Skyline Drive",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": ""
+        "WEBSITE": "http://engertowerduluth.com"
       },
       "geometry": {
         "type": "Point",
@@ -45,7 +45,7 @@
         "ADDRESS": "12th Ave E & London Road",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": ""
+        "WEBSITE": "www.duluthmn.gov/parks"
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +171,7 @@
         "ADDRESS": "8525 W Skyline Pkwy",
         "HOURS": "9:00 am - 5:00 pm",
         "COST": "Free",
-        "WEBSITE": ""
+        "WEBSITE": "http://www.tripadvisor.com/Attraction_Review-g43018-d2290252-Reviews-Thompson_Hill_Information_Center-Duluth_Minnesota.html"
       },
       "geometry": {
         "type": "Point",
