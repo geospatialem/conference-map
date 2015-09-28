@@ -17,6 +17,72 @@
           46.781194
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon Rooms (skyway level)",
+        "ADDRESS": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09695100784302,
+          46.78117371810515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "French River Rooms (skyway level)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09857106208801,
+          46.78106902377917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Ballrooms (skyway level)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09809899330139,
+          46.781214126387056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Split Rock Rooms (ground level)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09867030382156,
+          46.7814547387104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Lobby (ground level)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09873467683792,
+          46.78124718768604
+        ]
+      }
     }
   ]
 }
