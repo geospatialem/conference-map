@@ -187,10 +187,12 @@ style: function (feature) {
       clickable: true
     };
   },
-  onEachFeature: function (feature, layer) {		  		
+  onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
-	        var content = "<table class='table table-striped table-bordered table-condensed'>" + 
-	        "<tr><th scope='col'>Name</th><td scope='row'>" + feature.properties.NAME + "</td></tr>" + "<table>";
+	        var content = "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>Number of Rooms</th><td>" + feature.properties.ROOMS + "</td></tr>" +
+          "<tr><th>Workshops</th><td>" + feature.properties.WORKSHOPS + "</td></tr>" +
+          "<tr><th>Sessions</th><td>" + feature.properties.SESSIONS + "</td></tr>" + "<table>";
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -198,7 +200,7 @@ style: function (feature) {
 	            $("#featureModal").modal("show");
 	          }
 	        });
-	      } //End Popup			  
+	      } //End Popup
   }
 });
 $.getJSON("data/deccGround.geojson", function (data) {
@@ -218,10 +220,12 @@ style: function (feature) {
         clickable: true
     };
   },
-  onEachFeature: function (feature, layer) {		  		
+  onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
-	        var content = "<table class='table table-striped table-bordered table-condensed'>" + 
-	        "<tr><th scope='col'>Name</th><td scope='row'>" + feature.properties.NAME + "</td></tr>" + "<table>";
+	        var content = "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>Number of Rooms</th><td>" + feature.properties.ROOMS + "</td></tr>" +
+          "<tr><th>Workshops</th><td>" + feature.properties.WORKSHOPS + "</td></tr>" +
+          "<tr><th>Sessions</th><td>" + feature.properties.SESSIONS + "</td></tr>" + "<table>";
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -229,7 +233,7 @@ style: function (feature) {
 	            $("#featureModal").modal("show");
 	          }
 	        });
-	      } //End Popup			  
+	      } //End Popup
   }
 });
 $.getJSON("data/deccSkyway.geojson", function (data) {
