@@ -4,11 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#a50541",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5
       },
       "geometry": {
         "type": "Polygon",
