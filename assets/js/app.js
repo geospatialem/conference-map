@@ -1,4 +1,4 @@
-var map, featureList, mainSearch = [], hotelSearch = [], attractionsSearch = [], establishmentsSearch = [];
+var map, featureList, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [];
 
 $(document).on("click", ".feature-row", function(e) {
   sidebarClick(parseInt($(this).attr("id"), 10));
@@ -48,7 +48,7 @@ $("#sidebar-hide-btn").click(function() {
 });
 
 function sidebarClick(id) {
-  map.addLayer(hotelsLayer).addLayer(attractionsLayer).addLayer(establishmentsLayer).addLayer(mainLayer);
+  map.addLayer(hotelsLayer).addLayer(attractionsLayer).addLayer(establishmentsLayer);
   var layer = markerClusters.getLayer(id);
   map.setView([layer.getLatLng().lat, layer.getLatLng().lng], 17);
   layer.fire("click");
@@ -118,6 +118,7 @@ var markerClusters = new L.MarkerClusterGroup({
   disableClusteringAtZoom: 16
 });
 
+//DECC Point (lat, long)
 var mainLayer = L.geoJson(null);
 var main = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
@@ -147,21 +148,92 @@ var main = L.geoJson(null, {
           }));
         }
       });
-      $("#feature-list tbody").append('<tr class="feature-row" id="'+L.stamp(layer)+'"><td style="vertical-align: middle;"><span class="fa-stack"><i class="fa fa-square fa-stack-2x" style="color: #A03336;"></i><i class="fa fa-star fa-stack-1x" style="color: white;"></i></span></td><td class="feature-name">'+layer.feature.properties.NAME+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
-      mainSearch.push({
-        name: layer.feature.properties.NAME,
-        address: layer.feature.properties.ADDRESS,
-        source: "Main",
-        id: L.stamp(layer),
-        lat: layer.feature.geometry.coordinates[1],
-        lng: layer.feature.geometry.coordinates[0]
-      });
     }
   }
 });
 $.getJSON("data/main.geojson", function (data) {
   main.addData(data);
   map.addLayer(mainLayer);
+});
+
+//DECC Polygon
+var deccPoly = L.geoJson(null, {
+style: function (feature) {
+    return {
+      color: "#A50541",
+      weight: 2,
+      fillColor: "#A13336",
+      fillOpacity: 0.1,
+      opacity: 1,
+      dashArray: '3',
+      clickable: false
+    };
+  }
+});
+$.getJSON("data/deccLayout.geojson", function (data) {
+	deccPoly.addData(data);
+});
+
+//DECC Ground Floor
+var deccGround = L.geoJson(null, {
+style: function (feature) {
+    return {
+      color: "#A50541",
+      weight: 1.5,
+      fillColor: "#A13336",
+      fillOpacity: 0.1,
+      opacity: 1,
+      dashArray: '2',
+      clickable: true
+    };
+  },
+  onEachFeature: function (feature, layer) {		  		
+	    if (feature.properties) { //Popup
+	        var content = "<table class='table table-striped table-bordered table-condensed'>" + 
+	        "<tr><th scope='col'>Name</th><td scope='row'>" + feature.properties.NAME + "</td></tr>" + "<table>";
+	        layer.on({
+	          click: function (e) {
+	            $("#feature-title").html(feature.properties.NAME);
+	            $("#feature-info").html(content);
+	            $("#featureModal").modal("show");
+	          }
+	        });
+	      } //End Popup			  
+  }
+});
+$.getJSON("data/deccGround.geojson", function (data) {
+	deccGround.addData(data);
+});
+
+//DECC Skyway Level
+var deccSkyway = L.geoJson(null, {
+style: function (feature) {
+    return {
+        color: "#A50541",
+        weight: 1.5,
+        fillColor: "#A13336",
+        fillOpacity: 0.1,
+        opacity: 1,
+        dashArray: '2',
+        clickable: true
+    };
+  },
+  onEachFeature: function (feature, layer) {		  		
+	    if (feature.properties) { //Popup
+	        var content = "<table class='table table-striped table-bordered table-condensed'>" + 
+	        "<tr><th scope='col'>Name</th><td scope='row'>" + feature.properties.NAME + "</td></tr>" + "<table>";
+	        layer.on({
+	          click: function (e) {
+	            $("#feature-title").html(feature.properties.NAME);
+	            $("#feature-info").html(content);
+	            $("#featureModal").modal("show");
+	          }
+	        });
+	      } //End Popup			  
+  }
+});
+$.getJSON("data/deccSkyway.geojson", function (data) {
+	deccSkyway.addData(data);
 });
 
 //Fun run route geojson layer
@@ -364,7 +436,7 @@ var southWest = L.latLng(46.6300, -92.5000),
 map = L.map("map", {
   zoom: 16,
   center: [46.7830,-92.1005],
-  layers: [streets, markerClusters, highlight],
+  layers: [deccPoly, main, streets, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
@@ -381,9 +453,6 @@ map.on("overlayadd", function(e) {
   if (e.layer === establishmentsLayer) {
     markerClusters.addLayer(establishments);
   }
-  if (e.layer === mainLayer) {
-	    markerClusters.addLayer(main);
-	  }
 });
 
 map.on("overlayremove", function(e) {
@@ -396,9 +465,6 @@ map.on("overlayremove", function(e) {
   if (e.layer === establishmentsLayer) {
     markerClusters.removeLayer(establishments);
   }
-  if (e.layer === mainLayer) {
-	    markerClusters.removeLayer(main);
-	  }
 });
 
 /* Clear feature highlight when map is clicked */
@@ -477,8 +543,10 @@ var baseLayers = {
 };
 
 var groupedOverlays = {
-  "": {
-	"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #9E3235;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;DECC": mainLayer
+  "DECC": {
+	"&nbsp;Facility": deccPoly,
+	"&nbsp;Ground Level": deccGround,
+	"&nbsp;Skyway Level": deccSkyway
   },
   "Places of Interest": {
 		"&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
@@ -488,7 +556,7 @@ var groupedOverlays = {
   }
 };
 
-var options = { exclusiveGroups: [""],
+var options = { exclusiveGroups: ["DECC"],
 		collapsed: isCollapsed
 };
 
@@ -545,16 +613,6 @@ $(document).one("ajaxStop", function () {
     limit: 10
   });
 
-  var mainBH = new Bloodhound({
-	    name: "Main",
-	    datumTokenizer: function (d) {
-	      return Bloodhound.tokenizers.whitespace(d.name);
-	    },
-	    queryTokenizer: Bloodhound.tokenizers.whitespace,
-	    local: mainSearch,
-	    limit: 10
-  });
-
   var geonamesBH = new Bloodhound({
     name: "GeoNames",
     datumTokenizer: function (d) {
@@ -588,7 +646,6 @@ $(document).one("ajaxStop", function () {
   attractionsBH.initialize();
   hotelsBH.initialize();
   establishmentsBH.initialize();
-  mainBH.initialize();
   geonamesBH.initialize();
 
   /* instantiate the typeahead UI */
@@ -604,14 +661,6 @@ $(document).one("ajaxStop", function () {
     	header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions</h4>",
     	suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
     }
-  }, {
-	    name: "Main",
-	    displayKey: "name",
-	    source: mainBH.ttAdapter(),
-	    templates: {
-	      header: "<h4 class='typeahead-header'><span class='fa-stack'><i class='fa fa-square fa-stack-2x' style='color: #9e3235;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;Main Sites</h4>",
-	      suggestion: Handlebars.compile(["{{name}}<br>&nbsp;<small>{{address}}</small>"].join(""))
-	    }
 	  }, {
 	    name: "Hotels",
 	    displayKey: "name",
@@ -663,15 +712,6 @@ $(document).one("ajaxStop", function () {
         map._layers[datum.id].fire("click");
       }
     }
-    if (datum.source === "Main") {
-        if (!map.hasLayer(mainLayer)) {
-          map.addLayer(mainLayer);
-        }
-        map.setView([datum.lat, datum.lng], 17);
-        if (map._layers[datum.id]) {
-          map._layers[datum.id].fire("click");
-        }
-      }
     if (datum.source === "GeoNames") {
       map.setView([datum.lat, datum.lng], 14);
     }
