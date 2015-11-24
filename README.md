@@ -1,7 +1,7 @@
-2015 MN GIS/LIS Conference Map
+2016 MN GIS/LIS Conference Map
 ==============
 
-Contribute to the official [25th Annual Conference Map](http://geospatialem.github.io/conference-map) held in Duluth, Minnesota this October! Enhanced functionality and new places welcome! 
+Contribute to the official [26th Annual Conference Map](http://geospatialem.github.io/conference-map) held in Duluth, Minnesota this October! Enhanced functionality and new places welcome!
 
 The map includes: The Duluth Entertainment Convention Center (DECC), Hotels with conference rates, 5k fun run/walk route, Establishments to get cuisine, Establishments to order #geobeers, Attractions around Duluth, and much more!
 
@@ -21,6 +21,6 @@ The map includes: The Duluth Entertainment Convention Center (DECC), Hotels with
 ## Embedding the Map
 To embed the map on a page add in the following HTML content to the page:
 
-```html 
+```html
 <iframe src="http://geospatialem.github.io/conference-map" frameborder="0" width="600" height="400"></iframe>   
 ```
