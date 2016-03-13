@@ -133,7 +133,7 @@ var main = L.geoJson(null, {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
-      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";
+      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
 
       layer.on({
         click: function (e) {
@@ -258,7 +258,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
 	      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
 	      "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";
+	      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a> (PDF)." + "</td></tr>" + "<table>";
 	      layer.on({
 	        click: function (e) {
 	          $("#feature-title").html("Official 5k Fun Run/Walk Route");
@@ -354,7 +354,7 @@ var attractions = L.geoJson(null, {
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-   	  "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + "</a></td></tr>" + "<table>";
+   	  "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
 	      $("#feature-title").html(feature.properties.NAME);
@@ -400,7 +400,7 @@ var establishments = L.geoJson(null, {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
       "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
-      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" +
+      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" +
       "<tr><th>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" + "<table>";
       layer.on({
         click: function (e) {
@@ -763,7 +763,7 @@ map.on('almost:click', function (e) {
       "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
       "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
       "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map</a> (PDF)." + "</td></tr>" + "<table>";
+      "<tr><th>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2015_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a>." + "</td></tr>" + "<table>";
           $("#feature-title").html("Official 5k Fun Run/Walk Route");
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
