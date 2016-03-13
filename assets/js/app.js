@@ -254,7 +254,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	    if (feature.properties) {
 	      var content =
 	      "<table class='table table-striped table-bordered table-condensed'>" +
-	      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" +
+	      "<tr><th>Start Time</th><td>" + "Friday, Oct. 28, 2015 @ 6:00 a.m." + "</td></tr>" +
 	      "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
 	      "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
 	      "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
@@ -759,7 +759,7 @@ map.on('almost:click', function (e) {
   e.layer.setStyle({weight: 3, color: "#00FFFF"});
       var content =
       "<table class='table table-striped table-bordered table-condensed'>" +
-      "<tr><th>Start Time</th><td>" + "Friday, Oct. 9, 2015 @ 6:00 a.m." + "</td></tr>" +
+      "<tr><th>Start Time</th><td>" + "Friday, Oct. 28, 2015 @ 6:00 a.m." + "</td></tr>" +
       "<tr><th>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
       "<tr><th>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
       "<tr><th>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
