@@ -7,10 +7,10 @@
       "properties": {
         "NAME": "Holiday Inn Hotel & Suites",
         "ADDRESS": "200 West First Street",
-        "PHONE": "218-722-1202 or 800-477-7089",
-        "COST": "$89/night",
-        "URL": "http://www.holidayinn.com/redirect?path=hd&brandCode=hi&localeCode=en&regionCode=1&hotelCode=DULMN&_PMID=99801505&GPC=MNG",
-        "GROUPCODE": "MNG"
+        "PHONE": "218-722-1202",
+        "COST": "$84/night",
+        "URL": "http://www.holidayinn.com/redirect?path=hd&brandCode=hi&localeCode=en&regionCode=1&hotelCode=DULMN&_PMID=99801505&GPC=GIS",
+        "GROUPCODE": "GIS"
       },
       "geometry": {
         "type": "Point",
@@ -26,10 +26,10 @@
       "properties": {
         "NAME": "The Inn on Lake Superior",
         "ADDRESS": "350 Canal Park Drive",
-        "PHONE": "218-625-0415 or 888-668-4352",
-        "COST": "$124/night",
+        "PHONE": "218-279-6000",
+        "COST": "$125/night",
         "URL": "https://reservations.theinnonlakesuperior.com/V1WebControls/GroupLogin.aspx",
-        "GROUPCODE": "4619 (Password: 37000033)"
+        "GROUPCODE": "Coming soon!"
       },
       "geometry": {
         "type": "Point",
@@ -43,18 +43,18 @@
       "type": "Feature",
       "id": 2,
       "properties": {
-        "NAME": "Radisson Duluth Harbor View",
-        "ADDRESS": "505 West Superior Street",
-        "PHONE": "218-727-8981",
+        "NAME": "Canal Park Lodge",
+        "ADDRESS": "250 Canal Park Drive",
+        "PHONE": "218-279-6000",
         "COST": "$99/night",
-        "URL": "http://www.radisson.com/duluth-hotel-mn-55802/duluth",
-        "GROUPCODE": "Under 'More Search Options', select 'Promo Code' for Rate Type Code/ID:  'MNGISL'"
+        "URL": "https://www.thebookingbutton.co.uk/properties/canalparklodgedirect",
+        "GROUPCODE": "Coming soon!"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -92.105311,
-          46.781947
+          -92.094302,
+          46.785779
         ]
       }
     }
