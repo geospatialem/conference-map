@@ -307,7 +307,7 @@ var hotels = L.geoJson(null, {
         "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
         "<tr><th>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
         "<tr><th>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-        "<tr><th>Group Code</th><td><i>" + feature.properties.GROUPCODE + "</i></td></tr>" +
+        "<tr><th>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" +
         "<tr><th>Website</th><td><a href='" + feature.properties.URL + "'>Online reservations</a></td></tr>" + "<table>";
     layer.on({
         click: function (e) {
@@ -439,7 +439,6 @@ var southWest = L.latLng(46.6300, -92.5000),
 
 map = L.map("map", {
   zoom: 16,
-  //center: [46.7830,-92.1005],
   center: [46.782473, -92.097686],
   layers: [deccPoly, main, streets, markerClusters, highlight],
   maxBounds: bounds,
