@@ -29,7 +29,7 @@
         "PHONE": "218-279-6000",
         "COST": "$125/night",
         "URL": "https://reservations.theinnonlakesuperior.com/V1WebControls/GroupLogin.aspx",
-        "GROUPCODE": "Coming soon!"
+        "GROUPCODE": "Must call to reserve at the conference rate."
       },
       "geometry": {
         "type": "Point",
@@ -48,7 +48,7 @@
         "PHONE": "218-279-6000",
         "COST": "$99/night",
         "URL": "https://www.thebookingbutton.co.uk/properties/canalparklodgedirect",
-        "GROUPCODE": "Coming soon!"
+        "GROUPCODE": "GROUP ID: 4621, Password: 37000033"
       },
       "geometry": {
         "type": "Point",
