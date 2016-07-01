@@ -28,8 +28,8 @@
         "ADDRESS": "350 Canal Park Drive",
         "PHONE": "218-279-6000",
         "COST": "$125/night",
-        "URL": "https://reservations.theinnonlakesuperior.com/V1WebControls/GroupLogin.aspx",
-        "GROUPCODE": "Must call to reserve at the conference rate."
+        "URL": "https://reservations.theinnonlakesuperior.com/V1WebControls/GroupComments.aspx",
+        "GROUPCODE": "Group ID: 4621, Password: 37000033"
       },
       "geometry": {
         "type": "Point",
@@ -48,7 +48,7 @@
         "PHONE": "218-279-6000",
         "COST": "$99/night",
         "URL": "https://www.thebookingbutton.co.uk/properties/canalparklodgedirect",
-        "GROUPCODE": "GROUP ID: 4621, Password: 37000033"
+        "GROUPCODE": "Must call 218/279-6000 to reserve at the conference rate."
       },
       "geometry": {
         "type": "Point",
