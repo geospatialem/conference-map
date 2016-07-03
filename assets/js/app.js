@@ -1,4 +1,4 @@
-var map, featureList, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [];
+var map, featureList, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [], mqStreetBasemap = MQ.mapLayer();
 
 $(document).on("click", ".feature-row", function(e) {
   sidebarClick(parseInt($(this).attr("id"), 10));
@@ -418,7 +418,7 @@ var southWest = L.latLng(46.6300, -92.5000),
 map = L.map("map", {
   zoom: 16,
   center: [46.782473, -92.097686],
-  layers: [deccPoly, main, MQ.mapLayer(), markerClusters, highlight],
+  layers: [deccPoly, main, mqStreetBasemap, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
@@ -508,7 +508,7 @@ if (document.body.clientWidth <= 767) {
 }
 
 var baseLayers = {
-  "Streets": MQ.mapLayer(),
+  "Streets": mqStreetBasemap,
   "Aerial Imagery": MQ.satelliteLayer(),
   "Hybrid": MQ.hybridLayer()
 };
