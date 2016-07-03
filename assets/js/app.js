@@ -96,54 +96,15 @@ var markerClusters = new L.MarkerClusterGroup({
   disableClusteringAtZoom: 16
 });
 
-//DECC Point (lat, long)
-var mainLayer = L.geoJson(null);
-var main = L.geoJson(null, {
-  pointToLayer: function (feature, latlng) {
-    return L.marker(latlng, {
-    	icon: starMarker,
-    	title: feature.properties.NAME,
-    	riseOnHover: true
-    });
-  },
-  onEachFeature: function (feature, layer) {
-    if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" +
-      "<tr><th>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
-      "<tr><th>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
-      "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
-
-      layer.on({
-        click: function (e) {
-          $("#feature-title").html(feature.properties.NAME);
-          $("#feature-info").html(content);
-          $("#featureModal").modal("show");
-          highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
-            stroke: false,
-            fillColor: "#00FFFF",
-            fillOpacity: 0.7,
-            radius: 10
-          }));
-        }
-      });
-    }
-  }
-});
-$.getJSON("data/main.geojson", function (data) {
-  main.addData(data);
-  map.addLayer(mainLayer);
-});
-
 //DECC Polygon
 var deccPoly = L.geoJson(null, {
 style: function (feature) {
     return {
       color: "#A50541",
+      dashArray: "3",
       weight: 2,
-      fillColor: "#A13336",
       fillOpacity: 0.1,
       opacity: 1,
-      dashArray: '3',
       clickable: false
     };
   }
@@ -157,20 +118,30 @@ var deccGround = L.geoJson(null, {
 style: function (feature) {
     return {
       color: "#A50541",
-      weight: 1.5,
+      dashArray: "2",
+      weight: 1,
       fillColor: "#A13336",
       fillOpacity: 0.1,
       opacity: 1,
-      dashArray: '2',
       clickable: true
     };
   },
   onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
-	        var content = "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>Number of Rooms</th><td>" + feature.properties.ROOMS + "</td></tr>" +
-          "<tr><th>Workshops</th><td>" + feature.properties.WORKSHOPS + "</td></tr>" +
-          "<tr><th>Sessions</th><td>" + feature.properties.SESSIONS + "</td></tr>" + "<table>";
+	        var content =
+          "<h4>Wednesday Workshops</h4>" +
+            "<table class='table table-striped table-bordered table-condensed'>" +
+            "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + "</td></tr>" +
+            "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + "</td></tr><table></br>" +
+          "<h4>Thursday Sessions</h4>" +
+            "<table class='table table-striped table-bordered table-condensed'>" +
+            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+            "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+            "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr><table></br>" +
+          "<h4>Friday Sessions</h4>" +
+            "<table class='table table-striped table-bordered table-condensed'>" +
+            "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
+            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr><table>";
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -178,7 +149,7 @@ style: function (feature) {
 	            $("#featureModal").modal("show");
 	          }
 	        });
-	      } //End Popup
+	    } //End Popup
   }
 });
 $.getJSON("data/deccGround.geojson", function (data) {
@@ -190,20 +161,30 @@ var deccSkyway = L.geoJson(null, {
 style: function (feature) {
     return {
         color: "#A50541",
-        weight: 1.5,
+        dashArray: "2",
+        weight: 1,
         fillColor: "#A13336",
         fillOpacity: 0.1,
         opacity: 1,
-        dashArray: '2',
         clickable: true
     };
   },
   onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
-	        var content = "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>Number of Rooms</th><td>" + feature.properties.ROOMS + "</td></tr>" +
-          "<tr><th>Workshops</th><td>" + feature.properties.WORKSHOPS + "</td></tr>" +
-          "<tr><th>Sessions</th><td>" + feature.properties.SESSIONS + "</td></tr>" + "<table>";
+        var content =
+        "<h4>Wednesday Workshops</h4>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + "</td></tr>" +
+          "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + "</td></tr><table></br>" +
+        "<h4>Thursday Sessions</h4>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+          "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+          "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr><table></br>" +
+        "<h4>Friday Sessions</h4>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
+          "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr><table>";
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -418,7 +399,7 @@ var southWest = L.latLng(46.6300, -92.5000),
 map = L.map("map", {
   zoom: 16,
   center: [46.782473, -92.097686],
-  layers: [deccPoly, main, mqStreetBasemap, markerClusters, highlight],
+  layers: [mqStreetBasemap, deccPoly, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
@@ -517,15 +498,14 @@ var baseLayers = {
 
 var groupedOverlays = {
   "DECC": {
-	"&nbsp;Facility": deccPoly,
-	"&nbsp;Ground Level": deccGround,
-	"&nbsp;Skyway Level": deccSkyway
+	   "&nbsp;Ground Level": deccGround,
+	    "&nbsp;Skyway Level": deccSkyway
   },
   "Places of Interest": {
-		"&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
-		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
-		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
-		"<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
+		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
+		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
+		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
+		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer,
   }
 };
 
