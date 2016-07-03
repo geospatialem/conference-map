@@ -4,10 +4,14 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Split Rock Rooms",
-        "ROOMS": "2",
-        "WORKSHOPS": "<i class='fa fa-check-square-o text-success'></i>",
-        "SESSIONS": "<i class='fa fa-check-square-o text-success'></i>"
+        "NAME": "Split Rock Rooms (2 rooms)",
+        "workshopAM": "TBA",
+        "workshopPM": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -26,9 +30,13 @@
       "type": "Feature",
       "properties": {
         "NAME": "Exhibit Hall",
-        "ROOMS": "1",
-        "WORKSHOPS": "<i class='fa fa-ban text-danger'></i>",
-        "SESSIONS": "<i class='fa fa-ban text-danger'></i>"
+        "workshopAM": "N/A",
+        "workshopPM": "N/A",
+        "thursdaySession1": "N/A",
+        "thursdaySession2": "N/A",
+        "thursdaySession3": "N/A",
+        "fridaySession1": "N/A",
+        "fridaySession2": "N/A"
       },
       "geometry": {
         "type": "Polygon",
