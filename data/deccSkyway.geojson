@@ -4,14 +4,74 @@
     {
       "type": "Feature",
       "properties": {
+        "NAME": "Exhibit Hall & Geolounge",
+        "wedHours": "12:00 pm - 5:00 pm",
+        "thursHours": "7:00 am - 7:00 pm",
+        "eventHours": "5:00 pm - 6:30 pm",
+        "friHours": "7:00 am - 12:00 pm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.09841817617415,46.78123065703908],
+            [-92.09814995527267,46.78143453466352],
+            [-92.09852546453476,46.78167124296393],
+            [-92.09878094494343,46.78147356520178],
+            [-92.09841817617415,46.78123065703908]
+          ]
+        ]
+      }
+    },
+    {
+   "type": "Feature",
+     "properties": {
+       "NAME": "St. Louis River Room",
+       "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
+       "workshopAMspeakers": "Kim Sundeen",
+       "workshopPM": "--",
+       "workshopPMspeakers": "N/A",
+       "thursdaySession1": "TBA",
+       "thursdaySession2": "TBA",
+       "thursdaySession3": "TBA",
+       "fridaySession1": "TBA",
+       "fridaySession2": "TBA"
+     },
+     "geometry": {
+       "type": "Polygon",
+       "coordinates": [
+               [
+                 [-92.09882520139217,46.78116246806672],
+                 [-92.09898982197046,46.781159024176944],
+                 [-92.09896836429834,46.781100478016924],
+                 [-92.09890935570002,46.781037569523015],
+                 [-92.09882084280252,46.7809863702201],
+                 [-92.09878262132406,46.781009329554784],
+                 [-92.09874507039784,46.78103182969328],
+                 [-92.09870584309101,46.78105203389128],
+                 [-92.09875546395779,46.78106075842897],
+                 [-92.09878362715244,46.78107866668612],
+                 [-92.09881111979485,46.781100478016924],
+                 [-92.09882084280252,46.781124585267],
+                 [-92.09882520139217,46.78116246806672]
+               ]
+             ]
+           }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "NAME": "French River Room 1",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "Parcel Fabric 101: Introduction to the Parcel Fabric",
+        "workshopAMspeakers": "Frank Conkling",
+        "workshopPM": "Parcel Fabric 601: Advanced Techniques",
+        "workshopPMspeakers": "Frank Conkling",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
         "fridaySession1": "TBA",
-        "fridaySession2": "TBA"      },
+        "fridaySession2": "TBA"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -29,22 +89,25 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River Room 2",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "Making a Web Map Like That",
+        "workshopAMspeakers": "Kitty Hurley",
+        "workshopPM": "Q is the Bees Knees",
+        "workshopPMspeakers": "Cory Richter",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
         "fridaySession1": "TBA",
-        "fridaySession2": "TBA"      },
+        "fridaySession2": "TBA"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [-92.09870249032974,46.78105432982239],
-            [-92.09856569766998,46.7809606557536],
+            [-92.09870517253876,46.78105203389128],
+            [-92.09856502711773,46.78096157412762],
             [-92.09846377372742,46.78102494189679],
             [-92.09859788417815,46.78112045259633],
-            [-92.09870249032974,46.78105432982239]
+            [-92.09870517253876,46.78105203389128]
           ]
         ]
       }
@@ -53,8 +116,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Ballroom L",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "Intro to Collector for ArcGIS",
+        "workshopAMspeakers": "Jacqueline Kovarik & Chris Pouliot",
+        "workshopPM": "Intermediate Collector for ArcGIS",
+        "workshopPMspeakers": "Jacqueline Kovarik & Chris Pouliot",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -78,8 +143,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Ballroom MN",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "Intro to Python",
+        "workshopAMspeakers": "Zeb Thomas & Jessica Schuler",
+        "workshopPM": "Advanced Python: Build Your Own Classes and Modules",
+        "workshopPMspeakers": "Zeb Thomas",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -103,8 +170,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Ballroom O",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "Using Geoprocessing Services with the JavaScript API",
+        "workshopAMspeakers": "Caleb Mackey & Nate Christ",
+        "workshopPM": "ArcGIS Web AppBuilder: Basics of Creating Custom Themes and Widgets",
+        "workshopPMspeakers": "Vikrant Krishna",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -128,13 +197,15 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 202",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "workshopAM": "Creating Simple GIS Applications with Python",
+        "workshopAMspeakers": "Sam Giebner",
+        "workshopPM": "SQL 101: Spatial Data Revealed",
+        "workshopPMspeakers": "Len Kne",
+        "thursdaySession1": "--",
+        "thursdaySession2": "--",
+        "thursdaySession3": "--",
+        "fridaySession1": "--",
+        "fridaySession2": "--"
       },
       "geometry": {
         "type": "Polygon",
@@ -153,13 +224,15 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 203",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "workshopAM": "CAD and GIS Collaboration",
+        "workshopAMspeakers": "Kyle Heideman",
+        "workshopPM": "Open Data Portals: What, Why, How?",
+        "workshopPMspeakers": "Kyle Wikstrom",
+        "thursdaySession1": "--",
+        "thursdaySession2": "--",
+        "thursdaySession3": "--",
+        "fridaySession1": "--",
+        "fridaySession2": "--"
       },
       "geometry": {
         "type": "Polygon",
@@ -180,13 +253,15 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 204",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "workshopAM": "Running Enterprise GIS Systems in God Mode",
+        "workshopAMspeakers": "Jessica Fendos",
+        "workshopPM": "ArcGIS for Server: Administration and Advanced Topics",
+        "workshopPMspeakers": "Justin Hansen",
+        "thursdaySession1": "--",
+        "thursdaySession2": "--",
+        "thursdaySession3": "--",
+        "fridaySession1": "--",
+        "fridaySession2": "--"
       },
       "geometry": {
         "type": "Polygon",
@@ -206,13 +281,15 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 205",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "workshopAM": "--",
+        "workshopAMspeakers": "N/A",
+        "workshopPM": "--",
+        "workshopPMspeakers": "N/A",
+        "thursdaySession1": "--",
+        "thursdaySession2": "--",
+        "thursdaySession3": "--",
+        "fridaySession1": "--",
+        "fridaySession2": "--"
       },
       "geometry": {
         "type": "Polygon",
