@@ -5,8 +5,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Split Rock Room 1",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "K-12",
+        "workshopAMspeakers": "Scott Freburg",
+        "workshopPM": "K-12",
+        "workshopPMspeakers": "Scott Freburg",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -30,8 +32,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Split Rock Room 2",
-        "workshopAM": "TBA",
-        "workshopPM": "TBA",
+        "workshopAM": "K-12",
+        "workshopAMspeakers": "Scott Freburg",
+        "workshopPM": "K-12",
+        "workshopPMspeakers": "Scott Freburg",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -50,6 +54,87 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gooseberry Falls Room 1",
+        "workshopAM": "K-12",
+        "workshopAMspeakers": "Scott Freburg",
+        "workshopPM": "K-12",
+        "workshopPMspeakers": "Scott Freburg",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.09839135408401,46.78107269726772],
+            [-92.09832698106766,46.781017594912875],
+            [-92.09849327802658,46.78091290028331],
+            [-92.09855496883392,46.78095514550921],
+            [-92.09839135408401,46.78107269726772]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gooseberry Falls Room 2",
+        "workshopAM": "K-12",
+        "workshopAMspeakers": "Scott Freburg",
+        "workshopPM": "K-12",
+        "workshopPMspeakers": "Scott Freburg",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.0984610915184,46.781122289338875],
+            [-92.09839135408401,46.78107269726772],
+            [-92.09855496883392,46.78095514550921],
+            [-92.09863275289536,46.781006574435146],
+            [-92.0984610915184,46.781122289338875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gooseberry Falls Room 3",
+        "workshopAM": "K-12",
+        "workshopAMspeakers": "Scott Freburg",
+        "workshopPM": "K-12",
+        "workshopPMspeakers": "Scott Freburg",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.09870249032974,46.7810524930775],
+            [-92.09853619337082,46.78116820788256],
+            [-92.0984610915184,46.781122289338875],
+            [-92.09863275289536,46.781006574435146],
+            [-92.09870249032974,46.7810524930775]
+          ]
+      ]
+    }
     }
   ]
 }
