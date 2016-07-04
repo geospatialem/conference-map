@@ -239,8 +239,8 @@ style: function (feature) {
           "<tr><th>12:00 pm - 1:00 pm</th><td>" + feature.properties.activityThurs3+ "</td></tr><table></br>" +
         "<h4>Friday</h4>" +
           "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>8:30 am - 10:15 am</th><td>" + feature.properties.activityFri1 + "</td></tr>" +
-          "<tr><th>12:15 pm - 2:30 pm</th><td>" + feature.properties.activityFri2 + "</td></tr><table>";
+          "<tr><th>12:15 pm</th><td>" + feature.properties.activityFri1 + "</td></tr>" +
+          "<tr><th>12:30 pm - 2:30 pm</th><td>" + feature.properties.activityFri2 + "</td></tr><table>";
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
