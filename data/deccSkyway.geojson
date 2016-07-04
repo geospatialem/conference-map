@@ -52,21 +52,72 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Ballrooms (6 rooms)",
+        "NAME": "Ballroom L",
         "workshopAM": "TBA",
         "workshopPM": "TBA",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
         "fridaySession1": "TBA",
-        "fridaySession2": "TBA"      },
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.09817409515381,46.781362902072665],
+            [-92.09806144237518,46.78144188159054],
+            [-92.0978307723999,46.781293106123194],
+            [-92.09795147180557,46.78120861616859],
+            [-92.09817409515381,46.781362902072665]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Ballroom MN",
+        "workshopAM": "TBA",
+        "workshopPM": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.0982813835144,46.78127841222758],
+            [-92.09817409515381,46.781362902072665],
+            [-92.09795147180557,46.78120861616859],
+            [-92.09805876016617,46.7811277995662],
+            [-92.0982813835144,46.78127841222758]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Ballroom O",
+        "workshopAM": "TBA",
+        "workshopPM": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [-92.09838062524796,46.78120494268928],
-            [-92.09803730249405,46.781456575441545],
-            [-92.0978119969368,46.78130963675097],
+            [-92.0982813835144,46.78127841222758],
+            [-92.09805876016617,46.7811277995662],
             [-92.09815531969069,46.7810561665672],
             [-92.09838062524796,46.78120494268928]
           ]
@@ -76,23 +127,102 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Horizon Rooms (3 rooms)",
+        "NAME": "Horizon Room 202",
         "workshopAM": "TBA",
         "workshopPM": "TBA",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
         "fridaySession1": "TBA",
-        "fridaySession2": "TBA"      },
+        "fridaySession2": "TBA"
+      },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
-            [-92.0970207452774,46.781344534726315],
-            [-92.09685981273651,46.781263718327914],
-            [-92.0971468091011,46.780907390034],
-            [-92.09740966558455,46.78106718703479],
-            [-92.0970207452774,46.781344534726315]
+            [-92.09731847047806,46.781021268404956],
+            [-92.09743112325667,46.7809569822574],
+            [-92.09731578826904,46.78087432852632],
+            [-92.0972004532814,46.78094045152136],
+            [-92.09731847047806,46.781021268404956]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon Room 203",
+        "workshopAM": "TBA",
+        "workshopPM": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.0973989367485,46.78107637075603],
+            [-92.09728091955185,46.781159024176944],
+            [-92.09706902503966,46.78100841118158],
+            [-92.09717363119125,46.78092208403089],
+            [-92.0972004532814,46.78094045152136],
+            [-92.09731847047806,46.781021268404956],
+            [-92.0973989367485,46.78107637075603]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon Room 204",
+        "workshopAM": "TBA",
+        "workshopPM": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [ -92.09716558456421,46.78124535094775],
+            [-92.09707170724869,46.78117922832721],
+            [-92.09698051214218,46.781116779110995],
+            [-92.09706902503966,46.78100841118158],
+            [-92.09728091955185,46.781159024176944],
+            [-92.09716558456421,46.78124535094775]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon Room 205",
+        "workshopAM": "TBA",
+        "workshopPM": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.09716558456421,46.78124535094775],
+            [-92.09705829620361,46.78133902452118],
+            [-92.09688663482665,46.78122331008326],
+            [-92.09698051214218,46.781116779110995],
+            [-92.09716558456421,46.78124535094775]
           ]
         ]
       }
