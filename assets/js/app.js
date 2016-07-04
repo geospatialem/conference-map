@@ -131,8 +131,8 @@ style: function (feature) {
 	        var content =
           "<h4>Wednesday Workshops</h4>" +
             "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + "</td></tr>" +
-            "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + "</td></tr><table></br>" +
+            "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+            "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr><table></br>" +
           "<h4>Thursday Sessions</h4>" +
             "<table class='table table-striped table-bordered table-condensed'>" +
             "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
@@ -170,21 +170,77 @@ style: function (feature) {
     };
   },
   onEachFeature: function (feature, layer) {
+      //Popup
+      if (feature.properties.NAME === "Exhibit Hall & Geolounge") { //Exhibit Hall/Geolounge
+        var content =
+          "<h4>Wednesday</h4>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>Hours</th><td>" + feature.properties.wedHours + "</td></tr></table><br/>" +
+          "<h4>Thursday</h4>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>Hours</th><td>" + feature.properties.thursHours + "</td></tr>" +
+          "<tr><th>Exhibitor Reception</th><td>" + feature.properties.eventHours + "</td></tr></table><br/>" +
+          "<h4>Friday</h4>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th>Hours</th><td>" + feature.properties.friHours + "</td></tr><table>";
+        } else { //Conference Workshops/Sessions
+          var content =
+          "<h4>Wednesday Workshops</h4>" +
+            "<table class='table table-striped table-bordered table-condensed'>" +
+            "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+            "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr><table></br>" +
+          "<h4>Thursday Sessions</h4>" +
+            "<table class='table table-striped table-bordered table-condensed'>" +
+            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+            "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+            "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr><table></br>" +
+          "<h4>Friday Sessions</h4>" +
+            "<table class='table table-striped table-bordered table-condensed'>" +
+            "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
+            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr><table>";
+	      } //End Popup
+        layer.on({
+          click: function (e) {
+            $("#feature-title").html(feature.properties.NAME);
+            $("#feature-info").html(content);
+            $("#featureModal").modal("show");
+          }
+        });
+  }
+});
+$.getJSON("data/deccSkyway.geojson", function (data) {
+	deccSkyway.addData(data);
+});
+
+//DECC Third Floor
+var deccThirdFloor = L.geoJson(null, {
+style: function (feature) {
+    return {
+        color: "#A50541",
+        dashArray: "2",
+        weight: 1,
+        fillColor: "#A13336",
+        fillOpacity: 0.1,
+        opacity: 1,
+        clickable: true
+    };
+  },
+  onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
         var content =
-        "<h4>Wednesday Workshops</h4>" +
+        "<h4>Wednesday</h4>" +
           "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + "</td></tr>" +
-          "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + "</td></tr><table></br>" +
-        "<h4>Thursday Sessions</h4>" +
+          "<tr><th>12:00 pm</th><td>" + feature.properties.activityWed1 + "</td></tr>" +
+          "<tr><th>12:15 pm - 1:00 pm</th><td>" + feature.properties.activityWed2 + "</td></tr><table></br>" +
+        "<h4>Thursday</h4>" +
           "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
-          "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
-          "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr><table></br>" +
-        "<h4>Friday Sessions</h4>" +
+          "<tr><th>8:30 am - 9:00 am</th><td>" + feature.properties.activityThurs1 + "</td></tr>" +
+          "<tr><th>9:00 am - 10:15 am</th><td>" + feature.properties.activityThurs2 + "</td></tr>" +
+          "<tr><th>12:00 pm - 1:00 pm</th><td>" + feature.properties.activityThurs3+ "</td></tr><table></br>" +
+        "<h4>Friday</h4>" +
           "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
-          "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr><table>";
+          "<tr><th>8:30 am - 10:15 am</th><td>" + feature.properties.activityFri1 + "</td></tr>" +
+          "<tr><th>12:15 pm - 2:30 pm</th><td>" + feature.properties.activityFri2 + "</td></tr><table>";
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -195,8 +251,8 @@ style: function (feature) {
 	      } //End Popup
   }
 });
-$.getJSON("data/deccSkyway.geojson", function (data) {
-	deccSkyway.addData(data);
+$.getJSON("data/deccThirdFloor.geojson", function (data) {
+	deccThirdFloor.addData(data);
 });
 
 //Fun run route geojson layer
@@ -499,7 +555,8 @@ var baseLayers = {
 var groupedOverlays = {
   "DECC": {
 	   "&nbsp;1st Floor (Ground)": deccGround,
-	    "&nbsp;2nd Floor (Skyway)": deccSkyway
+	    "&nbsp;2nd Floor (Skyway)": deccSkyway,
+      "&nbsp;3rd Floor (Harbor Ballroom)": deccThirdFloor
   },
   "Places of Interest": {
 		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
