@@ -498,8 +498,8 @@ var baseLayers = {
 
 var groupedOverlays = {
   "DECC": {
-	   "&nbsp;Ground Level": deccGround,
-	    "&nbsp;Skyway Level": deccSkyway
+	   "&nbsp;1st Floor (Ground)": deccGround,
+	    "&nbsp;2nd Floor (Skyway)": deccSkyway
   },
   "Places of Interest": {
 		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
