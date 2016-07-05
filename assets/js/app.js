@@ -333,19 +333,36 @@ style: function (feature) {
   onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
         var content =
-        "<h4>Wednesday</h4>" +
-          "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>12:00 pm</th><td>" + feature.properties.activityWed1 + "</td></tr>" +
-          "<tr><th>12:15 pm - 1:00 pm</th><td>" + feature.properties.activityWed2 + "</td></tr><table></br>" +
-        "<h4>Thursday</h4>" +
-          "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>8:30 am - 9:00 am</th><td>" + feature.properties.activityThurs1 + "</td></tr>" +
-          "<tr><th>9:00 am - 10:15 am</th><td>" + feature.properties.activityThurs2 + "</td></tr>" +
-          "<tr><th>12:00 pm - 1:00 pm</th><td>" + feature.properties.activityThurs3+ "</td></tr><table></br>" +
-        "<h4>Friday</h4>" +
-          "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>12:15 pm</th><td>" + feature.properties.activityFri1 + "</td></tr>" +
-          "<tr><th>12:30 pm - 2:30 pm</th><td>" + feature.properties.activityFri2 + "</td></tr><table>";
+          "<ul class='nav nav-tabs nav nav-justified' id='harborBallroomContent'>" +
+            "<li class='active'><a href='#wed' data-toggle='tab'>Wednesday</a></li>" +
+            "<li><a href='#thurs' data-toggle='tab'>Thursday</a></li>" +
+            "<li><a href='#fri' data-toggle='tab'>Friday</a></li>" +
+          "</ul>" +
+          "<div class='tab-content' id='harborBallroomContent'>" +
+            "<div class='tab-pane fade active in' id='wed'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                  "<tr><th>12:00 pm</th><td>" + feature.properties.activityWed1 + "</td></tr>" +
+                  "<tr><th>12:15 pm - 1:00 pm</th><td>" + feature.properties.activityWed2 + "</td></tr></table>" +
+              "</div>" +
+          "</div>" +
+             "<div class='tab-pane fade' id='thurs'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                  "<tr><th>8:30 am - 9:00 am</th><td>" + feature.properties.activityThurs1 + "</td></tr>" +
+                  "<tr><th>9:00 am - 10:15 am</th><td>" + feature.properties.activityThurs2 + "</td></tr>" +
+                  "<tr><th>12:00 pm - 1:00 pm</th><td>" + feature.properties.activityThurs3+ "</td></tr></table>" +
+               "</div>" +
+             "</div>" +
+             "<div class='tab-pane fade' id='fri'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>12:15 pm</th><td>" + feature.properties.activityFri1 + "</td></tr>" +
+                 "<tr><th>12:30 pm - 2:30 pm</th><td>" + feature.properties.activityFri2 + "</td></tr></table>"
+             "</div>" +
+           "</div>" +
+        "</div>"
+
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
