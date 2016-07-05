@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Exhibit Hall & Geolounge",
+        "polyType": "Hours",
         "wedHours": "12:00 pm - 5:00 pm",
         "thursHours": "7:00 am - 7:00 pm",
         "eventHours": "5:00 pm - 6:30 pm",
@@ -27,9 +28,12 @@
    "type": "Feature",
      "properties": {
        "NAME": "St. Louis River Room",
+       "polyType": "Limited Workshop",
+       "workshopAMnumber": "WK002",
        "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
        "workshopAMspeakers": "Kim Sundeen",
-       "workshopPM": "--",
+       "workshopPMnumber": "N/A",
+       "workshopPM": "N/A",
        "workshopPMspeakers": "N/A",
        "thursdaySession1": "TBA",
        "thursdaySession2": "TBA",
@@ -62,8 +66,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River Room 1",
+        "workshopAMnumber": "WK003",
         "workshopAM": "Parcel Fabric 101: Introduction to the Parcel Fabric",
         "workshopAMspeakers": "Frank Conkling",
+        "workshopPMnumber": "WK011",
         "workshopPM": "Parcel Fabric 601: Advanced Techniques",
         "workshopPMspeakers": "Frank Conkling",
         "thursdaySession1": "TBA",
@@ -89,8 +95,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River Room 2",
+        "workshopAMnumber": "WK004",
         "workshopAM": "Making a Web Map Like That",
         "workshopAMspeakers": "Kitty Hurley",
+        "workshopPMnumber": "WK012",
         "workshopPM": "Q is the Bees Knees",
         "workshopPMspeakers": "Cory Richter",
         "thursdaySession1": "TBA",
@@ -116,8 +124,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Ballroom L",
+        "workshopAMnumber": "WK005",
         "workshopAM": "Intro to Collector for ArcGIS",
         "workshopAMspeakers": "Jacqueline Kovarik & Chris Pouliot",
+        "workshopPMnumber": "WK013",
         "workshopPM": "Intermediate Collector for ArcGIS",
         "workshopPMspeakers": "Jacqueline Kovarik & Chris Pouliot",
         "thursdaySession1": "TBA",
@@ -143,8 +153,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Ballroom MN",
+        "workshopAMnumber": "WK006",
         "workshopAM": "Intro to Python",
         "workshopAMspeakers": "Zeb Thomas & Jessica Schuler",
+        "workshopPMnumber": "WK014",
         "workshopPM": "Advanced Python: Build Your Own Classes and Modules",
         "workshopPMspeakers": "Zeb Thomas",
         "thursdaySession1": "TBA",
@@ -170,8 +182,10 @@
       "type": "Feature",
       "properties": {
         "NAME": "Ballroom O",
+        "workshopAMnumber": "WK007",
         "workshopAM": "Using Geoprocessing Services with the JavaScript API",
         "workshopAMspeakers": "Caleb Mackey & Nate Christ",
+        "workshopPMnumber": "WK015",
         "workshopPM": "ArcGIS Web AppBuilder: Basics of Creating Custom Themes and Widgets",
         "workshopPMspeakers": "Vikrant Krishna",
         "thursdaySession1": "TBA",
@@ -197,15 +211,13 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 202",
+        "polyType": "No sessions",
+        "workshopAMnumber": "WK008",
         "workshopAM": "Creating Simple GIS Applications with Python",
         "workshopAMspeakers": "Sam Giebner",
+        "workshopPMnumber": "WK016",
         "workshopPM": "SQL 101: Spatial Data Revealed",
-        "workshopPMspeakers": "Len Kne",
-        "thursdaySession1": "--",
-        "thursdaySession2": "--",
-        "thursdaySession3": "--",
-        "fridaySession1": "--",
-        "fridaySession2": "--"
+        "workshopPMspeakers": "Len Kne"
       },
       "geometry": {
         "type": "Polygon",
@@ -224,15 +236,13 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 203",
+        "polyType": "No sessions",
+        "workshopAMnumber": "WK009",
         "workshopAM": "CAD and GIS Collaboration",
         "workshopAMspeakers": "Kyle Heideman",
+        "workshopPMnumber": "WK017",
         "workshopPM": "Open Data Portals: What, Why, How?",
-        "workshopPMspeakers": "Kyle Wikstrom",
-        "thursdaySession1": "--",
-        "thursdaySession2": "--",
-        "thursdaySession3": "--",
-        "fridaySession1": "--",
-        "fridaySession2": "--"
+        "workshopPMspeakers": "Kyle Wikstrom"
       },
       "geometry": {
         "type": "Polygon",
@@ -253,15 +263,13 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 204",
+        "polyType": "No sessions",
+        "workshopAMnumber": "WK010",
         "workshopAM": "Running Enterprise GIS Systems in God Mode",
         "workshopAMspeakers": "Jessica Fendos",
+        "workshopPMnumber": "WK018",
         "workshopPM": "ArcGIS for Server: Administration and Advanced Topics",
-        "workshopPMspeakers": "Justin Hansen",
-        "thursdaySession1": "--",
-        "thursdaySession2": "--",
-        "thursdaySession3": "--",
-        "fridaySession1": "--",
-        "fridaySession2": "--"
+        "workshopPMspeakers": "Justin Hansen"
       },
       "geometry": {
         "type": "Polygon",
@@ -281,15 +289,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon Room 205",
-        "workshopAM": "--",
-        "workshopAMspeakers": "N/A",
-        "workshopPM": "--",
-        "workshopPMspeakers": "N/A",
-        "thursdaySession1": "--",
-        "thursdaySession2": "--",
-        "thursdaySession3": "--",
-        "fridaySession1": "--",
-        "fridaySession2": "--"
+        "polyType": "No values"
       },
       "geometry": {
         "type": "Polygon",
