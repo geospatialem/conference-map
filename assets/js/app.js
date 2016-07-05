@@ -129,19 +129,35 @@ style: function (feature) {
   onEachFeature: function (feature, layer) {
 	    if (feature.properties) { //Popup
 	        var content =
-          "<h4>Wednesday Workshops</h4>" +
-            "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
-            "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr><table></br>" +
-          "<h4>Thursday Sessions</h4>" +
-            "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
-            "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
-            "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr><table></br>" +
-          "<h4>Friday Sessions</h4>" +
-            "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
-            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr><table>";
+          "<ul class='nav nav-tabs nav nav-justified' id='fullWorkshopContent'>" +
+            "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+            "<li><a href='#thursSessions' data-toggle='tab'>Thursday Sessions</a></li>" +
+            "<li><a href='#friSessions' data-toggle='tab'>Friday Sessions</a></li>" +
+          "</ul>" +
+          "<div class='tab-content' id='fullWorkshopContent'>" +
+            "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                  "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+                  "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPMnumber + ": " + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr></table>" +
+              "</div>" +
+          "</div>" +
+             "<div class='tab-pane fade' id='thursSessions'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+                 "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+                 "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr></table>" +
+               "</div>" +
+             "</div>" +
+             "<div class='tab-pane fade' id='friSessions'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
+                 "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr></table>"
+             "</div>" +
+           "</div>" +
+        "</div>"
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -171,33 +187,122 @@ style: function (feature) {
   },
   onEachFeature: function (feature, layer) {
       //Popup
-      if (feature.properties.NAME === "Exhibit Hall & Geolounge") { //Exhibit Hall/Geolounge
+      if (feature.properties.polyType === "Hours") { //Exhibit Hall/Geolounge
         var content =
-          "<h4>Wednesday</h4>" +
-          "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>Hours</th><td>" + feature.properties.wedHours + "</td></tr></table><br/>" +
-          "<h4>Thursday</h4>" +
-          "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>Hours</th><td>" + feature.properties.thursHours + "</td></tr>" +
-          "<tr><th>Exhibitor Reception</th><td>" + feature.properties.eventHours + "</td></tr></table><br/>" +
-          "<h4>Friday</h4>" +
-          "<table class='table table-striped table-bordered table-condensed'>" +
-          "<tr><th>Hours</th><td>" + feature.properties.friHours + "</td></tr><table>";
-        } else { //Conference Workshops/Sessions
+          "<ul class='nav nav-tabs nav nav-justified' id='hoursOnlyContent'>" +
+            "<li class='active'><a href='#wed' data-toggle='tab'>Wednesday</a></li>" +
+            "<li><a href='#thurs' data-toggle='tab'>Thursday</a></li>" +
+            "<li><a href='#fri' data-toggle='tab'>Friday</a></li>" +
+          "</ul>" +
+          "<div class='tab-content' id='hoursOnlyContent'>" +
+            "<div class='tab-pane fade active in' id='wed'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                "<tr><th>Hours</th><td>" + feature.properties.wedHours + "</td></tr></table><br/>" +
+              "</div>" +
+            "</div>" +
+            "<div class='tab-pane fade' id='thurs'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                "<tr><th>Hours</th><td>" + feature.properties.thursHours + "</td></tr>" +
+                "<tr><th>Exhibitor Reception</th><td>" + feature.properties.eventHours + "</td></tr></table><br/>" +
+              "</div>" +
+            "</div>" +
+            "<div class='tab-pane fade' id='fri'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                "<tr><th>Hours</th><td>" + feature.properties.friHours + "</td></tr></table>" +
+              "</div>" +
+            "</div>" +
+          "</div>"
+        } else if (feature.properties.polyType === "Limited Workshop") { //AM only workshop
           var content =
-          "<h4>Wednesday Workshops</h4>" +
-            "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
-            "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr><table></br>" +
-          "<h4>Thursday Sessions</h4>" +
-            "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
-            "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
-            "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr><table></br>" +
-          "<h4>Friday Sessions</h4>" +
-            "<table class='table table-striped table-bordered table-condensed'>" +
-            "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
-            "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr><table>";
+          "<ul class='nav nav-tabs nav nav-justified' id='limitedWorkshopContent'>" +
+            "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+            "<li><a href='#thursSessions' data-toggle='tab'>Thursday Sessions</a></li>" +
+            "<li><a href='#friSessions' data-toggle='tab'>Friday Sessions</a></li>" +
+          "</ul>" +
+          "<div class='tab-content' id='limitedWorkshopContent'>" +
+            "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                  "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr></table>" +
+              "</div>" +
+          "</div>" +
+             "<div class='tab-pane fade' id='thursSessions'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+                 "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+                 "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr></table>" +
+               "</div>" +
+             "</div>" +
+             "<div class='tab-pane fade' id='friSessions'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
+                 "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr></table>"
+             "</div>" +
+           "</div>" +
+        "</div>"
+          } else if (feature.properties.polyType === "No sessions") { //AM only workshop
+            var content =
+            "<ul class='nav nav-tabs nav nav-justified' id='noSessionsContent'>" +
+              "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+            "</ul>" +
+            "<div class='tab-content' id='noSessionsContent'>" +
+              "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+                "<div class='modal-body'>" +
+                  "<table class='table table-striped table-bordered table-condensed'>" +
+                    "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+                    "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPMnumber + ": " + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr></table>";
+              "</div>" +
+            "</div>" +
+         "</div>"
+       } else if (feature.properties.polyType === "No values") { //AM only workshop
+            var content =
+            "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>" +
+              "<li class='active'><a href='#notAvailable' data-toggle='tab'>Not available</a></li>" +
+            "</ul>" +
+            "<div class='tab-content' id='noValuesContent'>" +
+              "<div class='tab-pane fade active in' id='notAvailable'>" +
+                "<div class='modal-body'>" +
+                  "<table class='table table-striped table-bordered table-condensed'>" +
+                    "<tr><th>Not available</th><td>No workshops and/or sessions offered.</td></tr></table>";
+              "</div>" +
+            "</div>" +
+         "</div>"
+          } else { //Conference Workshops/Sessions
+          var content =
+          "<ul class='nav nav-tabs nav nav-justified' id='fullWorkshopContent'>" +
+            "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+            "<li><a href='#thursSessions' data-toggle='tab'>Thursday Sessions</a></li>" +
+            "<li><a href='#friSessions' data-toggle='tab'>Friday Sessions</a></li>" +
+          "</ul>" +
+          "<div class='tab-content' id='fullWorkshopContent'>" +
+            "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                  "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+                  "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPMnumber + ": " + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr></table>" +
+              "</div>" +
+          "</div>" +
+             "<div class='tab-pane fade' id='thursSessions'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+                 "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+                 "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr></table>" +
+               "</div>" +
+             "</div>" +
+             "<div class='tab-pane fade' id='friSessions'>" +
+               "<div class='modal-body'>" +
+                 "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr>" +
+                 "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.fridaySession2 + "</td></tr></table>"
+             "</div>" +
+           "</div>" +
+        "</div>"
 	      } //End Popup
         layer.on({
           click: function (e) {
