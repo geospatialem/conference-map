@@ -32,9 +32,9 @@
        "workshopAMnumber": "WK002",
        "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
        "workshopAMspeakers": "Kim Sundeen",
-       "thursdaySession1": "TBA",
-       "thursdaySession2": "TBA",
-       "thursdaySession3": "TBA",
+       "thursdaySession1": "Web Map Creation I",
+       "thursdaySession2": "Undergraduate Student Competition I",
+       "thursdaySession3": "Undergraduate Student Competition II",
        "fridaySession1": "TBA",
        "fridaySession2": "TBA"
      },
@@ -69,9 +69,9 @@
         "workshopPMnumber": "WK011",
         "workshopPM": "Parcel Fabric 601: Advanced Techniques",
         "workshopPMspeakers": "Frank Conkling",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
+        "thursdaySession1": "LiDAR/Hydrology",
+        "thursdaySession2": "Minnesota Geospatial Advisory Council",
+        "thursdaySession3": "Graduate Student Competition",
         "fridaySession1": "TBA",
         "fridaySession2": "TBA"
       },
@@ -120,18 +120,18 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Ballroom L",
+        "NAME": "Lake Superior L",
         "workshopAMnumber": "WK005",
         "workshopAM": "Intro to Collector for ArcGIS",
         "workshopAMspeakers": "Jacqueline Kovarik & Chris Pouliot",
         "workshopPMnumber": "WK013",
         "workshopPM": "Intermediate Collector for ArcGIS",
         "workshopPMspeakers": "Jacqueline Kovarik & Chris Pouliot",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Crowd Sourcing",
+        "thursdaySession2": "Product Demonstrations II",
+        "thursdaySession3": "Data Standards Panel",
+        "fridaySession1": "Photogrammetry Panel",
+        "fridaySession2": "Remote Sensing Landcover"
       },
       "geometry": {
         "type": "Polygon",
@@ -149,18 +149,18 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Ballroom MN",
+        "NAME": "Lake Superior MN",
         "workshopAMnumber": "WK006",
         "workshopAM": "Intro to Python",
         "workshopAMspeakers": "Zeb Thomas & Jessica Schuler",
         "workshopPMnumber": "WK014",
         "workshopPM": "Advanced Python: Build Your Own Classes and Modules",
         "workshopPMspeakers": "Zeb Thomas",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Great Lakes I",
+        "thursdaySession2": "Great Lakes II",
+        "thursdaySession3": "Great Lakes III",
+        "fridaySession1": "Interviewing Panel",
+        "fridaySession2": "ArcGIS Online"
       },
       "geometry": {
         "type": "Polygon",
@@ -178,16 +178,16 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Ballroom O",
+        "NAME": "Lake Superior O",
         "workshopAMnumber": "WK007",
         "workshopAM": "Using Geoprocessing Services with the JavaScript API",
         "workshopAMspeakers": "Caleb Mackey & Nate Christ",
         "workshopPMnumber": "WK015",
         "workshopPM": "ArcGIS Web AppBuilder: Basics of Creating Custom Themes and Widgets",
         "workshopPMspeakers": "Vikrant Krishna",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
+        "thursdaySession1": "Remote Sensing",
+        "thursdaySession2": "Open Source",
+        "thursdaySession3": "Web Map Creation II",
         "fridaySession1": "TBA",
         "fridaySession2": "TBA"
       },
