@@ -245,7 +245,29 @@ style: function (feature) {
              "</div>" +
            "</div>" +
         "</div>"
-          } else if (feature.properties.polyType === "No sessions") { //AM only workshop
+      } else if (feature.properties.polyType === "AM Workshop and Thursday") { //AM only workshop + Thursday
+        var content =
+        "<ul class='nav nav-tabs nav nav-justified' id='limitedWorkshopContent'>" +
+          "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+          "<li><a href='#thursSessions' data-toggle='tab'>Thursday Sessions</a></li>" +
+        "</ul>" +
+        "<div class='tab-content' id='limitedWorkshopContent'>" +
+          "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+            "<div class='modal-body'>" +
+              "<table class='table table-striped table-bordered table-condensed'>" +
+                "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr></table>" +
+            "</div>" +
+        "</div>" +
+           "<div class='tab-pane fade' id='thursSessions'>" +
+             "<div class='modal-body'>" +
+               "<table class='table table-striped table-bordered table-condensed'>" +
+               "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+               "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+               "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr></table>" +
+             "</div>" +
+           "</div>" +
+      "</div>"
+          } else if (feature.properties.polyType === "No sessions") { //No conference sessions
             var content =
             "<ul class='nav nav-tabs nav nav-justified' id='noSessionsContent'>" +
               "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
@@ -259,7 +281,30 @@ style: function (feature) {
               "</div>" +
             "</div>" +
          "</div>"
-       } else if (feature.properties.polyType === "No values") { //AM only workshop
+       } else if (feature.properties.polyType === "No Friday sessions")  { //No Friday conference sessions
+                 var content =
+                 "<ul class='nav nav-tabs nav nav-justified' id='fullWorkshopContent'>" +
+                   "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+                   "<li><a href='#thursSessions' data-toggle='tab'>Thursday Sessions</a></li>" +
+                 "</ul>" +
+                 "<div class='tab-content' id='fullWorkshopContent'>" +
+                   "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+                     "<div class='modal-body'>" +
+                       "<table class='table table-striped table-bordered table-condensed'>" +
+                         "<tr><th>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+                         "<tr><th>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPMnumber + ": " + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr></table>" +
+                     "</div>" +
+                 "</div>" +
+                    "<div class='tab-pane fade' id='thursSessions'>" +
+                      "<div class='modal-body'>" +
+                        "<table class='table table-striped table-bordered table-condensed'>" +
+                        "<tr><th>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+                        "<tr><th>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
+                        "<tr><th>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr></table>" +
+                      "</div>" +
+                    "</div>" +
+               "</div>"
+       	      } else if (feature.properties.polyType === "No values") { //AM only workshop
             var content =
             "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>" +
               "<li class='active'><a href='#notAvailable' data-toggle='tab'>Not available</a></li>" +
