@@ -28,15 +28,13 @@
    "type": "Feature",
      "properties": {
        "NAME": "St. Louis River Room",
-       "polyType": "Limited Workshop",
+       "polyType": "AM Workshop and Thursday",
        "workshopAMnumber": "WK002",
        "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
        "workshopAMspeakers": "Kim Sundeen",
        "thursdaySession1": "Web Map Creation I",
        "thursdaySession2": "Undergraduate Student Competition I",
-       "thursdaySession3": "Undergraduate Student Competition II",
-       "fridaySession1": "TBA",
-       "fridaySession2": "TBA"
+       "thursdaySession3": "Undergraduate Student Competition II"
      },
      "geometry": {
        "type": "Polygon",
@@ -63,6 +61,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River Room 1",
+        "polyType": "No Friday sessions",
         "workshopAMnumber": "WK003",
         "workshopAM": "Parcel Fabric 101: Introduction to the Parcel Fabric",
         "workshopAMspeakers": "Frank Conkling",
@@ -71,9 +70,7 @@
         "workshopPMspeakers": "Frank Conkling",
         "thursdaySession1": "LiDAR/Hydrology",
         "thursdaySession2": "Minnesota Geospatial Advisory Council",
-        "thursdaySession3": "Graduate Student Competition",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession3": "Graduate Student Competition"
       },
       "geometry": {
         "type": "Polygon",
@@ -92,17 +89,13 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River Room 2",
+        "polyType": "No sessions",
         "workshopAMnumber": "WK004",
         "workshopAM": "Making a Web Map Like That",
         "workshopAMspeakers": "Kitty Hurley",
         "workshopPMnumber": "WK012",
         "workshopPM": "Q is the Bees Knees",
-        "workshopPMspeakers": "Cory Richter",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "workshopPMspeakers": "Cory Richter"
       },
       "geometry": {
         "type": "Polygon",
@@ -179,6 +172,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Lake Superior O",
+        "polyType": "No Friday sessions",
         "workshopAMnumber": "WK007",
         "workshopAM": "Using Geoprocessing Services with the JavaScript API",
         "workshopAMspeakers": "Caleb Mackey & Nate Christ",
@@ -187,9 +181,7 @@
         "workshopPMspeakers": "Vikrant Krishna",
         "thursdaySession1": "Remote Sensing",
         "thursdaySession2": "Open Source",
-        "thursdaySession3": "Web Map Creation II",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession3": "Web Map Creation II"
       },
       "geometry": {
         "type": "Polygon",
