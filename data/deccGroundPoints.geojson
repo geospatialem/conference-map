@@ -1,0 +1,70 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Split Rock 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09881782531738,
+          46.78144188159054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Split Rock 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09873735904694,
+          46.78139780001344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gooseberry Falls 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09867298603058,
+          46.78107086052347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gooseberry Falls 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09859251976013,
+          46.781026778642584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Gooseberry Falls 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09851205348969,
+          46.78098269672562
+        ]
+      }
+    }
+  ]
+}

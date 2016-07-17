@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Harbor Ballroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09735333919525,
+          46.781133309792914
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Lake Superior MN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09816336631775,
+          46.781225146822294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Lake Superior L"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09805607795714,
+          46.781302289805936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Lake Superior O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09825456142426,
+          46.781144330244715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Exhibit Hall / Geolounge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09868907928467,
+          46.78148963659166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "St. Louis River"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09895730018616,
+          46.78112963630849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "French River 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09863543510437,
+          46.78102310515091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "French River 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09852814674377,
+          46.781074534011914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon 202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09741771221161,
+          46.78095330876094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon 203"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09727823734283,
+          46.78101208467427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon 204"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.09717631340027,
+          46.781096574937315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Horizon 205"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0970743894577,
+          46.78118106506777
+        ]
+      }
+    }
+  ]
+}

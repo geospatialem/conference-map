@@ -172,6 +172,30 @@ $.getJSON("data/deccGround.geojson", function (data) {
 	deccGround.addData(data);
 });
 
+//DECC Ground Floor Labels
+var deccGroundLabels = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+			return new L.CircleMarker(latlng, {
+			radius: 5,
+			fillColor: "none",
+			color: "none",
+			weight: 1,
+			opacity: 1,
+			clickable: false
+			});
+	},
+  onEachFeature: function (feature, layer) {
+    layer.bindLabel(
+        feature.properties.NAME, {
+          noHide: true,
+          clickable: true
+    });
+  }
+});
+$.getJSON("data/deccGroundPoints.geojson", function (data) {
+	deccGroundLabels.addData(data);
+});
+
 //DECC Skyway Level
 var deccSkyway = L.geoJson(null, {
 style: function (feature) {
@@ -362,6 +386,30 @@ $.getJSON("data/deccSkyway.geojson", function (data) {
 	deccSkyway.addData(data);
 });
 
+//DECC Skyway Labels
+var deccSkywayLabels = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+			return new L.CircleMarker(latlng, {
+			radius: 5,
+			fillColor: "none",
+			color: "none",
+			weight: 1,
+			opacity: 1,
+			clickable: false
+			});
+	},
+  onEachFeature: function (feature, layer) {
+    layer.bindLabel(
+        feature.properties.NAME, {
+          noHide: true,
+          clickable: true
+    });
+  }
+});
+$.getJSON("data/deccSkywayPoints.geojson", function (data) {
+	deccSkywayLabels.addData(data);
+});
+
 //DECC Third Floor
 var deccThirdFloor = L.geoJson(null, {
 style: function (feature) {
@@ -420,6 +468,30 @@ style: function (feature) {
 });
 $.getJSON("data/deccThirdFloor.geojson", function (data) {
 	deccThirdFloor.addData(data);
+});
+
+//DECC Third Floor Labels
+var deccThirdFloorLabels = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+			return new L.CircleMarker(latlng, {
+			radius: 5,
+			fillColor: "none",
+			color: "none",
+			weight: 1,
+			opacity: 1,
+			clickable: false
+			});
+	},
+  onEachFeature: function (feature, layer) {
+    layer.bindLabel(
+        feature.properties.NAME, {
+          noHide: true,
+          clickable: true
+    });
+  }
+});
+$.getJSON("data/deccThirdFloorPoints.geojson", function (data) {
+	deccThirdFloorLabels.addData(data);
 });
 
 //Fun run route geojson layer
@@ -940,4 +1012,29 @@ map.on('almost:click', function (e) {
           $("#feature-title").html("Official 5k Fun Run/Walk Route");
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
+});
+
+// Add labels
+map.on('zoomend overlayadd', function () {
+  if (map.getZoom() >= 18) {
+    if (map.hasLayer(deccGround)) {
+      if (map.hasLayer(deccGroundLabels) == false) { map.addLayer(deccGroundLabels); }
+      if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
+      if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
+    } else if (map.hasLayer(deccSkyway)) {
+      if (map.hasLayer(deccSkywayLabels) == false) { map.addLayer(deccSkywayLabels); }
+      if (map.hasLayer(deccGroundLabels)) { map.removeLayer(deccGroundLabels); }
+      if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
+  } else if (map.hasLayer(deccThirdFloor)) {
+      if (map.hasLayer(deccThirdFloorLabels) == false) { map.addLayer(deccThirdFloorLabels); }
+      if (map.hasLayer(deccGroundLabels)) { map.removeLayer(deccGroundLabels); }
+      if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
+  } else {
+    // Do nothing
+  }
+} else {
+  if (map.hasLayer(deccGroundLabels)) { map.removeLayer(deccGroundLabels); }
+  if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
+  if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
+}
 });
