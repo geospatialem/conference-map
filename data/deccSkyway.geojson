@@ -27,7 +27,7 @@
     {
    "type": "Feature",
      "properties": {
-       "NAME": "St. Louis River Room",
+       "NAME": "St. Louis River",
        "polyType": "AM Workshop and Thursday",
        "workshopAMnumber": "WK002",
        "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
@@ -60,7 +60,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "French River Room 1",
+        "NAME": "French River 1",
         "polyType": "No Friday sessions",
         "workshopAMnumber": "WK003",
         "workshopAM": "Parcel Fabric 101: Introduction to the Parcel Fabric",
@@ -88,7 +88,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "French River Room 2",
+        "NAME": "French River 2",
         "polyType": "No sessions",
         "workshopAMnumber": "WK004",
         "workshopAM": "Making a Web Map Like That",
@@ -199,7 +199,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Horizon Room 202",
+        "NAME": "Horizon 202",
         "polyType": "No sessions",
         "workshopAMnumber": "WK008",
         "workshopAM": "Creating Simple GIS Applications with Python",
@@ -224,7 +224,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Horizon Room 203",
+        "NAME": "Horizon 203",
         "polyType": "No sessions",
         "workshopAMnumber": "WK009",
         "workshopAM": "CAD and GIS Collaboration",
@@ -251,7 +251,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Horizon Room 204",
+        "NAME": "Horizon 204",
         "polyType": "No sessions",
         "workshopAMnumber": "WK010",
         "workshopAM": "Running Enterprise GIS Systems in God Mode",
@@ -277,7 +277,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Horizon Room 205",
+        "NAME": "Horizon 205",
         "polyType": "No values"
       },
       "geometry": {

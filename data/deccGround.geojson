@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Split Rock Room 1",
+        "NAME": "Split Rock 1",
         "workshopAMnumber": "WK001",
         "workshopAM": "GIS for K-12 Educators",
         "workshopAMspeakers": "Scott Freburg",
@@ -33,7 +33,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Split Rock Room 2",
+        "NAME": "Split Rock 2",
         "workshopAMnumber": "WK001",
         "workshopAM": "GIS for K-12 Educators",
         "workshopAMspeakers": "Scott Freburg",
@@ -62,7 +62,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Gooseberry Falls Room 1",
+        "NAME": "Gooseberry Falls 1",
         "workshopAMnumber": "WK001",
         "workshopAM": "GIS for K-12 Educators",
         "workshopAMspeakers": "Scott Freburg",
@@ -91,7 +91,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Gooseberry Falls Room 2",
+        "NAME": "Gooseberry Falls 2",
         "workshopAMnumber": "WK001",
         "workshopAM": "GIS for K-12 Educators",
         "workshopAMspeakers": "Scott Freburg",
@@ -120,7 +120,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Gooseberry Falls Room 3",
+        "NAME": "Gooseberry Falls 3",
         "workshopAMnumber": "WK001",
         "workshopAM": "GIS for K-12 Educators",
         "workshopAMspeakers": "Scott Freburg",
