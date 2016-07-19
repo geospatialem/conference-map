@@ -109,7 +109,7 @@ style: function (feature) {
     };
   }
 });
-$.getJSON("data/deccLayout.geojson", function (data) {
+$.getJSON("data/duluth/deccLayout.geojson", function (data) {
 	deccPoly.addData(data);
 });
 
@@ -168,7 +168,7 @@ style: function (feature) {
 	    } //End Popup
   }
 });
-$.getJSON("data/deccGround.geojson", function (data) {
+$.getJSON("data/duluth/deccGround.geojson", function (data) {
 	deccGround.addData(data);
 });
 
@@ -192,7 +192,7 @@ var deccGroundLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/deccGroundPoints.geojson", function (data) {
+$.getJSON("data/duluth/deccGroundPoints.geojson", function (data) {
 	deccGroundLabels.addData(data);
 });
 
@@ -382,7 +382,7 @@ style: function (feature) {
         });
   }
 });
-$.getJSON("data/deccSkyway.geojson", function (data) {
+$.getJSON("data/duluth/deccSkyway.geojson", function (data) {
 	deccSkyway.addData(data);
 });
 
@@ -406,7 +406,7 @@ var deccSkywayLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/deccSkywayPoints.geojson", function (data) {
+$.getJSON("data/duluth/deccSkywayPoints.geojson", function (data) {
 	deccSkywayLabels.addData(data);
 });
 
@@ -466,7 +466,7 @@ style: function (feature) {
 	      } //End Popup
   }
 });
-$.getJSON("data/deccThirdFloor.geojson", function (data) {
+$.getJSON("data/duluth/deccThirdFloor.geojson", function (data) {
 	deccThirdFloor.addData(data);
 });
 
@@ -490,7 +490,7 @@ var deccThirdFloorLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/deccThirdFloorPoints.geojson", function (data) {
+$.getJSON("data/duluth/deccThirdFloorPoints.geojson", function (data) {
 	deccThirdFloorLabels.addData(data);
 });
 
@@ -540,7 +540,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	    });
 	  }
 	});
-	$.getJSON("data/funRoute.geojson", function (data) {
+	$.getJSON("data/duluth/funRoute.geojson", function (data) {
 	  funRunWalkRoute.addData(data);
 	  map.almostOver.addLayer(funRunWalkRoute);
 	});
@@ -588,7 +588,7 @@ var hotels = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/hotels.geojson", function (data) {
+$.getJSON("data/duluth/hotels.geojson", function (data) {
   hotels.addData(data);
   map.addLayer(hotelsLayer);
 });
@@ -634,7 +634,7 @@ var attractions = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/attractions.geojson", function (data) {
+$.getJSON("data/duluth/attractions.geojson", function (data) {
   attractions.addData(data);
   map.addLayer(attractionsLayer);
 });
@@ -681,7 +681,7 @@ var establishments = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/establishments.geojson", function (data) {
+$.getJSON("data/duluth/establishments.geojson", function (data) {
   establishments.addData(data);
   map.addLayer(establishmentsLayer);
 });
