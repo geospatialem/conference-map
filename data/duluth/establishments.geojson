@@ -167,24 +167,6 @@
       "type": "Feature",
       "id": 9,
       "properties": {
-        "NAME": "Grandma's Saloon and Grill",
-        "ADDRESS": "522 S Lake Ave",
-        "HOURS": "11:00 am - 1:00 am",
-        "URL": "http://grandmasrestaurants.com",
-        "DISCOUNT_NOTES": "Free app (up to $6.99) with 2 entree & 2 beverage purchase (not valid with other offers or discounts)."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.0933,
-          46.7801
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 10,
-      "properties": {
         "NAME": "Little Angie's Cantina and Grill",
         "ADDRESS": "11 East Buchanan Street",
         "HOURS": "11:00 am - 1:00 am",
@@ -201,7 +183,7 @@
     },
     {
       "type": "Feature",
-      "id": 11,
+      "id": 10,
       "properties": {
         "NAME": "Lake Avenue Restaurant and Bar",
         "ADDRESS": "394 S Lake Ave",
@@ -219,7 +201,7 @@
     },
     {
       "type": "Feature",
-      "id": 12,
+      "id": 11,
       "properties": {
         "NAME": "Amazing Grace Bakery & Cafe",
         "ADDRESS": "394 S Lake Ave",
@@ -237,7 +219,7 @@
     },
     {
       "type": "Feature",
-      "id": 13,
+      "id": 12,
       "properties": {
         "NAME": "Hepzibah's Sweet Shoppe",
         "ADDRESS": "394 S Lake Ave",
@@ -255,25 +237,7 @@
     },
     {
       "type": "Feature",
-      "id": 14,
-      "properties": {
-        "NAME": "7 West Taphouse",
-        "ADDRESS": "7 W Superior St",
-        "HOURS": "11:00 am - 1:00 am",
-        "URL": "http://7westtaphouse.com",
-        "DISCOUNT_NOTES": "$2.50 off any purchase of $10+."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.0986,
-          46.7867
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 15,
+      "id": 13,
       "properties": {
         "NAME": "Cloud 9 Asian Bistro",
         "ADDRESS": "308 S Lake Ave",
@@ -291,7 +255,7 @@
     },
     {
       "type": "Feature",
-      "id": 16,
+      "id": 14,
       "properties": {
         "NAME": "Vikre Distillery",
         "ADDRESS": "525 S Lake Ave",
