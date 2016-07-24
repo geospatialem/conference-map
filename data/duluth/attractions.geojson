@@ -27,7 +27,7 @@
         "ADDRESS": "16th Ave W & Skyline Drive",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": "http://engertowerduluth.com"
+        "WEBSITE": "http://www.engertowerduluth.com"
       },
       "geometry": {
         "type": "Point",
@@ -45,7 +45,7 @@
         "ADDRESS": "12th Ave E & London Road",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": "www.duluthmn.gov/parks"
+        "WEBSITE": "http://www.duluthmn.gov/parks"
       },
       "geometry": {
         "type": "Point",
@@ -62,7 +62,7 @@
         "NAME": "Glensheen Estate",
         "ADDRESS": "3300 London Rd",
         "HOURS": "9:30 am - 4:00 pm",
-        "COST": "$15 (Standard tour), $26 (Expanded tour)",
+        "COST": "$15 (Classic tour), $26 (Full mansion tour)",
         "WEBSITE": "https://glensheen.wp.d.umn.edu"
       },
       "geometry": {
@@ -79,7 +79,7 @@
       "properties": {
         "NAME": "Lake Superior Maritime Visitor Center",
         "ADDRESS": "600 S Lake Ave",
-        "HOURS": "10:00 am - 9:00 pm",
+        "HOURS": "10:00 am - 4:00 pm",
         "COST": "Free",
         "WEBSITE": "http://www.lsmma.com"
       },
@@ -134,7 +134,7 @@
         "NAME": "Great Lakes Aquarium",
         "ADDRESS": "353 Harbor Dr",
         "HOURS": "10:00 am - 6:00 pm",
-        "COST": "$16.50",
+        "COST": "$18",
         "WEBSITE": "http://www.glaquarium.org"
       },
       "geometry": {
@@ -151,7 +151,7 @@
       "properties": {
         "NAME": "Lake Superior Zoo",
         "ADDRESS": "7210 Fremont St",
-        "HOURS": "9:00 am - 5:00 pm",
+        "HOURS": "10:00 am - 5:00 pm",
         "COST": "$10",
         "WEBSITE": "http://www.lszooduluth.org"
       },
@@ -206,7 +206,7 @@
         "NAME": "S.S. William A. Irvin Ore Boat Museum",
         "ADDRESS": "350 Harbor Drive",
         "HOURS": "6:30 pm - 10:00 pm",
-        "COST": "$10 (Cash/check only)",
+        "COST": "$12 (Cash/check only)",
         "WEBSITE": "http://duluthhauntedship.com"
       },
       "geometry": {
@@ -241,7 +241,7 @@
       "properties": {
         "NAME": "Jay Cooke State Park",
         "ADDRESS": "3980 E Skyline Pkwy",
-        "HOURS": "9:00 am - 9:00 pm",
+        "HOURS": "10:00 am - 9:00 pm",
         "COST": "Free",
         "WEBSITE": "http://www.dnr.state.mn.us/state_parks/jay_cooke/index.html"
       },
