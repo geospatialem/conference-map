@@ -749,7 +749,7 @@ var southWest = L.latLng(46.6300, -92.5000),
 map = L.map("map", {
   zoom: 16,
   center: [46.782473, -92.097686],
-  layers: [mqStreetBasemap, deccPoly, funRunWalkRoute, markerClusters, highlight],
+  layers: [mqStreetBasemap, deccPoly, deccGround, funRunWalkRoute, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
