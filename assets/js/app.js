@@ -1,4 +1,4 @@
-var map, featureList, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [], eventsSearch = [], mqStreetBasemap = MQ.mapLayer();
+var map, featureList, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [], eventsSearch = [], mqStreetBasemap = MQ.mapLayer(), mqSatBasemap = MQ.satelliteLayer(), mqHybridBasemap = MQ.hybridLayer();
 
 $(document).on("click", ".feature-row", function(e) {
   sidebarClick(parseInt($(this).attr("id"), 10));
@@ -18,15 +18,18 @@ $("#schedule-btn").click(function() {
 
 $("#full-extent-btn").click(function() {
 	map.fitBounds([
-	               [46.7786733259, -92.1083088853],
-	               [46.786163129, -92.0913457505]
-	           ]);
+    [46.7786733259, -92.1083088853],
+	  [46.786163129, -92.0913457505]
+	]);
   $(".navbar-collapse.in").collapse("hide");
   return false;
 });
 
-$("#legend-btn").click(function() {
-  $("#legendModal").modal("show");
+$("#conference-extent-btn").click(function() {
+	map.fitBounds([
+	   [46.7823051385, -92.0992469788],
+	    [46.7802479928, -92.0965003967]
+	]);
   $(".navbar-collapse.in").collapse("hide");
   return false;
 });
@@ -746,7 +749,7 @@ var southWest = L.latLng(46.6300, -92.5000),
 map = L.map("map", {
   zoom: 16,
   center: [46.782473, -92.097686],
-  layers: [mqStreetBasemap, deccPoly, markerClusters, highlight],
+  layers: [mqStreetBasemap, deccPoly, funRunWalkRoute, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
@@ -843,8 +846,8 @@ if (document.body.clientWidth <= 767) {
 
 var baseLayers = {
   "Streets": mqStreetBasemap,
-  "Aerial Imagery": MQ.satelliteLayer(),
-  "Hybrid": MQ.hybridLayer()
+  "Aerial Imagery": mqSatBasemap,
+  "Hybrid": mqHybridBasemap
 };
 
 
