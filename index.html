@@ -45,22 +45,23 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="navbar-icon-container">
-            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
-            <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white"></i></a>
+            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white" aria-hidden="true"></i></a>
+            <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white" aria-hidden="true"></i></a>
           </div>
           <a class="navbar-brand" href="http://www.mngislis.org/?page=26_annual_conference">#MNGISLIS</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-info-circle white"></i>&nbsp;&nbsp;About</a></li>
-            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="schedule-btn"><i class="fa fa-calendar white"></i>&nbsp;&nbsp;Schedule</a></li>
+            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-info-circle white" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li>
+            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="schedule-btn"><i class="fa fa-calendar white" aria-hidden="true"></i>&nbsp;&nbsp;Schedule</a></li>
             <li class="dropdown">
-              <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
+              <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white" aria-hidden="true"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"><i class="fa fa-arrows-alt"></i>&nbsp;&nbsp;Zoom To Original Extent</a></li>
+                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"><i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp;&nbsp;Zoom to Initial Extent</a></li>
+                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="conference-extent-btn"><i class="fa fa-search" aria-hidden="true"></i></i>&nbsp;&nbsp;Zoom to DECC</a></li>
                 </ul>
             </li>
-            <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;POI List</a></li>
+            <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white" aria-hidden="true"></i>&nbsp;&nbsp;POI List</a></li>
           </ul>
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group has-feedback">
@@ -79,7 +80,7 @@
           <div class="panel panel-default" id="features">
             <div class="panel-heading">
               <h3 class="panel-title">Places of Interest
-              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><span class="sr-only">Hide</span><i class="fa fa-chevron-left"></i></button></h3>
+              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><span class="sr-only">Hide</span><i class="fa fa-chevron-left" aria-hidden="true"></i></button></h3>
             </div>
             <div class="panel-body">
               <p>
@@ -134,29 +135,33 @@
           </div>
           <div class="modal-body">
             <ul class="nav nav-tabs nav nav-justified" id="aboutTabs">
-              <li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the Map</a></li>
-              <li><a href="#disclaimer" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
+              <li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About the Map</a></li>
+              <li><a href="#disclaimer" data-toggle="tab"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Disclaimer</a></li>
             </ul>
             <div class="tab-content" id="aboutTabsContent">
               <div class="tab-pane fade active in" id="about">
-                <p>The official conference map for the <a href="http://www.mngislis.org/?page=26_annual_conference" target="_blank">
-                26th Annual Conference (new window) <i class="fa fa-external-link-square"></i></a> in Duluth, Minnesota this Oct. 26-28. Where can you get the conference rate? Where can you
-                grab a dinner or #geobeer? What other great things can you do in Duluth? All of these questions, and more can be
-                answered in one place!</p>
+                <p>The official conference map for the 26th Annual Minnesota GIS/LIS Conference held Wednesday, October 26th through
+                Friday, October 28th, 2016 in Duluth.</p>
 
+                <p>What is the conference schedule? What workshops and sessions are offered? Where are the rooms? Where can one grab
+                dinner or a #geobeer? What other great things can you do while visiting? All of these questions, and more can be answered in
+                one place!</p>
+
+                <p>For more information, please visit the official <a href="http://www.mngislis.org/2016" target="_blank">
+                Minnesota GIS/LIS Conference website (new window) <i class="fa fa-external-link-square" aria-hidden="true"></i></a>.</p>
 
                 <div class="panel panel-primary">
-                  <div class="panel-heading">More Information:</div>
+                  <div class="panel-heading">Additional Information:</div>
                   <ul class="list-group">
-                  <li class="list-group-item">Check out our <a href="http://www.mngislis.org/resource/resmgr/Docs/2016_Rates.pdf" target="_blank">conference rates (new window) <i class="fa fa-external-link-square"></i></a>. Conference registration is coming soon!</li>
-                  <li class="list-group-item">Check out the official <a href="docs/2016_FunRunMap.pdf" download="2016_FunRunMap.pdf" target="_blank">5k Fun Run/Walk Map (download) <i class="fa fa-download"></i></a> (PDF).</li>
-                  <li class="list-group-item">Check back soon for information on our preliminary program.</li>
+                  <li class="list-group-item">Join the conversation on social media! We'll be tweeting live at <a href="http://twitter.com/mngislis">@MNGISLIS</a> using <a href="https://twitter.com/hashtag/mngislis?f=tweets&vertical=default">#mngislis</a>.</li>
+                  <li class="list-group-item">View the <a href="http://www.mngislis.org/resource/resmgr/Docs/2016_Rates.pdf" target="_blank">2016 conference rates (new window) <i class="fa fa-external-link-square" aria-hidden="true"></i></a>. Conference registration will be available soon, check back for more details!</li>
+                  <li class="list-group-item">View the official <a href="docs/2016_FunRunMap.pdf" download="2016_FunRunMap.pdf" target="_blank">5k Fun Run/Walk Map (download) <i class="fa fa-download" aria-hidden="true"></i></a> (PDF).</li>
+                  <li class="list-group-item">Our preliminary program will be posted soon, check back for more details!</li>
                   </ul>
                 </div>
               </div>
               <div id="disclaimer" class="tab-pane fade text-danger">
-                <p>The data provided on this site is for informational and planning purposes only.</p>
-                <p>Absolutely no accuracy or completeness guarantee is implied or intended. All information on this map is subject to such variations and corrections as might result from a complete title search and/or accurate field survey.</p>
+                <p>The data provided on this site is for informational and planning purposes only. Absolutely no accuracy or completeness guarantee is implied or intended. All information on this map is subject to such variations and corrections as might result from a complete title search and/or accurate field survey.</p>
               </div>
             </div>
           </div>
