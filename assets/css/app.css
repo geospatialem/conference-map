@@ -5,7 +5,7 @@ body { padding-top: 50px; }
 
 /* Navbar */
 @media (max-width: 768px) {
-  .navbar-nav .open .dropdown-menu { text-align: center; }
+  .navbar-nav .open .dropdown-menu { text-align: center; } /* Dropdown menu */
 }
 
 /* Focus */
@@ -72,10 +72,10 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 
 /* Media Queries */
 @media (min-width: 800px) {
-  button.sidebar-toggle {display:none;}
+  button.sidebar-toggle { display:none; }
 }
 @media (max-width: 800px) {
-  button.sidebar-toggle {display:block;}
+  button.sidebar-toggle { display:block; }
 }
 
 @media (max-width: 992px) {
