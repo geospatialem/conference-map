@@ -3,6 +3,11 @@ html, body, #container { height: 100%; width: 100%; overflow: hidden; }
 body { padding-top: 50px; }
 #map { width: auto; height: 100%; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
 
+/* Navbar */
+@media (max-width: 768px) {
+  .navbar-nav .open .dropdown-menu { text-align: center; }
+}
+
 /* Focus */
 :focus, a:focus, a:hover { border: 1px dashed; -webkit-transition:all 0.15s ease-in-out; transition:all 0.15s ease-in-out; }
 
