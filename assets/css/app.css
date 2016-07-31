@@ -3,11 +3,6 @@ html, body, #container { height: 100%; width: 100%; overflow: hidden; }
 body { padding-top: 50px; }
 #map { width: auto; height: 100%; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
 
-/* Navbar */
-@media (max-width: 768px) {
-  .navbar-nav .open .dropdown-menu { text-align: center; } /* Dropdown menu */
-}
-
 /* Focus */
 :focus, a:focus, a:hover { border: 1px dashed; -webkit-transition:all 0.15s ease-in-out; transition:all 0.15s ease-in-out; }
 
@@ -85,7 +80,7 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 @media (max-width: 767px){
 	#sidebar { display: none; }
 	.url-break { word-break: break-all; word-break: break-word; -webkit-hyphens: auto; hyphens: auto; }
-	.dropdown-menu a i{ color: #FFFFFF; }
+	.dropdown-menu a{ color: #FFFFFF; text-align: justify; margin: 0 auto; width: 14em; } /* Dropdown menu */
 }
 
 @media print { /* Print Handling */
