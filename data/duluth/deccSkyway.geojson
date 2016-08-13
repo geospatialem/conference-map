@@ -6,10 +6,10 @@
       "properties": {
         "NAME": "Exhibit Hall & Geolounge",
         "polyType": "Hours",
-        "wedHours": "12:00 pm - 5:00 pm",
-        "thursHours": "7:00 am - 7:00 pm",
-        "eventHours": "5:00 pm - 6:30 pm",
-        "friHours": "7:00 am - 12:00 pm"
+        "wedHours": "2:00 pm - 5:00 pm",
+        "thursHours": "7:30 am - 7:00 pm",
+        "eventHours": "5:00 pm - 7:00 pm",
+        "friHours": "7:30 am - 12:00 pm"
       },
       "geometry": {
         "type": "Polygon",
