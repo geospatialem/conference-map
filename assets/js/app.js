@@ -27,8 +27,8 @@ $("#full-extent-btn").click(function() {
 
 $("#conference-extent-btn").click(function() {
 	map.fitBounds([
-	   [46.7823051385, -92.0992469788],
-	    [46.7802479928, -92.0965003967]
+      [46.7817821466, -92.0969683742],
+      [46.7805432416, -92.0989721204]
 	]);
   $(".navbar-collapse.in").collapse("hide");
   return false;
@@ -747,8 +747,8 @@ var southWest = L.latLng(46.6300, -92.5000),
 	bounds = L.latLngBounds(southWest, northEast);
 
 map = L.map("map", {
-  zoom: 16,
-  center: [46.782473, -92.097686],
+  zoom: 18,
+  center: [46.781235, -92.097792],
   layers: [mqStreetBasemap, deccPoly, deccGround, funRunWalkRoute, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
