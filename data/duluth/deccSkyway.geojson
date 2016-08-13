@@ -32,9 +32,9 @@
        "workshopAMnumber": "WK0006",
        "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
        "workshopAMspeakers": "Kim Sundeen",
-       "thursdaySession1": "Web Map Creation I",
-       "thursdaySession2": "Undergraduate Student Competition I",
-       "thursdaySession3": "Undergraduate Student Competition II"
+       "thursdaySession1": "Session 37: Web Map Creation I",
+       "thursdaySession2": "Session 41: Undergraduate Student Competition I",
+       "thursdaySession3": "Session 45: Undergraduate Student Competition II"
      },
      "geometry": {
        "type": "Polygon",
@@ -68,9 +68,9 @@
         "workshopPMnumber": "WK0013",
         "workshopPM": "Parcel Fabric 601: Advanced Techniques",
         "workshopPMspeakers": "Frank Conkling",
-        "thursdaySession1": "LiDAR/Hydrology",
-        "thursdaySession2": "Minnesota Geospatial Advisory Council",
-        "thursdaySession3": "Graduate Student Competition"
+        "thursdaySession1": "Session 38: LiDAR/Hydrology",
+        "thursdaySession2": "Session 42: Minnesota Geospatial Advisory Council",
+        "thursdaySession3": "Session 46: Graduate Student Competition"
       },
       "geometry": {
         "type": "Polygon",
@@ -120,11 +120,11 @@
         "workshopPMnumber": "WK0010",
         "workshopPM": "Intermediate Collector for ArcGIS",
         "workshopPMspeakers": "Chris Pouliot",
-        "thursdaySession1": "Crowd Sourcing",
-        "thursdaySession2": "Product Demonstrations II",
-        "thursdaySession3": "Data Standards Panel",
-        "fridaySession1": "Photogrammetry Panel",
-        "fridaySession2": "Remote Sensing Landcover"
+        "thursdaySession1": "Session 6: Crowd Sourcing",
+        "thursdaySession2": "Session 13: Product Demonstrations II",
+        "thursdaySession3": "TBD",
+        "fridaySession1": "Session 27: Photogrammetry Panel",
+        "fridaySession2": "Session 34: Remote Sensing Landcover"
       },
       "geometry": {
         "type": "Polygon",
@@ -149,11 +149,11 @@
         "workshopPMnumber": "WK0011",
         "workshopPM": "Advanced Python: Build Your Own Classes and Modules",
         "workshopPMspeakers": "Zeb Thomas",
-        "thursdaySession1": "Great Lakes I",
-        "thursdaySession2": "Great Lakes II",
-        "thursdaySession3": "Great Lakes III",
-        "fridaySession1": "Interviewing Panel",
-        "fridaySession2": "ArcGIS Online"
+        "thursdaySession1": "Session 7: Great Lakes I",
+        "thursdaySession2": "Session 14: Great Lakes II",
+        "thursdaySession3": "Session 21: Great Lakes III",
+        "fridaySession1": "Session 28: Interviewing Panel",
+        "fridaySession2": "Session 35: ArcGIS Online"
       },
       "geometry": {
         "type": "Polygon",
@@ -179,9 +179,9 @@
         "workshopPMnumber": "WK0012",
         "workshopPM": "ArcGIS Web AppBuilder: Basics of Creating Custom Themes and Widgets",
         "workshopPMspeakers": "Vikrant Krishna",
-        "thursdaySession1": "Remote Sensing",
-        "thursdaySession2": "Open Source",
-        "thursdaySession3": "Web Map Creation II"
+        "thursdaySession1": "Session 36: Remote Sensing",
+        "thursdaySession2": "Session 40: Open Source",
+        "thursdaySession3": "Session 44: Web Map Creation II"
       },
       "geometry": {
         "type": "Polygon",
