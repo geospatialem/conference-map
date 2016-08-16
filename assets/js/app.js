@@ -248,7 +248,34 @@ style: function (feature) {
               "</div>" +
             "</div>" +
           "</div>"
-        } else if (feature.properties.polyType === "Limited Workshop") { //AM only workshop
+        } else if (feature.properties.polyType === "Esri Lab") { //Esri HOLL
+                var content =
+                  "<ul class='nav nav-tabs nav nav-justified' id='esriHOLLcontent'>" +
+                    "<li class='active'><a href='#wed' data-toggle='tab'>Wednesday</a></li>" +
+                    "<li><a href='#thurs' data-toggle='tab'>Thursday</a></li>" +
+                    "<li><a href='#fri' data-toggle='tab'>Friday</a></li>" +
+                  "</ul>" +
+                  "<div class='tab-content' id='hoursOnlyContent'>" +
+                    "<div class='tab-pane fade active in' id='wed'>" +
+                      "<div class='modal-body'>" +
+                        "<table class='table table-striped table-bordered table-condensed'>" +
+                        "<tr><th scope='row'>Esri HOLL Hours</th><td>" + feature.properties.wedHours + "</td></tr></table><br/>" +
+                      "</div>" +
+                    "</div>" +
+                    "<div class='tab-pane fade' id='thurs'>" +
+                      "<div class='modal-body'>" +
+                        "<table class='table table-striped table-bordered table-condensed'>" +
+                        "<tr><th scope='row'>Esri HOLL Hours</th><td>" + feature.properties.thursHours + "</td></tr></table><br/>" +
+                      "</div>" +
+                    "</div>" +
+                    "<div class='tab-pane fade' id='fri'>" +
+                      "<div class='modal-body'>" +
+                        "<table class='table table-striped table-bordered table-condensed'>" +
+                        "<tr><th scope='row'>Esri HOLL Hours</th><td>" + feature.properties.friHours + "</td></tr></table>" +
+                      "</div>" +
+                    "</div>" +
+                  "</div>"
+                } else if (feature.properties.polyType === "Limited Workshop") { //AM only workshop
           var content =
           "<ul class='nav nav-tabs nav nav-justified' id='limitedWorkshopContent'>" +
             "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +

@@ -69,6 +69,19 @@
     {
       "type": "Feature",
       "properties": {
+        "NAME": "Boardroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0989653468132,
+          46.78124535094775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "NAME": "French River 2"
       },
       "geometry": {
