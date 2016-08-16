@@ -255,7 +255,7 @@ style: function (feature) {
                     "<li><a href='#thurs' data-toggle='tab'>Thursday</a></li>" +
                     "<li><a href='#fri' data-toggle='tab'>Friday</a></li>" +
                   "</ul>" +
-                  "<div class='tab-content' id='hoursOnlyContent'>" +
+                  "<div class='tab-content' id='esriHOLLcontent'>" +
                     "<div class='tab-pane fade active in' id='wed'>" +
                       "<div class='modal-body'>" +
                         "<table class='table table-striped table-bordered table-condensed'>" +
