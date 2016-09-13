@@ -334,6 +334,49 @@ style: function (feature) {
              "</div>" +
            "</div>" +
       "</div>"
+    } else if (feature.properties.polyType === "One Thursday User Group") { //One User Group
+            var content =
+            "<ul class='nav nav-tabs nav nav-justified' id='oneThursdayUG'>" +
+              "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+              "<li><a href='#thursUserGroup' data-toggle='tab'>Thursday User Groups</a></li>" +
+            "</ul>" +
+            "<div class='tab-content' id='oneThursdayUG'>" +
+              "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+                "<div class='modal-body'>" +
+                  "<table class='table table-striped table-bordered table-condensed'>" +
+                    "<tr><th scope='row'>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+                    "<tr><th scope='row'>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPMnumber + ": " + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr></table>" +
+                "</div>" +
+            "</div>" +
+               "<div class='tab-pane fade' id='thursUserGroup'>" +
+                 "<div class='modal-body'>" +
+                   "<table class='table table-striped table-bordered table-condensed'>" +
+                   "<tr><th scope='row'>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr></table>" +
+                 "</div>" +
+               "</div>" +
+          "</div>"
+       } else if (feature.properties.polyType === "Two Thursday User Groups") { //Two User Groups
+         var content =
+         "<ul class='nav nav-tabs nav nav-justified' id='twoThursdayUG'>" +
+           "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
+           "<li><a href='#thursUserGroups' data-toggle='tab'>Thursday User Groups</a></li>" +
+         "</ul>" +
+         "<div class='tab-content' id='twoThursdayUG'>" +
+           "<div class='tab-pane fade active in' id='wedWorkshops'>" +
+             "<div class='modal-body'>" +
+               "<table class='table table-striped table-bordered table-condensed'>" +
+                 "<tr><th scope='row'>9:00 am - 12:15 pm</th><td>" + feature.properties.workshopAMnumber + ": " + feature.properties.workshopAM + " (" + feature.properties.workshopAMspeakers + ")</td></tr>" +
+                 "<tr><th scope='row'>1:15 pm - 4:30 pm</th><td>" + feature.properties.workshopPMnumber + ": " + feature.properties.workshopPM + " (" + feature.properties.workshopPMspeakers + ")</td></tr></table>" +
+             "</div>" +
+         "</div>" +
+            "<div class='tab-pane fade' id='thursUserGroups'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                "<tr><th scope='row'>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
+                "<tr><th scope='row'>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr></table>" +
+              "</div>" +
+            "</div>" +
+       "</div>"
           } else if (feature.properties.polyType === "No sessions") { //No conference sessions
             var content =
             "<ul class='nav nav-tabs nav nav-justified' id='noSessionsContent'>" +

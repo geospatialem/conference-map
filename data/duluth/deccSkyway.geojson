@@ -230,13 +230,14 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 202",
-        "polyType": "No sessions",
+        "polyType": "One Thursday User Group",
         "workshopAMnumber": "WK0007",
         "workshopAM": "Creating Simple GIS Applications with Python",
         "workshopAMspeakers": "Sam Giebner",
         "workshopPMnumber": "WK0015",
         "workshopPM": "SQL 101: Spatial Data Revealed",
-        "workshopPMspeakers": "Len Kne"
+        "workshopPMspeakers": "Len Kne",
+        "thursdaySession1": "Arrowhead Ownership Collaborative"
       },
       "geometry": {
         "type": "Polygon",
@@ -255,13 +256,15 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 203",
-        "polyType": "No sessions",
+        "polyType": "Two Thursday User Groups",
         "workshopAMnumber": "WK0008",
         "workshopAM": "CAD and GIS Collaboration",
         "workshopAMspeakers": "Kyle Heideman",
         "workshopPMnumber": "WK0016",
         "workshopPM": "Open Data Portals: What, Why, How?",
-        "workshopPMspeakers": "Kyle Wikstrom"
+        "workshopPMspeakers": "Kyle Wikstrom",
+        "thursdaySession1": "Trimble Geospatial Solutions",
+        "thursdaySession2": "Pictometry User Group"
       },
       "geometry": {
         "type": "Polygon",
