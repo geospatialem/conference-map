@@ -6,9 +6,10 @@
       "properties": {
         "NAME": "7 West Taphouse",
         "ADDRESS": "7 W Superior St",
-        "DETAILS": "Tuesday Night Social Event. $2 off any regular priced burgers throughout conference.",
+        "DETAILS": "Tuesday Night Social Event",
         "EVENTHOURS": "5:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
+        "DISCOUNT_NOTES": "$2 off any regular priced burgers throughout conference.",
         "URL": "http://7westtaphouse.com"
       },
       "geometry": {
@@ -24,9 +25,10 @@
       "properties": {
         "NAME": "Grandma's Saloon and Grill",
         "ADDRESS": "522 S Lake Ave",
-        "DETAILS": "Wednesday Welcome Reception. Free app (up to $6.99) with 2 entree & 2 beverage purchase (not valid with other offers or discounts, one-time use only).",
+        "DETAILS": "Wednesday Welcome Reception",
         "EVENTHOURS": "6:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
+        "DISCOUNT_NOTES": "Free app (up to $6.99) with 2 entree & 2 beverage purchase (not valid with other offers or discounts, one-time use only).",
         "URL": "http://grandmasrestaurants.com"
       },
       "geometry": {
