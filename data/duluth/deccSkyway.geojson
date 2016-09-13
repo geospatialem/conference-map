@@ -56,13 +56,14 @@
    "type": "Feature",
      "properties": {
        "NAME": "St. Louis River",
-       "polyType": "AM Workshop and Thursday",
+       "polyType": "AM Workshop",
        "workshopAMnumber": "WK0006",
        "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
        "workshopAMspeakers": "Kim Sundeen",
        "thursdaySession1": "Session 37: Web Map Creation I",
        "thursdaySession2": "Session 41: Undergraduate Student Competition I",
-       "thursdaySession3": "Session 45: Undergraduate Student Competition II"
+       "thursdaySession3": "Session 45: Undergraduate Student Competition II",
+       "fridaySession1": "Maptime MSP: Editing the National Map"
      },
      "geometry": {
        "type": "Polygon",
