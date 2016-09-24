@@ -1161,11 +1161,16 @@ map.on('almost:move', function (e) {
 });
 
 //AlmostOver: Once the user has gone 'off' the line, reset the feature
-//TODO: Add mobile functionality that displays the original style
 map.on('almost:out', function (e) {
   map.removeLayer(circle);
   e.layer.setStyle({weight: 3, color: "#FF3135", dashArray: 4, opacity: 0.6});
 });
+
+//AlmostOver: Mobile functionality that displays the original line style (also on desktop)
+$('#featureModal').on('hidden.bs.modal', function () {
+  map.removeLayer(circle);
+  funRunWalkRoute.setStyle({weight: 3, color: "#FF3135", dashArray: 4, opacity: 0.6});
+})
 
 //AlmostOver: When the user is almost clicking on the polyline, show the attribute table
 map.on('almost:click', function (e) {
