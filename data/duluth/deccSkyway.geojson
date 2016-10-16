@@ -62,8 +62,7 @@
        "workshopAMspeakers": "Kim Sundeen",
        "thursdaySession1": "Session 37: Web Map Creation I",
        "thursdaySession2": "Session 41: Undergraduate Student Competition I",
-       "thursdaySession3": "Session 45: Undergraduate Student Competition II",
-       "fridaySession1": "Maptime MSP: Editing the National Map"
+       "thursdaySession3": "Session 45: Undergraduate Student Competition II"
      },
      "geometry": {
        "type": "Polygon",

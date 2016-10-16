@@ -310,7 +310,6 @@ style: function (feature) {
         "<ul class='nav nav-tabs nav nav-justified' id='limitedWorkshopContent'>" +
           "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
           "<li><a href='#thursSessions' data-toggle='tab'>Thursday Sessions</a></li>" +
-          "<li><a href='#friUserGroups' data-toggle='tab'>Friday User Groups</a></li>" +
         "</ul>" +
         "<div class='tab-content' id='limitedWorkshopContent'>" +
           "<div class='tab-pane fade active in' id='wedWorkshops'>" +
@@ -325,12 +324,6 @@ style: function (feature) {
                "<tr><th scope='row'>10:30 am - 12:00 pm</th><td>" + feature.properties.thursdaySession1 + "</td></tr>" +
                "<tr><th scope='row'>1:30 pm - 3:00 pm</th><td>" + feature.properties.thursdaySession2 + "</td></tr>" +
                "<tr><th scope='row'>3:30 pm - 5:00 pm</th><td>" + feature.properties.thursdaySession3 + "</td></tr></table>" +
-             "</div>" +
-           "</div>" +
-           "<div class='tab-pane fade' id='friUserGroups'>" +
-             "<div class='modal-body'>" +
-               "<table class='table table-striped table-bordered table-condensed'>" +
-               "<tr><th scope='row'>8:30 am - 10:00 am</th><td>" + feature.properties.fridaySession1 + "</td></tr></table>" +
              "</div>" +
            "</div>" +
       "</div>"
