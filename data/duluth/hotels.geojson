@@ -57,6 +57,63 @@
           46.785779
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "NAME": "Edgewater Hotel & Waterpark",
+        "ADDRESS": "2400 London Rd",
+        "PHONE": "(800) 777-7925",
+        "COST": "$98/night",
+        "URL": "http://duluthwaterpark.com",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0636721,
+          46.806515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "NAME": "Downtown Duluth Motel",
+        "ADDRESS": "131 W 2nd St",
+        "PHONE": "218-727-6851",
+        "COST": "$67/night",
+        "URL": "https://downtownduluthmotel.com",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.1031843,
+          46.7853149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "NAME": "Fitgers Inn",
+        "ADDRESS": "600 E Superior St",
+        "PHONE": "218-722-8862",
+        "COST": "$124/night",
+        "URL": "https://fitgers.com",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.090707,
+          46.792014
+        ]
+      }
     }
   ]
 }

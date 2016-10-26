@@ -683,15 +683,18 @@ var hotels = L.geoJson(null, {
           var pubs = {};
           establishments.eachLayer(function(layer) {
             var distance = turf.distance(e.target.feature, layer.feature, "kilometers");
-            var distanceInMeters = Math.round(distance * 1000);
-            pubs[layer.feature.properties.NAME] = distanceInMeters;
+
+            if (distance < 1) {
+              var distanceInMeters = Math.round(distance * 1000);
+              pubs[layer.feature.properties.NAME] = distanceInMeters;
+            }
           });
 
           // Created a sorted array of pub names by distance
           pubsSorted = Object.keys(pubs).sort(function(a,b){return pubs[a]-pubs[b]})
 
           // Build an HTML table of pubs
-          var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs</th><th>Distance (meters)</th></tr>";
+          var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs (<1km)</th><th>Distance (meters)</th></tr>";
           for (var pub of pubsSorted) {
             pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
           }
