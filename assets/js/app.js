@@ -648,15 +648,15 @@ var hotels = L.geoJson(null, {
     layer.on({
         mouseover: function(e) {
           var layer = e.target;
-          layer.openPopup();
 
           // Get the GeoJSON from establishments and hotels
           var establishmentFeatures = establishments.toGeoJSON();
           var hotelFeatures = hotels.toGeoJSON();
 
-          // Using Turf, find the nearest establishment to hotel clicked
+          // Using Turf, find the nearest establishment to hotel moused-over
           var nearestEstablishment = turf.nearest(e.target.feature, establishmentFeatures);
 
+          // Highlight hotel
           highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], e.target.feature.geometry.coordinates[0]], {
             stroke: false,
             fillColor: "#00FFFF",
@@ -664,15 +664,41 @@ var hotels = L.geoJson(null, {
             radius: 10
           }));
 
-          // Add and open a popup drawing attention to the nearest pub
+          // Set content for and open a popup and highlight the nearest pubs
           establishments.eachLayer(function(layer) {
 
                 if (layer.feature.id === nearestEstablishment.id) {
                   var distance = turf.distance(e.target.feature, layer.feature, "kilometers");
                   var distanceInMeters = Math.round(distance * 1000);
                   nearestFeature = layer;
-                  layer.bindPopup('<strong>Nearest Pub to ' + e.target.feature.properties.NAME + ' is: </strong><br>' + layer.feature.properties.NAME + '<br><strong>Distance: </strong>' + distanceInMeters.toString() + " meters", { closeButton: true });
-                  layer.openPopup();
+
+                  // Highlight nearest pub
+                  highlight.addLayer(L.circleMarker([layer.feature.geometry.coordinates[1], layer.feature.geometry.coordinates[0]], {
+                    stroke: false,
+                    fillColor: "#008800",
+                    fillOpacity: 0.7,
+                    radius: 10
+                  }));
+
+                  // Using Turf, find and highlight the next nearest establishment - think pub crawl :-)
+                  establishmentFeatures.features = establishmentFeatures.features.filter(function(feature) {
+                                                    return feature.id != nearestEstablishment.id;
+                                                  });
+                  var nextNearestEstablishment = turf.nearest(nearestEstablishment, establishmentFeatures);
+                  var nextDistance = turf.distance(nextNearestEstablishment, e.target.feature, "kilometers");
+                  var nextDistanceInMeters = Math.round(nextDistance * 1000);
+
+                  highlight.addLayer(L.circleMarker([nextNearestEstablishment.geometry.coordinates[1], nextNearestEstablishment.geometry.coordinates[0]], {
+                    stroke: false,
+                    fillColor: "#FF0E1D",
+                    fillOpacity: 0.7,
+                    radius: 10
+                  }));
+
+                  // Set content of popup to include hotel name and nearest pubs + distances
+                  e.target.setPopupContent('<h4>' + e.target.feature.properties.NAME + '</h4><strong>Nearest Pubs:</strong><br><i class="fa fa-cutlery" aria-hidden="true" style="color:#008800"></i> ' + layer.feature.properties.NAME + ' (' + distanceInMeters.toString() + ' meters)<br><i class="fa fa-cutlery" aria-hidden="true" style="color:#FF0E1D"></i> ' + nextNearestEstablishment.properties.NAME + ' (' + nextDistanceInMeters.toString() + " meters)", { closeButton: true });
+                  e.target.openPopup();
+
                 }
               });
         },
