@@ -705,18 +705,22 @@ var hotels = L.geoJson(null, {
 
         click: function (e) {
 
-          // Calculate Distances to all Establishments and Generate HTML Table
-          var pubs = {};
-          establishments.eachLayer(function(layer) {
-            var distance = turf.distance(e.target.feature, layer.feature, "kilometers");
+          // Find all pubs within 1km
+          var establishmentFeatures = establishments.toGeoJSON();
+          kmBuffer = turf.buffer(e.target.feature,1,'kilometers');
+          nearbyPubs = turf.within(establishmentFeatures,kmBuffer);
 
+          // Calculate Distances to all nearby pubs and Generate HTML Table
+          var pubs = {};
+          nearbyPubs.features.forEach(function(feature) {
+            var distance = turf.distance(e.target.feature, feature, "kilometers");
             if (distance < 1) {
               var distanceInMeters = Math.round(distance * 1000);
-              pubs[layer.feature.properties.NAME] = distanceInMeters;
+              pubs[feature.properties.NAME] = distanceInMeters;
             }
           });
 
-          // Created a sorted array of pub names by distance
+          // Sort pub names by distance
           pubsSorted = Object.keys(pubs).sort(function(a,b){return pubs[a]-pubs[b]})
 
           // Build an HTML table of pubs
@@ -1290,10 +1294,13 @@ map.on('zoomend overlayadd', function () {
 }
 });
 
-// Hide nearest pub popup if another pub is clicked or map itself
+// Hide nearest pub popup/highlights if another pub is clicked or map itself
 establishments.on('click', function() {
   map.closePopup();
 });
 map.on('click', function() {
   map.closePopup();
+});
+map.on('popupclose', function() {
+  highlight.clearLayers();
 });
