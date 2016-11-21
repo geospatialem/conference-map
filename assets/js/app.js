@@ -1,4 +1,4 @@
-var map, featureList, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [], eventsSearch = [], mqStreetBasemap = MQ.mapLayer(), mqSatBasemap = MQ.satelliteLayer(), mqHybridBasemap = MQ.hybridLayer();
+var map, featureList, nearestFeature, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [], eventsSearch = [], mqStreetBasemap = MQ.mapLayer(), mqSatBasemap = MQ.satelliteLayer(), mqHybridBasemap = MQ.hybridLayer();
 
 $(document).on("click", ".feature-row", function(e) {
   sidebarClick(parseInt($(this).attr("id"), 10));
@@ -636,16 +636,106 @@ var hotels = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
+
         var content = "<table class='table table-striped table-bordered table-condensed'>" +
         "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
         "<tr><th scope='row'>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
         "<tr><th scope='row'>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
         "<tr><th scope='row'>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" +
-        "<tr><th scope='row'>Website</th><td><a href='" + feature.properties.URL + "'>Online reservations</a></td></tr>" + "<table>";
+        "<tr><th scope='row'>Website</th><td><a href='" + feature.properties.URL + "'>Online reservations</a></td></tr>" + "</table>";
+        layer.bindPopup("<strong>" + feature.properties.NAME + "</strong>");
+
     layer.on({
+        mouseover: function(e) {
+          var layer = e.target;
+
+          // Get the GeoJSON from establishments and hotels
+          var establishmentFeatures = establishments.toGeoJSON();
+          var hotelFeatures = hotels.toGeoJSON();
+
+          // Using Turf, find the nearest establishment to hotel moused-over
+          var nearestEstablishment = turf.nearest(e.target.feature, establishmentFeatures);
+
+          // Set content for and open a popup and highlight the nearest pubs
+          establishments.eachLayer(function(layer) {
+
+                if (layer.feature.id === nearestEstablishment.id) {
+                  var distance = turf.distance(e.target.feature, layer.feature, "kilometers");
+                  var distanceInMeters = Math.round(distance * 1000);
+                  nearestFeature = layer;
+
+                  // Highlight nearest pub
+                  highlight.addLayer(L.circleMarker([layer.feature.geometry.coordinates[1], layer.feature.geometry.coordinates[0]], {
+                    stroke: false,
+                    fillColor: "#008800",
+                    fillOpacity: 0.7,
+                    radius: 10
+                  }));
+
+                  // Using Turf, find and highlight the next nearest establishment - think pub crawl :-)
+                  establishmentFeatures.features = establishmentFeatures.features.filter(function(feature) {
+                                                    return feature.id != nearestEstablishment.id;
+                                                  });
+                  var nextNearestEstablishment = turf.nearest(nearestEstablishment, establishmentFeatures);
+                  var nextDistance = turf.distance(nextNearestEstablishment, e.target.feature, "kilometers");
+                  var nextDistanceInMeters = Math.round(nextDistance * 1000);
+
+                  highlight.addLayer(L.circleMarker([nextNearestEstablishment.geometry.coordinates[1], nextNearestEstablishment.geometry.coordinates[0]], {
+                    stroke: false,
+                    fillColor: "#FF0E1D",
+                    fillOpacity: 0.7,
+                    radius: 10
+                  }));
+
+                  // Set content of popup to include hotel name and nearest pubs + distances
+                  e.target.setPopupContent('<h4>' + e.target.feature.properties.NAME + '</h4><strong>Nearest Pubs:</strong><br><i class="fa fa-cutlery" aria-hidden="true" style="color:#008800"></i> ' + layer.feature.properties.NAME + ' (' + distanceInMeters.toString() + ' meters)<br><i class="fa fa-cutlery" aria-hidden="true" style="color:#FF0E1D"></i> ' + nextNearestEstablishment.properties.NAME + ' (' + nextDistanceInMeters.toString() + " meters)", { closeButton: true });
+                  e.target.openPopup();
+
+                }
+              });
+        },
+
         click: function (e) {
+          //Highlight hotel on click
+          highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], e.target.feature.geometry.coordinates[0]], {
+            stroke: false,
+            fillColor: "#00FFFF",
+            fillOpacity: 0.7,
+            radius: 10
+          }));
+
+          // Find all pubs within 1km
+          var establishmentFeatures = establishments.toGeoJSON();
+          kmBuffer = turf.buffer(e.target.feature,1,'kilometers');
+          nearbyPubs = turf.within(establishmentFeatures,kmBuffer);
+
+          // Calculate Distances to all nearby pubs and Generate HTML Table
+          var pubs = {};
+          nearbyPubs.features.forEach(function(feature) {
+            var distance = turf.distance(e.target.feature, feature, "kilometers");
+            if (distance < 1) {
+              var distanceInMeters = Math.round(distance * 1000);
+              pubs[feature.properties.NAME] = distanceInMeters;
+            }
+          });
+
+          // Sort pub names by distance
+          pubsSorted = Object.keys(pubs).sort(function(a,b){
+            return pubs[a]-pubs[b]
+          })
+
+          // Grab (up to) the 5 closest pubs
+          var topFivePubs = pubsSorted.slice(0, 5);
+
+          // Build an HTML table of pubs
+          var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs (<1km)</th><th>Distance (meters)</th></tr>";
+          for (var pub of topFivePubs) {
+            pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
+          }
+          pubsHTML += "</table>";
+
           $("#feature-title").html(feature.properties.NAME);
-          $("#feature-info").html(content);
+          $("#feature-info").html(content + pubsHTML);
           $("#featureModal").modal("show");
           highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
             stroke: false,
@@ -653,6 +743,8 @@ var hotels = L.geoJson(null, {
             fillOpacity: 0.7,
             radius: 10
           }));
+
+          map.closePopup();
         }
       });
       $("#feature-list tbody").append('<tr class="feature-row" id="'+L.stamp(layer)+'"><td style="vertical-align: middle;"><span class="fa-stack"><i class="fa fa-square fa-stack-2x" style="color: #406573;"></i><i class="fa fa-bed fa-stack-1x" style="color: white;"></i></span></td><td class="feature-name">'+layer.feature.properties.NAME+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
@@ -667,6 +759,7 @@ var hotels = L.geoJson(null, {
     }
   }
 });
+
 $.getJSON("data/duluth/hotels.geojson", function (data) {
   hotels.addData(data);
   map.addLayer(hotelsLayer);
@@ -1203,4 +1296,15 @@ map.on('zoomend overlayadd', function () {
   if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
   if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
 }
+});
+
+// Hide nearest pub popup/highlights if another pub is clicked or map itself
+establishments.on('click', function() {
+  map.closePopup();
+});
+map.on('click', function() {
+  map.closePopup();
+});
+map.on('popupclose', function() {
+  highlight.clearLayers();
 });

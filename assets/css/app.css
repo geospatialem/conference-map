@@ -34,6 +34,7 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 
 /* Table */
 .table { margin-bottom: 0px; }
+table.table.table-striped.table-bordered.table-condensed { margin-top: 1em; }
 
 /* Navigation */
 .navbar .navbar-brand { font-weight: bold; font-size: 25px; color: #FFFFFF; }
