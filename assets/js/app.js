@@ -656,14 +656,6 @@ var hotels = L.geoJson(null, {
           // Using Turf, find the nearest establishment to hotel moused-over
           var nearestEstablishment = turf.nearest(e.target.feature, establishmentFeatures);
 
-          // Highlight hotel
-          highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], e.target.feature.geometry.coordinates[0]], {
-            stroke: false,
-            fillColor: "#00FFFF",
-            fillOpacity: 0.7,
-            radius: 10
-          }));
-
           // Set content for and open a popup and highlight the nearest pubs
           establishments.eachLayer(function(layer) {
 
@@ -704,6 +696,13 @@ var hotels = L.geoJson(null, {
         },
 
         click: function (e) {
+          //Highlight hotel on click
+          highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], e.target.feature.geometry.coordinates[0]], {
+            stroke: false,
+            fillColor: "#00FFFF",
+            fillOpacity: 0.7,
+            radius: 10
+          }));
 
           // Find all pubs within 1km
           var establishmentFeatures = establishments.toGeoJSON();
@@ -721,11 +720,16 @@ var hotels = L.geoJson(null, {
           });
 
           // Sort pub names by distance
-          pubsSorted = Object.keys(pubs).sort(function(a,b){return pubs[a]-pubs[b]})
+          pubsSorted = Object.keys(pubs).sort(function(a,b){
+            return pubs[a]-pubs[b]
+          })
+
+          // Grab (up to) the 5 closest pubs
+          var topFivePubs = pubsSorted.slice(0, 5);
 
           // Build an HTML table of pubs
           var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs (<1km)</th><th>Distance (meters)</th></tr>";
-          for (var pub of pubsSorted) {
+          for (var pub of topFivePubs) {
             pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
           }
           pubsHTML += "</table>";
