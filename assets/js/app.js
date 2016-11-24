@@ -1149,7 +1149,7 @@ $(document).one("ajaxStop", function () {
     },
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-      url: "//api.geonames.org/searchJSON?username=mnhealth&featureClass=P&maxRows=5&countryCode=US&name_startsWith=%QUERY",
+      url: "//api.geonames.org/searchJSON?username=geospatialem&featureClass=P&maxRows=5&countryCode=US&name_startsWith=%QUERY",
       filter: function (data) {
         return $.map(data.geonames, function (result) {
           return {
