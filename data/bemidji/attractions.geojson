@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "NAME": "Paul Bunyan & Babe the Blue Ox Statues",
+        "ADDRESS": "300 Bemidji Ave N",
+        "HOURS": "8:00 am - 5:00 pm",
+        "COST": "Free",
+        "WEBSITE": "//bemidji.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.878988,
+          47.470378
+
+        ]
+      }
+    }
+  ]
+}

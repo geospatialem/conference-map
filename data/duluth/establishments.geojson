@@ -8,7 +8,7 @@
         "NAME": "Duluth Grill",
         "ADDRESS": "118 S 27th Ave W",
         "HOURS": "7:00 am - 9:00 pm",
-        "URL": "http://www.duluthgrill.com",
+        "URL": "//www.duluthgrill.com",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -26,7 +26,7 @@
         "NAME": "Northern Waters Smokehaus",
         "ADDRESS": "394 Lake Ave S, Suite 106",
         "HOURS": "10:00 am - 8:00 pm",
-        "URL": "http://www.northernwaterssmokehaus.com",
+        "URL": "//www.northernwaterssmokehaus.com",
         "DISCOUNT_NOTES": "10% off any purchase through the duration of the conference"
       },
       "geometry": {
@@ -44,7 +44,7 @@
         "NAME": "Canal Park Brewing Company",
         "ADDRESS": "300 Canal Park Dr",
         "HOURS": "11:00 am - 11:00 pm",
-        "URL": "http://www.canalparkbrewery.com",
+        "URL": "//www.canalparkbrewery.com",
         "DISCOUNT_NOTES": "10% off food purchase."
       },
       "geometry": {
@@ -62,7 +62,7 @@
         "NAME": "Fitgers Brewhouse Brewery",
         "ADDRESS": "600 E Superior St",
         "HOURS": "11:00 am - 1:00 am",
-        "URL": "http://brewhouse.net",
+        "URL": "//brewhouse.net",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -80,7 +80,7 @@
         "NAME": "Bent Paddle Brewing Company",
         "ADDRESS": "1912 W Michigan St",
         "HOURS": "3:00 pm - 10:00 pm",
-        "URL": "http://www.bentpaddlebrewing.com",
+        "URL": "//www.bentpaddlebrewing.com",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -98,7 +98,7 @@
         "NAME": "Lake Superior Brewing Company",
         "ADDRESS": "2711 W Superior St",
         "HOURS": "4:00 pm - 9:00 pm",
-        "URL": "http://www.lakesuperiorbrewing.com",
+        "URL": "//www.lakesuperiorbrewing.com",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -116,7 +116,7 @@
         "NAME": "Dubh Linn Irish Brew Pub",
         "ADDRESS": "109 W Superior St",
         "HOURS": "11:00 am - 2:00 am",
-        "URL": "http://www.dubhlinnpub.com",
+        "URL": "//www.dubhlinnpub.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -134,7 +134,7 @@
         "NAME": "Tycoons Zenith Alehouse",
         "ADDRESS": "132 E Superior St",
         "HOURS": "11:00 am - 1:00 am",
-        "URL": "http://tycoonsalehouse.com",
+        "URL": "//tycoonsalehouse.com",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -152,7 +152,7 @@
         "NAME": "Grizzly's Wood-fire Grill Canal Park",
         "ADDRESS": "310 S Lake Ave",
         "HOURS": "11:00 am - 2:00 am",
-        "URL": "http://grizzlysgrill.com",
+        "URL": "//grizzlysgrill.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -170,7 +170,7 @@
         "NAME": "Little Angie's Cantina and Grill",
         "ADDRESS": "11 East Buchanan Street",
         "HOURS": "11:00 am - 1:00 am",
-        "URL": "http://littleangiescantina.com",
+        "URL": "//littleangiescantina.com",
         "DISCOUNT_NOTES": "$2.50 off medium-sized margarita (one-time use only)"
       },
       "geometry": {
@@ -188,7 +188,7 @@
         "NAME": "Lake Avenue Restaurant and Bar",
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "11:00 am - 11:00 pm",
-        "URL": "http://lakeavenuerestaurantandbar.com",
+        "URL": "//lakeavenuerestaurantandbar.com",
         "DISCOUNT_NOTES": "10% off order (limit one per customer per day)"
       },
       "geometry": {
@@ -206,7 +206,7 @@
         "NAME": "Amazing Grace Bakery & Cafe",
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "7:00 am - 8:00 pm",
-        "URL": "http://amazinggraceduluth.com",
+        "URL": "//amazinggraceduluth.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -224,7 +224,7 @@
         "NAME": "Hepzibah's Sweet Shoppe",
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "10:00 am - 9:00 pm",
-        "URL": "http://chocolatesduluth.com",
+        "URL": "//chocolatesduluth.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -242,7 +242,7 @@
         "NAME": "Cloud 9 Asian Bistro",
         "ADDRESS": "308 S Lake Ave",
         "HOURS": "11:30 am - 9:30 pm",
-        "URL": "http://cloud9asianbistro.com",
+        "URL": "//cloud9asianbistro.com",
         "DISCOUNT_NOTES": "$5 off w/ purchase of $30 or more. Does not include happy hour menu and drinks. One-time use only."
       },
       "geometry": {
@@ -260,7 +260,7 @@
         "NAME": "Vikre Distillery",
         "ADDRESS": "525 S Lake Ave",
         "HOURS": "2:00 pm - 11:00 pm",
-        "URL": "http://vikredistillery.com",
+        "URL": "//vikredistillery.com",
         "DISCOUNT_NOTES": "$5 Gin and Tonics"
       },
       "geometry": {

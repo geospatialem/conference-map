@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "NAME": "Bemidji Brewing",
+        "ADDRESS": "211 America Ave NW",
+        "HOURS": "4:00 pm - 10:00 pm",
+        "URL": "//bemidjibeer.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.884803,
+          47.469900
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "NAME": "Bar 209",
+        "ADDRESS": "209 Minnesota Ave NW",
+        "HOURS": "11:00 am - 1:00 am",
+        "URL": "//bar209bemidji.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.883247,
+          47.469864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "NAME": "Sparkling Waters",
+        "ADDRESS": "824 Paul Bunyan Dr SE",
+        "HOURS": "11:00 am - 9:00 pm",
+        "URL": "//sparklingwatersbemidji.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.869398,
+          47.463631
+        ]
+      }
+    }
+  ]
+}

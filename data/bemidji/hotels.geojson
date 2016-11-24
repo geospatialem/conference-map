@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "NAME": "Country Inn and Suites",
+        "ADDRESS": "927 Lake Shore Drive NE",
+        "PHONE": "218-441-4800",
+        "COST": "$xx/night",
+        "URL": "//www.countryinns.com/bemidji-hotel-mn-56601/usabemn",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85543936491013,
+          47.46398686398237
+        ]
+      }
+    }
+  ]
+}

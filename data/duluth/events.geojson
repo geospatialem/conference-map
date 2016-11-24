@@ -10,7 +10,7 @@
         "EVENTHOURS": "5:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
         "DISCOUNT_NOTES": "$2 off any regular priced burgers throughout conference.",
-        "URL": "http://7westtaphouse.com"
+        "URL": "//7westtaphouse.com"
       },
       "geometry": {
         "type": "Point",
@@ -29,7 +29,7 @@
         "EVENTHOURS": "6:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
         "DISCOUNT_NOTES": "Free app (up to $6.99) with 2 entree & 2 beverage purchase (not valid with other offers or discounts, one-time use only).",
-        "URL": "http://grandmasrestaurants.com"
+        "URL": "//grandmasrestaurants.com"
       },
       "geometry": {
         "type": "Point",

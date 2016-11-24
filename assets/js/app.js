@@ -1,5 +1,8 @@
 var map, featureList, nearestFeature, hotelSearch = [], attractionsSearch = [], establishmentsSearch = [], eventsSearch = [], mqStreetBasemap = MQ.mapLayer(), mqSatBasemap = MQ.satelliteLayer(), mqHybridBasemap = MQ.hybridLayer();
 
+// City-specific script ID's
+var conferenceCity = $('#conference-city').attr("city");
+
 $(document).on("click", ".feature-row", function(e) {
   sidebarClick(parseInt($(this).attr("id"), 10));
 });
@@ -16,20 +19,42 @@ $("#schedule-btn").click(function() {
   return false;
 });
 
+//Full extent button, based on city
 $("#full-extent-btn").click(function() {
-	map.fitBounds([
-    [46.7786733259, -92.1083088853],
-	  [46.786163129, -92.0913457505]
-	]);
-  $(".navbar-collapse.in").collapse("hide");
+  if (conferenceCity == "duluth") {
+  	map.fitBounds([
+      [46.7786733259, -92.1083088853],
+  	  [46.786163129, -92.0913457505]
+  	]);
+  } else if (conferenceCity == "bemidji") {
+    map.fitBounds([
+      [47.4555041443, -94.8897743225],
+      [47.4801754759, -94.850435257]
+     ]);
+  } else {
+    //Do nothing
+  }
+
+$(".navbar-collapse.in").collapse("hide");
   return false;
 });
 
+//Conference extent button, based on city
 $("#conference-extent-btn").click(function() {
-	map.fitBounds([
+  if (conferenceCity == "duluth") {
+  	map.fitBounds([
       [46.7817821466, -92.0969683742],
       [46.7805432416, -92.0989721204]
-	]);
+  	]);
+  } else if (conferenceCity == "bemidji") {
+    map.fitBounds([
+      [47.4627447273, -94.8547276855],
+      [47.4643416544, -94.8522180319]
+     ]);
+  } else {
+    //Do nothing
+  }
+
   $(".navbar-collapse.in").collapse("hide");
   return false;
 });
@@ -105,8 +130,8 @@ var markerClusters = new L.MarkerClusterGroup({
   disableClusteringAtZoom: 16
 });
 
-//DECC Polygon
-var deccPoly = L.geoJson(null, {
+//Conference Polygon (e.g. DECC, Sanford Center)
+var conferencePolygon = L.geoJson(null, {
 style: function (feature) {
     return {
       color: "#A50541",
@@ -118,8 +143,8 @@ style: function (feature) {
     };
   }
 });
-$.getJSON("data/duluth/deccLayout.geojson", function (data) {
-	deccPoly.addData(data);
+$.getJSON("data/" + conferenceCity + "/site/Layout.geojson", function (data) {
+	conferencePolygon.addData(data);
 });
 
 //DECC Ground Floor
@@ -177,7 +202,7 @@ style: function (feature) {
 	    } //End Popup
   }
 });
-$.getJSON("data/duluth/deccGround.geojson", function (data) {
+$.getJSON("data/duluth/site/groundLevel.geojson", function (data) {
 	deccGround.addData(data);
 });
 
@@ -201,7 +226,7 @@ var deccGroundLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/duluth/deccGroundPoints.geojson", function (data) {
+$.getJSON("data/duluth/site/groundLevelPoints.geojson", function (data) {
 	deccGroundLabels.addData(data);
 });
 
@@ -461,7 +486,7 @@ style: function (feature) {
         });
   }
 });
-$.getJSON("data/duluth/deccSkyway.geojson", function (data) {
+$.getJSON("data/duluth/site/skywayLevel.geojson", function (data) {
 	deccSkyway.addData(data);
 });
 
@@ -485,7 +510,7 @@ var deccSkywayLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/duluth/deccSkywayPoints.geojson", function (data) {
+$.getJSON("data/duluth/site/skywayLevelPoints.geojson", function (data) {
 	deccSkywayLabels.addData(data);
 });
 
@@ -545,7 +570,7 @@ style: function (feature) {
 	      } //End Popup
   }
 });
-$.getJSON("data/duluth/deccThirdFloor.geojson", function (data) {
+$.getJSON("data/duluth/site/thirdLevel.geojson", function (data) {
 	deccThirdFloor.addData(data);
 });
 
@@ -569,7 +594,7 @@ var deccThirdFloorLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/duluth/deccThirdFloorPoints.geojson", function (data) {
+$.getJSON("data/duluth/site/thirdLevelPoints.geojson", function (data) {
 	deccThirdFloorLabels.addData(data);
 });
 
@@ -619,7 +644,7 @@ var funRunWalkRoute = L.geoJson(null, {
 	    });
 	  }
 	});
-	$.getJSON("data/duluth/funRoute.geojson", function (data) {
+	$.getJSON("data/" + conferenceCity + "/funRoute.geojson", function (data) {
 	  funRunWalkRoute.addData(data);
 	  map.almostOver.addLayer(funRunWalkRoute);
 	});
@@ -760,7 +785,7 @@ var hotels = L.geoJson(null, {
   }
 });
 
-$.getJSON("data/duluth/hotels.geojson", function (data) {
+$.getJSON("data/" + conferenceCity + "/hotels.geojson", function (data) {
   hotels.addData(data);
   map.addLayer(hotelsLayer);
 });
@@ -781,7 +806,7 @@ var events = L.geoJson(null, {
       "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th scope='row'>Full Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th scope='row'>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" +
-      "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr><table>";
+      "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>https:" + feature.properties.URL + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr><table>";
       layer.on({
         click: function (e) {
 	      $("#feature-title").html(feature.properties.NAME);
@@ -807,7 +832,7 @@ var events = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/duluth/events.geojson", function (data) {
+$.getJSON("data/" + conferenceCity + "/events.geojson", function (data) {
   events.addData(data);
   map.addLayer(eventsLayer);
 });
@@ -827,7 +852,7 @@ var attractions = L.geoJson(null, {
       "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th scope='row'>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th scope='row'>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-   	  "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
+   	  "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>https:" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
 	      $("#feature-title").html(feature.properties.NAME);
@@ -853,7 +878,7 @@ var attractions = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/duluth/attractions.geojson", function (data) {
+$.getJSON("data/" + conferenceCity + "/attractions.geojson", function (data) {
   attractions.addData(data);
   map.addLayer(attractionsLayer);
 });
@@ -873,7 +898,7 @@ var establishments = L.geoJson(null, {
       var content = "<table class='table table-striped table-bordered table-condensed'>" +
       "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th scope='row'>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
-      "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" +
+      "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>https:" + feature.properties.URL + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" +
       "<tr><th scope='row'>Discount</th><td>" + feature.properties.DISCOUNT_NOTES + "</td></tr>" + "<table>";
       layer.on({
         click: function (e) {
@@ -900,20 +925,41 @@ var establishments = L.geoJson(null, {
     }
   }
 });
-$.getJSON("data/duluth/establishments.geojson", function (data) {
+$.getJSON("data/" + conferenceCity + "/establishments.geojson", function (data) {
   establishments.addData(data);
   map.addLayer(establishmentsLayer);
 });
 
-//Define the map bounds constraint
-var southWest = L.latLng(46.6300, -92.5000),
-	northEast = L.latLng(46.8805, -91.9201),
-	bounds = L.latLngBounds(southWest, northEast);
+//Define the map bounds constraint, based on city
+if (conferenceCity == "duluth") {
+  var southWest = L.latLng(46.6300, -92.5000),
+  	northEast = L.latLng(46.8805, -91.9201),
+  	bounds = L.latLngBounds(southWest, northEast);
+} else if (conferenceCity == "bemidji") {
+  var southWest = L.latLng(47.3243, -95.0811),
+    northEast = L.latLng(47.6038, -94.6115),
+    bounds = L.latLngBounds(southWest, northEast);
+  } else {
+    //Do nothing
+    [47.4555041443, -94.8897743225],
+    [47.4801754759, -94.850435257]
+  }
+
+//Define the map lat & lng, based on city
+if (conferenceCity == "duluth") {
+  cityLat = 46.781235;
+  cityLng = -92.097792;
+} else if (conferenceCity == "bemidji") {
+  cityLat = 47.463423;
+  cityLng = -94.853554;
+} else {
+  //Do nothing
+}
 
 map = L.map("map", {
   zoom: 18,
-  center: [46.781235, -92.097792],
-  layers: [mqStreetBasemap, deccPoly, deccGround, funRunWalkRoute, markerClusters, highlight],
+  center: [cityLat, cityLng],
+  layers: [mqStreetBasemap, conferencePolygon, deccGround, funRunWalkRoute, markerClusters, highlight],
   maxBounds: bounds,
   zoomControl: false,
   attributionControl: false
