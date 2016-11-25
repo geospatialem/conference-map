@@ -54,6 +54,240 @@
           47.463631
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "NAME": "Keg N' Cork Pub",
+        "ADDRESS": "310 Beltrami Ave NW",
+        "HOURS": "11:00 am - 1:00 am",
+        "URL": "//kegncorkbemidjimn.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.880948,
+          47.470953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "NAME": "Corner Bar",
+        "ADDRESS": "602 2nd St SE",
+        "HOURS": "11:00 am - 2:00 am",
+        "URL": "//cornerbarbemidji.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.860323,
+          47.459638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "NAME": "Garden Grill & Pub",
+        "ADDRESS": "111 Central Ave SE",
+        "HOURS": "11:00 am - 2:00 am",
+        "URL": "//thegardenbemidji.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.861096,
+          47.460087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "NAME": "Brigid's Cross Irish Pub",
+        "ADDRESS": "317 Beltrami Ave NW",
+        "HOURS": "4:00 pm - 11:00 pm",
+        "URL": "//brigidsirishpub.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.881597,
+          47.471280
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "NAME": "Toddy's Pub and Grub",
+        "ADDRESS": "119 3rd St NW",
+        "HOURS": "1:00 pm - 2:00 am",
+        "URL": "//facebook.com/hottoddysbemidji",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.880784,
+          47.470799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "NAME": "Slim's Bar & Grill",
+        "ADDRESS": "142 Anne St NW",
+        "HOURS": "11:00 am - 1:00 am",
+        "URL": "//slimsbarandgrill.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.875944,
+          47.506005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "NAME": "Lazy Jack's",
+        "ADDRESS": "6735 Frontage Rd NW",
+        "HOURS": "11:00 am - 1:00 am",
+        "URL": "//facebook.com/LazyJacks",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.898787,
+          47.534684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "NAME": "Tara Bemidji - Thai Food & Craft Beer",
+        "ADDRESS": "401 Beltrami Ave NW",
+        "HOURS": "11:30 am - 2:30 pm & 5:00 pm - 9:00 pm",
+        "URL": "//tarabemidji.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.881652,
+          47.471739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "NAME": "J.J.’s Dockside Restaurant & Tavern",
+        "ADDRESS": "929 Lake Shore Dr NE",
+        "HOURS": "11:00 am - 12:00 am",
+        "URL": "//jjsdockside.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.855242,
+          47.463561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "NAME": "Green Mill Restaurant & Bar",
+        "ADDRESS": "1025 Paul Bunyan Dr SE",
+        "HOURS": "11:00 am - 12:00 am",
+        "URL": "//greenmill.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.866670,
+          47.463789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "NAME": "Minnesota Nice Cafe",
+        "ADDRESS": "315 Irvine Ave NW",
+        "HOURS": "7:00 am - 3:00 pm",
+        "URL": "//minnesotanicecafe.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.885727,
+          47.471238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "NAME": "Tutto Bene",
+        "ADDRESS": "300 Beltrami Ave NW",
+        "HOURS": "11:00 am - 2:00 pm & 4:00 pm - 9:00 pm",
+        "URL": "//tuttobene.us",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.880956,
+          47.470700
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "NAME": "Paul Bunyan Sub Shop",
+        "ADDRESS": "119 2nd St NW",
+        "HOURS": "11:00 am - 8:00 pm",
+        "URL": "//paulbunyansubshop.com",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.880612,
+          47.469654
+        ]
+      }
     }
   ]
 }

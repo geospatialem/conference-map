@@ -8,7 +8,7 @@
         "NAME": "Country Inn and Suites",
         "ADDRESS": "927 Lake Shore Drive NE",
         "PHONE": "218-441-4800",
-        "COST": "$xx/night",
+        "COST": "$114/night",
         "URL": "//www.countryinns.com/bemidji-hotel-mn-56601/usabemn",
         "GROUPCODE": "None"
       },
@@ -17,6 +17,158 @@
         "coordinates": [
           -94.85543936491013,
           47.46398686398237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "NAME": "Doubletree by Hilton",
+        "ADDRESS": "115 Lake Shore Dr NE",
+        "PHONE": "218-441-4400",
+        "COST": "$140/night",
+        "URL": "//doubletree3.hilton.com/en/hotels/minnesota/doubletree-by-hilton-hotel-bemidji-BJILSDT/index.html",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.865820,
+          47.463809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "NAME": "Hampton Inn and Suites",
+        "ADDRESS": "1019 Paul Bunyan Dr SE",
+        "PHONE": "218-751-3600",
+        "COST": "$140/night",
+        "URL": "//hamptoninn3.hilton.com/en/hotels/minnesota/hampton-inn-and-suites-bemidji-BJIMNHX/index.html",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.867311,
+          47.463976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "NAME": "Candlewood Suites Bemidji - Paul Bunyan",
+        "ADDRESS": "401 Paul Bunyan Dr SE",
+        "PHONE": "218-497-3000",
+        "COST": "$83/night",
+        "URL": "//www.ihg.com/candlewood/hotels/us/en/bemidji/bjipb/hoteldetail",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.864087,
+          47.457820
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "NAME": "AmericInn Lodge & Suites Bemidji",
+        "ADDRESS": "1200 Paul Bunyan Dr NW",
+        "PHONE": "218-751-3000",
+        "COST": "$100/night",
+        "URL": "//www.americinn.com/hotels/mn/bemidji",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.897238,
+          47.491264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "NAME": "Holiday Inn Express Bemidji",
+        "ADDRESS": "2422 Ridgeway Ave NW",
+        "PHONE": "218-751-2487",
+        "COST": "$110/night",
+        "URL": "//www.ihg.com/holidayinnexpress/hotels/us/en/bemidji/bjiex/hoteldetail",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.895502,
+          47.492922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "NAME": "Super 8 Bemidji",
+        "ADDRESS": "1815 Paul Bunyan Dr NW",
+        "PHONE": "218-751-8481",
+        "COST": "$86/night",
+        "URL": "//www.wyndhamhotels.com/super-8/bemidji-minnesota/super-8-bemidji-mn/overview",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.906339,
+          47.495176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "NAME": "Best Western Bemidji",
+        "ADDRESS": "2420 Paul Bunyan Dr NW",
+        "PHONE": "218-751-0390",
+        "COST": "$60/night",
+        "URL": "//www.bestwestern.com/en_US/book/hotel-details.24115.html",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.915019,
+          47.495923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "NAME": "Quality Inn",
+        "ADDRESS": "3500 Moberg Dr NW",
+        "PHONE": "218-444-7700",
+        "COST": "$80/night",
+        "URL": "//www.choicehotels.com/minnesota/bemidji/quality-inn-hotels/mn018",
+        "GROUPCODE": "None"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.932069,
+          47.502119
         ]
       }
     }

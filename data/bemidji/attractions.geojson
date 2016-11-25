@@ -16,7 +16,96 @@
         "coordinates": [
           -94.878988,
           47.470378
-
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "NAME": "Lake Bemidji State Park",
+        "ADDRESS": "3401 State Park Rd NE",
+        "HOURS": "8:00 am - 4:00 pm",
+        "COST": "Daily parking permit: $5, Annual parking permit: $25",
+        "WEBSITE": "//dnr.state.mn.us/state_parks/lake_bemidji"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.827930,
+          47.535516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "NAME": "Beltrami County Historical Center",
+        "ADDRESS": "130 Minnesota Ave SW",
+        "HOURS": "12:00 pm - 4:00 pm",
+        "COST": "Adults: $5, Children: $1",
+        "WEBSITE": "//beltramihistory.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.881298,
+          47.468384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "NAME": "Paul Bunyan Playhouse",
+        "ADDRESS": "314 Beltrami Ave NW",
+        "HOURS": "Varies",
+        "COST": "Varies",
+        "WEBSITE": "//thechieftheater.com/paul-bunyan-playhouse.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.880763,
+          47.471225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "NAME": "Headwaters Science Center",
+        "ADDRESS": "413 Beltrami Ave",
+        "HOURS": "9:30 am - 5:00 pm",
+        "COST": "Adults: $7, Children: $5",
+        "WEBSITE": "//hscbemidji.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.881679,
+          47.472223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "NAME": "Bemidji Sculpture Walk",
+        "ADDRESS": "Downtown Bemidji",
+        "HOURS": "Not applicable",
+        "COST": "Free",
+        "WEBSITE": "//bemidjisculpture.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.882762,
+          47.472667
         ]
       }
     }
