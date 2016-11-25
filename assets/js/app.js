@@ -742,12 +742,13 @@ var hotels = L.geoJson(null, {
 
           // Build an HTML table of pubs
           var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs (<1km)</th><th>Distance (meters)</th></tr>";
-          if (topFivePubs.length == 0) { //If no pubs are within range, inform the visitor.
-            pubsHTML += "<tr><td scope='row' colspan='2'>No pubs within 1 km.</td></tr>";
-          } else { //When pubs are within range, display them.
+
+          if (topFivePubs.length > 0) { //If there are pubs, add them to the pop-up
             for (var pub of topFivePubs) {
               pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
             }
+          } else { //If not, display no pubs text to the user
+            pubsHTML += "<tr><td scope='row' colspan='2'>No pubs within 1 km.</td></tr>";
           }
           pubsHTML += "</table>";
 
