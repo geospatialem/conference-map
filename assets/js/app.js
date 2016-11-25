@@ -22,15 +22,9 @@ $("#schedule-btn").click(function() {
 //Full extent button, based on city
 $("#full-extent-btn").click(function() {
   if (conferenceCity == "duluth") {
-  	map.fitBounds([
-      [46.7786733259, -92.1083088853],
-  	  [46.786163129, -92.0913457505]
-  	]);
+  	map.fitBounds([[46.7786733259, -92.1083088853],[46.786163129, -92.0913457505]]);
   } else if (conferenceCity == "bemidji") {
-    map.fitBounds([
-      [47.4555041443, -94.8897743225],
-      [47.4801754759, -94.850435257]
-     ]);
+    map.fitBounds([[47.4509021555, -94.9586105347],[47.5572987869, -94.7890090942]]);
   } else {
     //Do nothing
   }
@@ -42,15 +36,9 @@ $(".navbar-collapse.in").collapse("hide");
 //Conference extent button, based on city
 $("#conference-extent-btn").click(function() {
   if (conferenceCity == "duluth") {
-  	map.fitBounds([
-      [46.7817821466, -92.0969683742],
-      [46.7805432416, -92.0989721204]
-  	]);
+  	map.fitBounds([[46.7817821466, -92.0969683742],[46.7805432416, -92.0989721204]]);
   } else if (conferenceCity == "bemidji") {
-    map.fitBounds([
-      [47.4627447273, -94.8547276855],
-      [47.4643416544, -94.8522180319]
-     ]);
+    map.fitBounds([[47.4627447273, -94.8547276855],[47.4643416544, -94.8522180319]]);
   } else {
     //Do nothing
   }
@@ -754,8 +742,12 @@ var hotels = L.geoJson(null, {
 
           // Build an HTML table of pubs
           var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs (<1km)</th><th>Distance (meters)</th></tr>";
-          for (var pub of topFivePubs) {
-            pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
+          if (topFivePubs.length == 0) { //If no pubs are within range, inform the visitor.
+            pubsHTML += "<tr><td scope='row' colspan='2'>No pubs within 1 km.</td></tr>";
+          } else { //When pubs are within range, display them.
+            for (var pub of topFivePubs) {
+              pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
+            }
           }
           pubsHTML += "</table>";
 
@@ -930,37 +922,27 @@ $.getJSON("data/" + conferenceCity + "/establishments.geojson", function (data) 
   map.addLayer(establishmentsLayer);
 });
 
-//Define the map bounds constraint, based on city
+//Define the full map bounds and map center on-load, based on city
 if (conferenceCity == "duluth") {
-  var southWest = L.latLng(46.6300, -92.5000),
-  	northEast = L.latLng(46.8805, -91.9201),
-  	bounds = L.latLngBounds(southWest, northEast);
+  var southwestMax = L.latLng(46.6300, -92.5000), northeastMax = L.latLng(46.8805, -91.9201), //Map bounds
+      initialLat = 46.781235, initialLng = -92.097792; //On-load map center
 } else if (conferenceCity == "bemidji") {
-  var southWest = L.latLng(47.3243, -95.0811),
-    northEast = L.latLng(47.6038, -94.6115),
-    bounds = L.latLngBounds(southWest, northEast);
-  } else {
-    //Do nothing
-    [47.4555041443, -94.8897743225],
-    [47.4801754759, -94.850435257]
-  }
-
-//Define the map lat & lng, based on city
-if (conferenceCity == "duluth") {
-  cityLat = 46.781235;
-  cityLng = -92.097792;
-} else if (conferenceCity == "bemidji") {
-  cityLat = 47.463423;
-  cityLng = -94.853554;
+  var southwestMax = L.latLng(47.3243, -95.0811), northeastMax = L.latLng(47.6038, -94.6115), //Map bounds
+      initialLat = 47.463423, initialLng = -94.853554; //On-load map center
 } else {
-  //Do nothing
+  var southwestMax = L.latLng(44.8872, -93.2077), northeastMax = L.latLng(44.9920, -93.0043), //Map bounds
+      initialLat = 44.971159, initialLng = -93.203874; //On-load map center
+  alert("You've added an unexplored city, please create a new set of parameters. \n\nTo do so, search for 'conferenceCity' in app.js.");
 }
+
+//Set the bounds to the southWest and northEast coordinates, based on city constraints above
+var mapExtentBounds = L.latLngBounds(southwestMax, northeastMax);
 
 map = L.map("map", {
   zoom: 18,
-  center: [cityLat, cityLng],
+  center: [initialLat, initialLng],
   layers: [mqStreetBasemap, conferencePolygon, deccGround, funRunWalkRoute, markerClusters, highlight],
-  maxBounds: bounds,
+  maxBounds: mapExtentBounds,
   zoomControl: false,
   attributionControl: false
 });
@@ -1001,9 +983,8 @@ map.on("click", function(e) {
   highlight.clearLayers();
 });
 
-var attributionControl = L.control({
-  position: "bottomright"
-});
+/* Attribution control */
+var attributionControl = L.control({position: "bottomright"});
 attributionControl.onAdd = function (map) {
   var div = L.DomUtil.create("div", "leaflet-control-attribution");
   div.innerHTML = "<a href='#' onclick='$(\"#attributionModal\").modal(\"show\"); return false;'>Attribution</a>";
@@ -1011,9 +992,8 @@ attributionControl.onAdd = function (map) {
 };
 map.addControl(attributionControl);
 
-var zoomControl = L.control.zoom({
-  position: "bottomright"
-}).addTo(map);
+/* Zoom control */
+var zoomControl = L.control.zoom({position: "bottomright"}).addTo(map);
 
 /* GPS enabled geolocation control set to follow the user's location */
 var locateControl = L.control.locate({
