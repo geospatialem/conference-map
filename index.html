@@ -6,9 +6,10 @@
     <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="2016 Minnesota GIS/LIS Conference Map">
+    <meta name="description" content="2017 Minnesota GIS/LIS Conference Map">
+    <meta name="keywords" content="mngislis, conference map, minnesota gis, bemidji, 2017">
     <meta name="author" content="Kitty Hurley">
-    <title>2016 MN GIS/LIS Conference Map: #MNGISLIS</title>
+    <title>2017 MN GIS/LIS Conference Map: #MNGISLIS</title>
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -57,10 +58,8 @@
             <li class="dropdown">
               <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white" aria-hidden="true"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"><i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp;&nbsp;Zoom to Duluth</a></li>
-                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="conference-extent-btn"><i class="fa fa-search" aria-hidden="true"></i></i>&nbsp;&nbsp;Zoom to DECC</a></li>
-                  <!--<li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"><i class="fa fa-arrows-alt" aria-hidden="true"></i>&nbsp;&nbsp;Zoom to Bemidji</a></li>
-                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="conference-extent-btn"><i class="fa fa-search" aria-hidden="true"></i></i>&nbsp;&nbsp;Zoom to Sanford Center</a></li>-->
+                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="full-extent-btn"></a></li><!--see js/content.js for dynamic text-->
+                  <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="conference-extent-btn"></a></li><!--see js/content.js for dynamic text-->
                 </ul>
             </li>
             <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white" aria-hidden="true"></i>&nbsp;&nbsp;POI List</a></li>
@@ -133,7 +132,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">2016 Minnesota GIS/LIS Conference Map</h4>
+            <h4 class="modal-title">2017 Minnesota GIS/LIS Conference Map</h4>
           </div>
           <div class="modal-body">
             <ul class="nav nav-tabs nav nav-justified" id="aboutTabs">
@@ -141,28 +140,7 @@
               <li><a href="#disclaimer" data-toggle="tab"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Disclaimer</a></li>
             </ul>
             <div class="tab-content" id="aboutTabsContent">
-              <div class="tab-pane fade active in" id="about">
-                <p>The official conference map for the 26th Annual Minnesota GIS/LIS Conference held Wednesday, October 26th through
-                Friday, October 28th, 2016 in Duluth.</p>
-
-                <p>What is the conference schedule? What workshops and sessions are offered? Where are the rooms? Where can one grab
-                dinner or a #geobeer? What other great things can you do while visiting? All of these questions, and more can be answered in
-                one place!</p>
-
-                <p>For more information, please visit the official <a href="//www.mngislis.org/2016" target="_blank">
-                Minnesota GIS/LIS Conference website (new window) <i class="fa fa-external-link-square" aria-hidden="true"></i></a>.</p>
-
-                <div class="panel panel-primary">
-                  <div class="panel-heading">Additional Information:</div>
-                  <ul class="list-group">
-                  <li class="list-group-item">Join the conversation on social media! We'll be tweeting live at <a href="//twitter.com/mngislis">@MNGISLIS</a> using <a href="//twitter.com/hashtag/mngislis?f=tweets&vertical=default">#mngislis</a>.</li>
-                  <!--<li class="list-group-item">View the <a href="//www.mngislis.org/resource/resmgr/Docs/2016_Rates.pdf" target="_blank">2016 conference rates (new window) <i class="fa fa-external-link-square" aria-hidden="true"></i></a>.-->
-                  <li class="list-group-item">Ready to go? <a href="//www.mngislis.org/event/26th_Annual_Conference" target="_blank">Register for the annual conference! (new window) <i class="fa fa-external-link-square" aria-hidden="true"></i></a> </li>
-                  <li class="list-group-item">View the official <a href="docs/2016_FunRunMap.pdf" download="2016_FunRunMap.pdf" target="_blank">5k Fun Run/Walk Map (download) <i class="fa fa-download" aria-hidden="true"></i></a> (PDF).</li>
-                  <li class="list-group-item">Check out our <a href="//c.ymcdn.com/sites/www.mngislis.org/resource/resmgr/conf2016/mngislis_preliminary_program.pdf" target="_blank">preliminary program! (new window) <i class="fa fa-external-link-square" aria-hidden="true"></i></a> </li>
-                  </ul>
-                </div>
-              </div>
+              <div class="tab-pane fade active in" id="about"></div><!--see js/content.js for dynamic text-->
               <div id="disclaimer" class="tab-pane fade text-danger">
                 <p>The data provided on this site is for informational and planning purposes only. Absolutely no accuracy or completeness guarantee is implied or intended. All information on this map is subject to such variations and corrections as might result from a complete title search and/or accurate field survey.</p>
               </div>
@@ -182,59 +160,7 @@
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title">Conference Schedule</h4>
           </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs nav nav-justified" id="scheduleTabs">
-              <li class="active"><a href="#tuesday" data-toggle="tab">Tuesday, Oct. 25</a></li>
-              <li><a href="#wednesday" data-toggle="tab">Wednesday, Oct. 26</a></li>
-              <li><a href="#thursday" data-toggle="tab">Thursday, Oct. 27</a></li>
-              <li><a href="#friday" data-toggle="tab">Friday, Oct. 28</a></li>
-            </ul>
-            <div class="tab-content" id="aboutTabsContent">
-              <div class="tab-pane fade active in" id="tuesday">
-                <table class="table table-striped table-bordered table-condensed">
-                  <tr><th scope="col">Time</th><th scope="col">Activity</th><th scope="col">Location</th></tr>
-                  <tr><th scope="row">5:00 pm - 8:00 pm</th><td>Tuesday Night Social Event</td><td>7 West Taphouse</td></tr>
-                </table>
-              </div>
-              <div id="wednesday" class="tab-pane fade">
-                <table class="table table-striped table-bordered table-condensed">
-                  <tr><th scope="col">Time</th><th scope="col">Activity</th><th scope="col">Location</th></tr>
-                  <tr><th scope="row">7:30 am - 5:00 pm</th><td>Registration</td><td>Registration Desk</td></tr>
-                  <tr><th scope="row">9:00 am - 12:15 pm</th><td>Morning Workshops</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">12:15 pm - 1:15 pm</th><td>Opening Keynote Denfeld High School &amp; Luncheon</td><td>Harbor Ballroom</td></tr>
-                  <tr><th scope="row">1:15 pm - 4:30 pm</th><td>Afternoon Workshops</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">2:00 pm - 5:00 pm</th><td>Exhibit Hall &amp; Geolounge Open</td><td>Exhibit Hall/Geolounge</td></tr>
-                  <tr><th scope="row">4:00 pm - 6:00 pm</th><td>Wednesday Welcome Reception</td><td>Geolounge</td></tr>
-                  <tr><th scope="row">6:00 pm - 8:00 pm</th><td>Wednesday Welcome Reception Continued</td><td>Grandma's Saloon</td></tr>
-                </table>
-              </div>
-              <div id="thursday" class="tab-pane fade">
-                <table class="table table-striped table-bordered table-condensed">
-                  <tr><th scope="col">Time</th><th scope="col">Activity</th><th scope="col">Location</th></tr>
-                  <tr><th scope="row">7:30 am - 5:00 pm</th><td>Registration</td><td>Registration Desk</td></tr>
-                  <tr><th scope="row">7:00 am - 7:00 pm</th><td>Exhibit Hall &amp; Geolounge Open</td><td>Exhibit Hall/Geolounge</td></tr>
-                  <tr><th scope="row">8:00 am - 10:00 am</th><td>Conference Welcome &amp; Keynote Carrie Sowden</td><td>Harbor Ballroom</td></tr>
-                  <tr><th scope="row">10:30 am - 12:00 pm</th><td>Conference Sessions</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">12:00 pm - 1:00 pm</th><td>Awards Luncheon</td><td>Harbor Ballroom</td></tr>
-                  <tr><th scope="row">1:30 pm - 3:00 pm</th><td>Conference Sessions</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">3:30 pm - 5:00 pm</th><td>Conference Sessions</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">5:00 pm - 7:00 pm</th><td>Vendor Reception</td><td>Exhibit Hall</td></tr>
-                  <tr><th scope="row">7:15 pm - 10:00 pm</th><td>Thursday Night Social Event</td><td>Holiday Inn</td></tr>
-                </table>
-              </div>
-              <div id="friday" class="tab-pane fade">
-                <table class="table table-striped table-bordered table-condensed">
-                  <tr><th scope="col">Time</th><th scope="col">Activity</th><th scope="col">Location</th></tr>
-                  <tr><th scope="row">6:15 am - 7:15 am</th><td>5k Fun Run/Walk</td><td>Canal Park Lodge Parking Lot</td></tr>
-                  <tr><th scope="row">7:30 am - 10:00 am</th><td>Registration</td><td>Registration Desk</td></tr>
-                  <tr><th scope="row">8:00 am - 12:00 pm</th><td>Exhibit Hall &amp; Geolounge Open</td><td>Exhibit Hall/Geolounge</td></tr>
-                  <tr><th scope="row">8:30 am - 10:00 am</th><td>Conference Sessions</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">10:30 pm - 12:00 pm</th><td>Conference Sessions</td><td>DECC Rooms</td></tr>
-                  <tr><th scope="row">12:00 pm - 2:30 pm</th><td>Closing Keynote Dana Starkell &amp; Luncheon</td><td>Harbor Ballroom</td></tr>
-                </table>
-              </div>
-            </div>
-          </div>
+          <div class="modal-body" id="scheduleText"></div><!--see js/content.js for dynamic text-->
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
@@ -257,25 +183,7 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Map Attribution</h4>
-          </div>
-          <div class="modal-body">
-            <ul>
-            <li>Basemap tiles 2016 &copy; <a href="//developer.mapquest.com" target="_blank">Mapquest</a>, <a href="//mapbox.com" target="_blank">Mapbox</a>, <a href="//tomtom.com" target="_blank">TomTom</a>.</li>
-            <li>Bootleaf Template Developed by <a target="_blank" href="//bryanmcbride.com">Bryan McBride</a></li>
-            <li>Map Content and Design by <a target="_blank" href="//geospatialem.github.io">Kitty Hurley</a></li>
-            <li>5k Fun Run/Walk Route Coordination and Map Design by Geoff Maas</li>
-            <li>DECC Ground and Skyway Level Design by Mike Dolbow</li>
-            <li>Nearest Hotel Pub Analysis and Design by Andy Walz</li>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog"></div><!--see js/content.js for dynamic text-->
 
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -294,7 +202,8 @@
     <script src="assets/js/leaflet.almostover.js"></script>
     <script src="//www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=GjVvLMyTKIykuYPZiPEIld4ohPRrZaDg"></script>
     <script src="//api.mapbox.com/mapbox.js/plugins/turf/v2.0.2/turf.min.js"></script>
-    <script src="assets/js/app.js" id="conference-city" city="duluth"></script>
+    <script src="assets/js/app.js" id="conference-city" city="bemidji"></script>
+    <script src="assets/js/content.js"></script>
 
   </body>
 </html>
