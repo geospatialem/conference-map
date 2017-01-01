@@ -13,9 +13,9 @@ if (conferenceCity == "bemidji") {
   conferenceExtentListItem += "<i class=\"fa fa-search\" aria-hidden=\"true\"><\/i><\/i>&nbsp;&nbsp;Zoom to DECC";
 
 } else {
-    console.log("Change the full extent and conference extent in content.js");
     fullExtentListItem += "<i class=\"fa fa-arrows-alt\" aria-hidden=\"true\"><\/i>&nbsp;&nbsp;Zoom to City";
     conferenceExtentListItem += "<i class=\"fa fa-search\" aria-hidden=\"true\"><\/i><\/i>&nbsp;&nbsp;Zoom to Conference City";
+    console.log("Add '" + conferenceCity + "' to the fullExtentListItem & conferenceExtentListItem js/content.js file.");
 }
 
 $('#full-extent-btn').html(fullExtentListItem); //Link the content to the div
@@ -46,7 +46,7 @@ var aboutConferenceText = "";
       aboutConferenceText += "<li class=\"list-group-item\">View the official <a href=\"docs\/2016_FunRunMap.pdf\" download=\"2016_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>";
       aboutConferenceText += "<li class=\"list-group-item\">Check out our <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis_preliminary_program.pdf\" target=\"_blank\">preliminary program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
 
-    } else { console.log("Add '" + conferenceCity + "' to the js/content.js file."); }
+    } else { console.log("Add '" + conferenceCity + "' to the aboutConferenceText js/content.js file."); }
 
     aboutConferenceText += "<\/ul>";
     aboutConferenceText += "<\/div>";
@@ -166,7 +166,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
 
-    } else { console.log("Add '" + conferenceCity + "' to the js/content.js file."); }
+    } else { console.log("Add '" + conferenceCity + "' to the scheduleModalDialogText js/content.js file."); }
 
     scheduleModalDialogText += "<\/div>";
 
