@@ -1,4 +1,4 @@
-2016 MN GIS/LIS Conference Map  
+MN GIS/LIS Conference Map  
 ==============
 
 Contribute to the official [27th Annual Conference Map](//geospatialem.github.io/conference-map) held in Bemidji, Minnesota this October!  
@@ -53,7 +53,7 @@ For example:
 ```javascript  
 /* City-Specific JavaScript Content  */
 if (conferenceCity == "bemidji") {
-  // Bemidji-specific javascript content
+  //Bemidji-specific javascript content
 } else if (conferenceCity == "duluth") {
   //Duluth-specific javascript content
 }
