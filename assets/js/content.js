@@ -185,7 +185,7 @@ var attributionDialogText = "";
     attributionDialogText += "<\/div>";
     attributionDialogText += "<div class=\"modal-body\">";
     attributionDialogText += "<ul>";
-    attributionDialogText += "<li>Basemap tiles 2016 &copy; <a href=\"\/\/developer.mapquest.com\" target=\"_blank\">Mapquest<\/a>, <a href=\"\/\/mapbox.com\" target=\"_blank\">Mapbox<\/a>, <a href=\"\/\/tomtom.com\" target=\"_blank\">TomTom<\/a>.<\/li>";
+    attributionDialogText += "<li>Basemap tiles 2017 &copy; <a href=\"\/\/developer.mapquest.com\" target=\"_blank\">Mapquest<\/a>, <a href=\"\/\/mapbox.com\" target=\"_blank\">Mapbox<\/a>, <a href=\"\/\/tomtom.com\" target=\"_blank\">TomTom<\/a>.<\/li>";
     attributionDialogText += "<li>Bootleaf Template Developed by <a target=\"_blank\" href=\"\/\/bryanmcbride.com\">Bryan McBride<\/a><\/li>";
     attributionDialogText += "<li>Map Content and Design by <a target=\"_blank\" href=\"\/\/geospatialem.github.io\">Kitty Hurley<\/a><\/li>";
     attributionDialogText += "<li>5k Fun Run\/Walk Route Coordination and Map Design by Geoff Maas<\/li>";
