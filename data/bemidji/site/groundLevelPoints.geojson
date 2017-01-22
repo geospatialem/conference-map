@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85438525676727,
+          47.46390526466484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85430747270584,
+          47.46394878431663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.8542270064354,
+          47.463992303932386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85414654016495,
+          47.46403582351212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85420420765877,
+          47.46373934566184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85407814383505,
+          47.46379374539267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85395744442938,
+          47.46386083831645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Exhibit Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85396683216095,
+          47.46324883888022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Poster Gallery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.8544442653656,
+          47.46340841275322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Plenary/Lunch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85360205173492,
+          47.46344467947498
+        ]
+      }
+    }
+  ]
+}

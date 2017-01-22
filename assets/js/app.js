@@ -7,6 +7,11 @@ $(document).on("click", ".feature-row", function(e) {
   sidebarClick(parseInt($(this).attr("id"), 10));
 });
 
+/* Basemap tile accessibility */
+mqStreetBasemap.on("tileloadstart", function (tileLoadEvent) { tileLoadEvent.tile.setAttribute("alt", ""); });
+mqSatBasemap.on("tileloadstart", function (tileLoadEvent) { tileLoadEvent.tile.setAttribute("alt", ""); });
+mqHybridBasemap.on("tileloadstart", function (tileLoadEvent) { tileLoadEvent.tile.setAttribute("alt", ""); });
+
 $("#about-btn").click(function() {
   $("#aboutModal").modal("show");
   $(".navbar-collapse.in").collapse("hide");
@@ -41,9 +46,9 @@ $("#conference-extent-btn").click(function() {
     map.fitBounds([[47.4627447273, -94.8547276855],[47.4643416544, -94.8522180319]]);
   } else {
     //Do nothing
-  }
+}
 
-  $(".navbar-collapse.in").collapse("hide");
+$(".navbar-collapse.in").collapse("hide");
   return false;
 });
 
@@ -135,8 +140,8 @@ $.getJSON("data/" + conferenceCity + "/site/Layout.geojson", function (data) {
 	conferencePolygon.addData(data);
 });
 
-//DECC Ground Floor
-var deccGround = L.geoJson(null, {
+//Ground Floor
+var groundFloor = L.geoJson(null, {
 style: function (feature) {
     return {
       color: "#A50541",
@@ -149,7 +154,9 @@ style: function (feature) {
     };
   },
   onEachFeature: function (feature, layer) {
-	    if (feature.properties) { //Popup
+    if (feature.properties.polyType === "No values") { //No values
+      // Use the default pop-up (see content.js)
+    } else { //Conference Workshops/Sessions
 	        var content =
           "<ul class='nav nav-tabs nav nav-justified' id='fullWorkshopContent'>" +
             "<li class='active'><a href='#wedWorkshops' data-toggle='tab'>Wednesday Workshops</a></li>" +
@@ -180,6 +187,7 @@ style: function (feature) {
              "</div>" +
            "</div>" +
         "</div>"
+      } //End Popup
 	        layer.on({
 	          click: function (e) {
 	            $("#feature-title").html(feature.properties.NAME);
@@ -187,15 +195,15 @@ style: function (feature) {
 	            $("#featureModal").modal("show");
 	          }
 	        });
-	    } //End Popup
+
   }
 });
-$.getJSON("data/duluth/site/groundLevel.geojson", function (data) {
-	deccGround.addData(data);
+$.getJSON("data/" + conferenceCity + "/site/groundLevel.geojson", function (data) {
+	groundFloor.addData(data);
 });
 
-//DECC Ground Floor Labels
-var deccGroundLabels = L.geoJson(null, {
+//Ground Floor Labels
+var groundFloorLabels = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
 			return new L.CircleMarker(latlng, {
 			radius: 5,
@@ -214,8 +222,8 @@ var deccGroundLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/duluth/site/groundLevelPoints.geojson", function (data) {
-	deccGroundLabels.addData(data);
+$.getJSON("data/" + conferenceCity + "/site/groundLevelPoints.geojson", function (data) {
+	groundFloorLabels.addData(data);
 });
 
 //DECC Skyway Level
@@ -420,7 +428,7 @@ style: function (feature) {
                       "</div>" +
                     "</div>" +
                "</div>"
-       	      } else if (feature.properties.polyType === "No values") { //AM only workshop
+             } else if (feature.properties.polyType === "No values") { //No values
             var content =
             "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>" +
               "<li class='active'><a href='#notAvailable' data-toggle='tab'>Not available</a></li>" +
@@ -942,7 +950,7 @@ var mapExtentBounds = L.latLngBounds(southwestMax, northeastMax);
 map = L.map("map", {
   zoom: 18,
   center: [initialLat, initialLng],
-  layers: [mqStreetBasemap, conferencePolygon, deccGround, funRunWalkRoute, markerClusters, highlight],
+  layers: [mqStreetBasemap, conferencePolygon, groundFloor, funRunWalkRoute, markerClusters, highlight],
   maxBounds: mapExtentBounds,
   zoomControl: false,
   attributionControl: false
@@ -1041,24 +1049,46 @@ var baseLayers = {
   "Hybrid": mqHybridBasemap
 };
 
-var groupedOverlays = {
-  "DECC": {
-	   "&nbsp;1st Floor (Ground)": deccGround,
-	    "&nbsp;2nd Floor (Skyway)": deccSkyway,
-      "&nbsp;3rd Floor (Harbor Ballroom)": deccThirdFloor
-  },
-  "Places of Interest": {
-		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
-		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
-      "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #B74448;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;Conference Events": eventsLayer,
-		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
-		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer
-  }
-};
+if (conferenceCity == "duluth") {
+  var groupedOverlays = {
+    "DECC": {
+  	   "&nbsp;1st Floor (Ground)": groundFloor,
+  	    "&nbsp;2nd Floor (Skyway)": deccSkyway,
+        "&nbsp;3rd Floor (Harbor Ballroom)": deccThirdFloor
+    },
+    "Places of Interest": {
+  		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
+  		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
+        "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #B74448;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;Conference Events": eventsLayer,
+  		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
+  		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer
+    }
+  };
+} else if (conferenceCity == "bemidji") {
+  var groupedOverlays = {
+    "Places of Interest": {
+  		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
+  		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
+        "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #B74448;'></i><i class='fa fa-star fa-stack-1x' style='color: white;'></i></span>&nbsp;Conference Events": eventsLayer,
+  		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #72AF26;'></i><i class='fa fa-binoculars fa-stack-1x' style='color: white;'></i></span>&nbsp;Attractions": attractionsLayer,
+  		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #EB902E;'></i><i class='fa fa-cutlery fa-stack-1x' style='color: white;'></i></span>&nbsp;Establishments": establishmentsLayer
+    }
+  };
+}
 
-var options = { exclusiveGroups: ["DECC"],
-		collapsed: isCollapsed
-};
+if (conferenceCity == "duluth") {
+  var options = { exclusiveGroups: ["DECC"],
+  		collapsed: isCollapsed
+  };
+} else if (conferenceCity = "bemidji") {
+  var options = {
+  		collapsed: isCollapsed
+  };
+} else {
+  var options = {
+  };
+  console.log("Edit the conference city legend options");
+}
 
 var layerControl = L.control.groupedLayers(baseLayers, groupedOverlays, options, {
   collapsed: isCollapsed
@@ -1260,23 +1290,23 @@ map.on('almost:click', function (e) {
 // Add labels
 map.on('zoomend overlayadd', function () {
   if (map.getZoom() >= 18) {
-    if (map.hasLayer(deccGround)) {
-      if (map.hasLayer(deccGroundLabels) == false) { map.addLayer(deccGroundLabels); }
+    if (map.hasLayer(groundFloor)) {
+      if (map.hasLayer(groundFloorLabels) == false) { map.addLayer(groundFloorLabels); }
       if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
       if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
     } else if (map.hasLayer(deccSkyway)) {
       if (map.hasLayer(deccSkywayLabels) == false) { map.addLayer(deccSkywayLabels); }
-      if (map.hasLayer(deccGroundLabels)) { map.removeLayer(deccGroundLabels); }
+      if (map.hasLayer(groundFloorLabels)) { map.removeLayer(groundFloorLabels); }
       if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
   } else if (map.hasLayer(deccThirdFloor)) {
       if (map.hasLayer(deccThirdFloorLabels) == false) { map.addLayer(deccThirdFloorLabels); }
-      if (map.hasLayer(deccGroundLabels)) { map.removeLayer(deccGroundLabels); }
+      if (map.hasLayer(groundFloorLabels)) { map.removeLayer(groundFloorLabels); }
       if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
   } else {
     // Do nothing
   }
 } else {
-  if (map.hasLayer(deccGroundLabels)) { map.removeLayer(deccGroundLabels); }
+  if (map.hasLayer(groundFloorLabels)) { map.removeLayer(groundFloorLabels); }
   if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
   if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
 }
