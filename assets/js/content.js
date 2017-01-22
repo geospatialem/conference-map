@@ -175,13 +175,31 @@ $('#scheduleText').html(scheduleModalDialogText); //Link the content to the div
 
 
 
+/* Default feature info pop-up */
+var content = "";
+    content += "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>";
+    content += "<li class='active'><a href='#notAvailable' data-toggle='tab'>Not available<\/a><\/li>";
+    content += "<\/ul>";
+    content += "<div class='tab-content' id='noValuesContent'>";
+    content += "<div class='tab-pane fade active in' id='notAvailable'>";
+    content += "<div class='modal-body'>";
+    content += "<table class='table table-striped table-bordered table-condensed'>";
+    content += "<tr><th scope='row'>Not available<\/th><td>No workshops and\/or sessions offered.<\/td><\/tr><\/table>";
+    content += "<\/div>";
+    content += "<\/div>";
+    content += "<\/div>";
+
+$("#feature-info").html(content); //Link the content to the div
+
+
+
 /* Attribution Dialog Text */
 var attributionDialogText = "";
     attributionDialogText += "<div class=\"modal-dialog\">";
     attributionDialogText += "<div class=\"modal-content\">";
     attributionDialogText += "<div class=\"modal-header\">";
     attributionDialogText += "<button class=\"close\" type=\"button\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;<\/button>";
-    attributionDialogText += "<h4 class=\"modal-title\">Map Attribution<\/h4>";
+    attributionDialogText += "<h2 class=\"modal-title\">Map Attribution<\/h2>";
     attributionDialogText += "<\/div>";
     attributionDialogText += "<div class=\"modal-body\">";
     attributionDialogText += "<ul>";

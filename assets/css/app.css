@@ -37,6 +37,7 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 table.table.table-striped.table-bordered.table-condensed { margin-top: 1em; }
 
 /* Navigation */
+h1 { font-size: 25px; margin: 0px; }
 .navbar .navbar-brand { font-weight: bold; font-size: 25px; color: #FFFFFF; }
 .navbar-collapse.in { overflow-y: hidden; }
 .navbar-header .navbar-icon-container { margin-right: 15px; }
@@ -58,6 +59,7 @@ table.table.table-striped.table-bordered.table-condensed { margin-top: 1em; }
 /* Modal Dialog Styling */
 .modal-header { background-color: #337ab7; } /* Modal header background color */
 .modal-title, .modal-header .close { color: #fff; } /* Modal header text and close button color */
+h2 { font-size: 18px; }
 
 /* Map Symbolization */
 .awesome-marker i { font-size: 14px; margin-top: 12px; }

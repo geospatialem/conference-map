@@ -46,10 +46,10 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="navbar-icon-container">
-            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white" aria-hidden="true"></i></a>
-            <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white" aria-hidden="true"></i></a>
+            <a class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white" aria-hidden="true"></i></a>
+            <a class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white" aria-hidden="true"></i></a>
           </div>
-          <a class="navbar-brand" href="//www.mngislis.org/2016">#MNGISLIS</a>
+          <a class="navbar-brand" href="//www.mngislis.org/2016"><h1>#MNGISLIS</h1></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav text-center">
@@ -62,7 +62,7 @@
                   <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="conference-extent-btn"></a></li><!--see js/content.js for dynamic text-->
                 </ul>
             </li>
-            <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white" aria-hidden="true"></i>&nbsp;&nbsp;POI List</a></li>
+            <li class="hidden-xs hidden-sm"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white" aria-hidden="true"></i>&nbsp;&nbsp;POI List</a></li>
           </ul>
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group has-feedback">
@@ -80,8 +80,9 @@
         <div class="sidebar-wrapper">
           <div class="panel panel-default" id="features">
             <div class="panel-heading">
-              <h3 class="panel-title">Places of Interest
-              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><span class="sr-only">Hide</span><i class="fa fa-chevron-left" aria-hidden="true"></i></button></h3>
+              <h2 class="panel-title">Places of Interest
+                <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><span class="sr-only">Hide</span><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+              </h2>
             </div>
             <div class="panel-body">
               <p>
@@ -132,7 +133,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">2017 Minnesota GIS/LIS Conference Map</h4>
+            <h2 class="modal-title">2017 Minnesota GIS/LIS Conference Map</h2>
           </div>
           <div class="modal-body">
             <ul class="nav nav-tabs nav nav-justified" id="aboutTabs">
@@ -158,7 +159,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Conference Schedule</h4>
+            <h2 class="modal-title">Conference Schedule</h2>
           </div>
           <div class="modal-body" id="scheduleText"></div><!--see js/content.js for dynamic text-->
           <div class="modal-footer">
@@ -173,7 +174,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title text-primary" id="feature-title">Feature Title</h4>
+            <h2 class="modal-title text-primary" id="feature-title">Feature Title</h2>
           </div>
           <div class="modal-body" id="feature-info"></div>
           <div class="modal-footer">
@@ -193,7 +194,7 @@
     <script src="//unpkg.com/leaflet@0.7.3/dist/leaflet.js"></script>
     <script src="assets/js/leaflet.label.js"></script>
     <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
-    <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
+    <script src="//cdn.jsdelivr.net/leaflet.locatecontrol/0.60.0/L.Control.Locate.min.js"></script>
     <script src="assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
 	  <script src="assets/js/leaflet.awesome-markers.min.js"></script>
     <script src="assets/js/leaflet-indoor.js"></script>
