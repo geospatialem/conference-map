@@ -1322,3 +1322,6 @@ map.on('click', function() {
 map.on('popupclose', function() {
   highlight.clearLayers();
 });
+
+//Accessibility for Mapquest logo
+$('.mq-logo-control img').attr('alt', '');
