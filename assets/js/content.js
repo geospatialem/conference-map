@@ -27,7 +27,7 @@ var aboutConferenceText = "";
     //TODO: Change annually
     aboutConferenceText += "<p>The official conference map for the 27th Annual Minnesota GIS\/LIS Conference held Wednesday, October 4th through Friday, October 6th, 2017 in Bemidji.<\/p>";
     aboutConferenceText += "<p>What is the conference schedule? What workshops and sessions are offered? Where are the rooms? Where can one grab dinner or a #geobeer? What other great things can you do while visiting? All of these questions, and more can be answered in one place!<\/p>";
-    aboutConferenceText += "<p>For more information, please visit the official <a href=\"\/\/www.mngislis.org\/2016\" target=\"_blank\"> Minnesota GIS\/LIS Conference website (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a>.<\/p>";
+    aboutConferenceText += "For more information, please visit the official <a href=\"\/\/www.mngislis.org?page=27annual_conference\" target=\"_blank\"> Minnesota GIS\/LIS Conference website (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a>.<\/p>";
 
     aboutConferenceText += "<div class=\"panel panel-primary\">";
     aboutConferenceText += "<div class=\"panel-heading\">Additional Information:<\/div>";
@@ -36,12 +36,14 @@ var aboutConferenceText = "";
 
     if (conferenceCity == "bemidji") {
         aboutConferenceText += "<li class=\"list-group-item\">View <a href=\"\/\/www.mngislis.org\/resource\/resmgr\/Docs\/2016_Rates.pdf\" target=\"_blank\">last year's conference rates (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a><\/li>";
+        /* TODO: Open registration */
         aboutConferenceText += "<!--<li class=\"list-group-item\">Ready to go? <a href=\"\/\/www.mngislis.org\/event\/26th_Annual_Conference\" target=\"_blank\">Register for the annual conference! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>-->";
         aboutConferenceText += "<li class=\"list-group-item\">View the official <a href=\"docs\/2017_FunRunMap.pdf\" download=\"2017_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>";
         aboutConferenceText += "<li class=\"list-group-item\">Check out <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis-onsite-2016.pdf\" target=\"_blank\">last year's on-site program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
 
     } else if (conferenceCity == "duluth") {
       aboutConferenceText += "<li class=\"list-group-item\">View the <a href=\"\/\/www.mngislis.org\/resource\/resmgr\/Docs\/2016_Rates.pdf\" target=\"_blank\">2016 conference rates (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a><\/li>";
+      /* TODO: Open registration */
       aboutConferenceText += "<!--<li class=\"list-group-item\">Ready to go? <a href=\"\/\/www.mngislis.org\/event\/26th_Annual_Conference\" target=\"_blank\">Register for the annual conference! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>-->";
       aboutConferenceText += "<li class=\"list-group-item\">View the official <a href=\"docs\/2016_FunRunMap.pdf\" download=\"2016_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>";
       aboutConferenceText += "<li class=\"list-group-item\">Check out our <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis_preliminary_program.pdf\" target=\"_blank\">preliminary program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
