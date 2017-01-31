@@ -37,7 +37,7 @@ var aboutConferenceText = "";
     if (conferenceCity == "bemidji") {
         aboutConferenceText += "<li class=\"list-group-item\">View <a href=\"\/\/www.mngislis.org\/resource\/resmgr\/Docs\/2016_Rates.pdf\" target=\"_blank\">last year's conference rates (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a><\/li>";
         aboutConferenceText += "<!--<li class=\"list-group-item\">Ready to go? <a href=\"\/\/www.mngislis.org\/event\/26th_Annual_Conference\" target=\"_blank\">Register for the annual conference! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>-->";
-        aboutConferenceText += "<!--<li class=\"list-group-item\">View the official <a href=\"docs\/2016_FunRunMap.pdf\" download=\"2016_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>-->";
+        aboutConferenceText += "<li class=\"list-group-item\">View the official <a href=\"docs\/2017_FunRunMap.pdf\" download=\"2017_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>";
         aboutConferenceText += "<li class=\"list-group-item\">Check out <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis-onsite-2016.pdf\" target=\"_blank\">last year's on-site program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
 
     } else if (conferenceCity == "duluth") {
@@ -108,7 +108,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<div id=\"friday\" class=\"tab-pane fade\">";
       scheduleModalDialogText += "<table class=\"table table-striped table-bordered table-condensed\">";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">6:15 am - 7:15 am<\/th><td>5k Fun Run\/Walk<\/td><td>TBA<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">6:15 am - 7:15 am<\/th><td>5k Fun Run\/Walk<\/td><td>Sanford Center Main Entrance<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 10:00 am<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 12:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:30 am - 10:00 am<\/th><td>Conference Sessions<\/td><td>Sanford Center Rooms<\/td><\/tr>";

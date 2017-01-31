@@ -608,12 +608,13 @@ var funRunWalkRoute = L.geoJson(null, {
 	    if (feature.properties) {
 	      var content =
 	      "<table class='table table-striped table-bordered table-condensed'>" +
-	      "<tr><th scope='row'>Start Time</th><td>" + "Friday, Oct. 28, 2016 @ 6:15 a.m." + "</td></tr>" +
-	      "<tr><th scope='row'>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
-	      "<tr><th scope='row'>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
+	      "<tr><th scope='row'>Start Time</th><td>" + "Friday, Oct. 6, 2017 @ 6:15 a.m." + "</td></tr>" +
+	      "<tr><th scope='row'>Start/Finish Location</th><td>" + "Sanford Center Main Entrance" + "</td></tr>" +
+	      "<tr><th scope='row'>Start/Finish Address</th><td>" + "1111 Event Center Dr NE, Bemidji" + "</td></tr>" +
 	      "<tr><th scope='row'>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-	      "<tr><th scope='row'>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2016_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a> (PDF)." + "</td></tr>" + "<table>";
-	      layer.on({
+	      "<tr><th scope='row'>Race Details</th><td>" + "Race route is 'out and back' and follows the trail along the lake and the sidewalk along Paul Bunyan Drive. Wayfinding signage along the route will indicate the race course and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2017_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a> (PDF)." + "</td></tr>" + "<table>";
+
+        layer.on({
 	        click: function (e) {
 	          $("#feature-title").html("Official 5k Fun Run/Walk Route");
 	          $("#feature-info").html(content);
@@ -1277,11 +1278,11 @@ map.on('almost:click', function (e) {
   e.layer.setStyle({weight: 3, color: "#00FFFF"});
       var content =
       "<table class='table table-striped table-bordered table-condensed'>" +
-      "<tr><th scope='col'>Start Time</th><td>" + "Friday, Oct. 28, 2016 @ 6:15 a.m." + "</td></tr>" +
-      "<tr><th scope='col'>Start/Finish Location</th><td>" + "Canal Park Lodge Parking Lot (Northwest Corner)" + "</td></tr>" +
-      "<tr><th scope='col'>Start/Finish Address</th><td>" + "250 Canal Park Drive, Duluth" + "</td></tr>" +
-      "<tr><th scope='col'>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-      "<tr><th scope='col'>Race Details</th><td>" + "Race route is 'out and back' and follows the Lakewalk trail. Signage (illuminated with glow sticks) will indicate the route and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2016_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a>." + "</td></tr>" + "<table>";
+      "<tr><th scope='row'>Start Time</th><td>" + "Friday, Oct. 6, 2017 @ 6:15 a.m." + "</td></tr>" +
+      "<tr><th scope='row'>Start/Finish Location</th><td>" + "Sanford Center Main Entrance" + "</td></tr>" +
+      "<tr><th scope='row'>Start/Finish Address</th><td>" + "1111 Event Center Dr NE, Bemidji" + "</td></tr>" +
+      "<tr><th scope='row'>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
+      "<tr><th scope='row'>Race Details</th><td>" + "Race route is 'out and back' and follows the trail along the lake and the sidewalk along Paul Bunyan Drive. Wayfinding signage along the route will indicate the race course and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2017_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a> (PDF)." + "</td></tr>" + "<table>";
           $("#feature-title").html("Official 5k Fun Run/Walk Route");
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
