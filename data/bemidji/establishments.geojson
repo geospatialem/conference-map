@@ -288,6 +288,24 @@
           47.469654
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "NAME": "Keith's Pizza",
+        "ADDRESS": "110 Paul Bunyan Dr SE",
+        "HOURS": "11:00 am - 10:00 pm",
+        "URL": "//keithspizza.com/",
+        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.863959,
+          47.460206
+        ]
+      }
     }
   ]
 }
