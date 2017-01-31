@@ -27,7 +27,7 @@ var aboutConferenceText = "";
     //TODO: Change annually
     aboutConferenceText += "<p>The official conference map for the 27th Annual Minnesota GIS\/LIS Conference held Wednesday, October 4th through Friday, October 6th, 2017 in Bemidji.<\/p>";
     aboutConferenceText += "<p>What is the conference schedule? What workshops and sessions are offered? Where are the rooms? Where can one grab dinner or a #geobeer? What other great things can you do while visiting? All of these questions, and more can be answered in one place!<\/p>";
-    aboutConferenceText += "For more information, please visit the official <a href=\"\/\/www.mngislis.org?page=27annual_conference\" target=\"_blank\"> Minnesota GIS\/LIS Conference website (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a>.<\/p>";
+    aboutConferenceText += "<p>For more information, please visit the official <a href=\"\/\/www.mngislis.org?page=27annual_conference\" target=\"_blank\"> Minnesota GIS\/LIS Conference website (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a>.<\/p>";
 
     aboutConferenceText += "<div class=\"panel panel-primary\">";
     aboutConferenceText += "<div class=\"panel-heading\">Additional Information:<\/div>";
