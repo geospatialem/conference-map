@@ -155,7 +155,7 @@ style: function (feature) {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties.polyType === "No values") { //No values
-      // Use the default pop-up (see content.js)
+
     } else { //Conference Workshops/Sessions
 	        var content =
           "<ul class='nav nav-tabs nav nav-justified' id='fullWorkshopContent'>" +
@@ -606,13 +606,12 @@ var funRunWalkRoute = L.geoJson(null, {
 	  },
 	  onEachFeature: function (feature, layer) {
 	    if (feature.properties) {
-	      var content =
-	      "<table class='table table-striped table-bordered table-condensed'>" +
-	      "<tr><th scope='row'>Start Time</th><td>" + "Friday, Oct. 6, 2017 @ 6:15 a.m." + "</td></tr>" +
-	      "<tr><th scope='row'>Start/Finish Location</th><td>" + "Sanford Center Main Entrance" + "</td></tr>" +
-	      "<tr><th scope='row'>Start/Finish Address</th><td>" + "1111 Event Center Dr NE, Bemidji" + "</td></tr>" +
-	      "<tr><th scope='row'>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
-	      "<tr><th scope='row'>Race Details</th><td>" + "Race route is 'out and back' and follows the trail along the lake and the sidewalk along Paul Bunyan Drive. Wayfinding signage along the route will indicate the race course and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2017_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a> (PDF)." + "</td></tr>" + "<table>";
+	      var content = "<table class='table table-striped table-bordered table-condensed'>" +
+              	      "<tr><th scope='row'>Start Time</th><td>" + "Friday, Oct. 6, 2017 @ 6:15 a.m." + "</td></tr>" +
+              	      "<tr><th scope='row'>Start/Finish Location</th><td>" + "Sanford Center Main Entrance" + "</td></tr>" +
+              	      "<tr><th scope='row'>Start/Finish Address</th><td>" + "1111 Event Center Dr NE, Bemidji" + "</td></tr>" +
+              	      "<tr><th scope='row'>Cost</th><td>" + "Free! Finishers will recieve a commemorative t-shirt after completion." + "</td></tr>" +
+              	      "<tr><th scope='row'>Race Details</th><td>" + "Race route is 'out and back' and follows the trail along the lake and the sidewalk along Paul Bunyan Drive. Wayfinding signage along the route will indicate the race course and the 'turn around point'. Please dress for the weather! For more information, check out the <a href='docs/2017_FunRunMap.pdf' target='_blank'> official map (download) <i class='fa fa-download'></i></a> (PDF)." + "</td></tr>" + "<table>";
 
         layer.on({
 	        click: function (e) {
@@ -659,13 +658,14 @@ var hotels = L.geoJson(null, {
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
 
-        var content = "<table class='table table-striped table-bordered table-condensed'>" +
-        "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
-        "<tr><th scope='row'>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
-        "<tr><th scope='row'>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-        "<tr><th scope='row'>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" +
-        "<tr><th scope='row'>Website</th><td><a href='" + feature.properties.URL + "'>Online reservations</a></td></tr>" + "</table>";
-        layer.bindPopup("<strong>" + feature.properties.NAME + "</strong>");
+      var content = "<table class='table table-striped table-bordered table-condensed'>" +
+                    "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
+                    "<tr><th scope='row'>Phone Number</th><td>" + feature.properties.PHONE + "</td></tr>" +
+                    "<tr><th scope='row'>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
+                    "<tr><th scope='row'>Group Code</th><td>" + feature.properties.GROUPCODE + "</td></tr>" +
+                    "<tr><th scope='row'>Website</th><td><a href='" + feature.properties.URL + "'>Online reservations</a></td></tr>" + "</table>";
+
+    layer.bindPopup("<strong>" + feature.properties.NAME + "</strong>");
 
     layer.on({
         mouseover: function(e) {
@@ -753,8 +753,8 @@ var hotels = L.geoJson(null, {
           var pubsHTML = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th scope='row'>Nearby Pubs (<1km)</th><th>Distance (meters)</th></tr>";
 
           if (topFivePubs.length > 0) { //If there are pubs, add them to the pop-up
-            for (var pub of topFivePubs) {
-              pubsHTML += "<tr><td scope='row'>" + pub + "</td><td>" + pubs[pub] + "</td></tr>";
+            for(var i=0; i<topFivePubs.length; i++) {
+              pubsHTML += "<tr><td scope='row'>" + topFivePubs[i] + "</td><td>" + pubs[topFivePubs[i]] + "</td></tr>";
             }
           } else { //If not, display no pubs text to the user
             pubsHTML += "<tr><td scope='row' colspan='2'>No pubs within 1 km.</td></tr>";
