@@ -175,26 +175,6 @@ var scheduleModalDialogText = "";
 
 $('#scheduleText').html(scheduleModalDialogText); //Link the content to the div
 
-
-
-/* Default feature info pop-up */
-var content = "";
-    content += "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>";
-    content += "<li class='active'><a href='#notAvailable' data-toggle='tab'>Conference planning in progress<\/a><\/li>";
-    content += "<\/ul>";
-    content += "<div class='tab-content' id='noValuesContent'>";
-    content += "<div class='tab-pane fade active in' id='notAvailable'>";
-    content += "<div class='modal-body'>";
-    content += "<table class='table table-striped table-bordered table-condensed'>";
-    content += "<tr><th scope='row'>Coming soon<\/th><td>More details coming soon!<\/td><\/tr><\/table>";
-    content += "<\/div>";
-    content += "<\/div>";
-    content += "<\/div>";
-
-$("#feature-info").html(content); //Link the content to the div
-
-
-
 /* Attribution Dialog Text */
 var attributionDialogText = "";
     attributionDialogText += "<div class=\"modal-dialog\">";

@@ -155,7 +155,17 @@ style: function (feature) {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties.polyType === "No values") { //No values
-
+      var content = "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>" +
+          "<li class='active'><a href='#notAvailable' data-toggle='tab'>Conference planning in progress</a></li>" +
+          "</ul>" +
+          "<div class='tab-content' id='noValuesContent'>" +
+          "<div class='tab-pane fade active in' id='notAvailable'>" +
+          "<div class='modal-body'>" +
+          "<table class='table table-striped table-bordered table-condensed'>" +
+          "<tr><th scope='row'>Coming soon</th><td>More details coming soon!</td></tr></table>" +
+          "</div>" +
+          "</div>" +
+          "</div>"
     } else { //Conference Workshops/Sessions
 	        var content =
           "<ul class='nav nav-tabs nav nav-justified' id='fullWorkshopContent'>" +
