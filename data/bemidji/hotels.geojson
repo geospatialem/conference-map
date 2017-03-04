@@ -9,8 +9,8 @@
         "ADDRESS": "927 Lake Shore Drive NE",
         "PHONE": "218-441-4800",
         "COST": "$110/night (incl. breakfast)",
-        "URL": "//www.countryinns.com/bemidji-hotel-mn-56601/usabemn",
-        "GROUPCODE": "TBA/Coming soon"
+        "URL": "//www.countryinns.com/gislisconsortium",
+        "GROUPCODE": "gislisconsortium"
       },
       "geometry": {
         "type": "Point",
@@ -47,8 +47,8 @@
         "ADDRESS": "1019 Paul Bunyan Dr SE",
         "PHONE": "218-751-3600",
         "COST": "$110/night (incl. breakfast)",
-        "URL": "//hamptoninn3.hilton.com/en/hotels/minnesota/hampton-inn-and-suites-bemidji-BJIMNHX/index.html",
-        "GROUPCODE": "TBA/Coming soon"
+        "URL": "//secure3.hilton.com/en_US/hp/reservation/book.htm?inputModule=HOTEL&ctyhocn=BJIMNHX&spec_plan=CHHGIS&arrival=20171003&departure=20171006&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT",
+        "GROUPCODE": "MN GIS/LIS"
       },
       "geometry": {
         "type": "Point",
@@ -65,7 +65,7 @@
         "NAME": "Candlewood Suites Bemidji - Paul Bunyan*",
         "ADDRESS": "401 Paul Bunyan Dr SE",
         "PHONE": "218-497-3000",
-        "COST": "$85/night (incl. breakfast)",
+        "COST": "$85/night (breakfast not included)",
         "URL": "//www.ihg.com/candlewood/hotels/us/en/bemidji/bjipb/hoteldetail",
         "GROUPCODE": "TBA/Coming soon"
       },
