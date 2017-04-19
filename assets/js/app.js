@@ -236,8 +236,8 @@ $.getJSON("data/" + conferenceCity + "/site/groundLevelPoints.geojson", function
 	groundFloorLabels.addData(data);
 });
 
-//DECC Skyway Level
-var deccSkyway = L.geoJson(null, {
+//Second Floor (Duluth: Skyway level)
+var secondFloor = L.geoJson(null, {
 style: function (feature) {
     return {
         color: "#A50541",
@@ -251,7 +251,17 @@ style: function (feature) {
   },
   onEachFeature: function (feature, layer) {
       //Popup
-      if (feature.properties.polyType === "Hours") { //Exhibit Hall/Geolounge
+      if (feature.properties.polyType === "Geolounge") { //Geolounge (Bemidji)
+        var content =
+          "<div class='tab-content' id='geoloungeHours'>" +
+              "<div class='modal-body'>" +
+                "<table class='table table-striped table-bordered table-condensed'>" +
+                "<tr><th scope='row'>Wednesday</th><td>" + feature.properties.wedHours + "</td></tr>" +
+                "<tr><th scope='row'>Thursday</th><td>" + feature.properties.thursHours + "</td></tr>" +
+                "<tr><th scope='row'>Friday</th><td>" + feature.properties.friHours + "</td></tr></table>" +
+              "</div>" +
+          "</div>"
+        } else if (feature.properties.polyType === "Hours") { //Exhibit Hall & Geolounge (Duluth)
         var content =
           "<ul class='nav nav-tabs nav nav-justified' id='hoursOnlyContent'>" +
             "<li class='active'><a href='#wed' data-toggle='tab'>Wednesday</a></li>" +
@@ -492,12 +502,13 @@ style: function (feature) {
         });
   }
 });
-$.getJSON("data/duluth/site/skywayLevel.geojson", function (data) {
-	deccSkyway.addData(data);
+//$.getJSON("data/duluth/site/skywayLevel.geojson", function (data) {
+$.getJSON("data/" + conferenceCity + "/site/secondLevel.geojson", function (data) {
+	secondFloor.addData(data);
 });
 
-//DECC Skyway Labels
-var deccSkywayLabels = L.geoJson(null, {
+//Second Floor Labels (Duluth: Skyway level labels)
+var secondFloorLabels = L.geoJson(null, {
   pointToLayer: function (feature, latlng) {
 			return new L.CircleMarker(latlng, {
 			radius: 5,
@@ -516,8 +527,9 @@ var deccSkywayLabels = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/duluth/site/skywayLevelPoints.geojson", function (data) {
-	deccSkywayLabels.addData(data);
+//$.getJSON("data/duluth/site/skywayLevelPoints.geojson", function (data) {
+$.getJSON("data/" + conferenceCity + "/site/secondLevelPoints.geojson", function (data) {
+	secondFloorLabels.addData(data);
 });
 
 //DECC Third Floor
@@ -1064,8 +1076,8 @@ if (conferenceCity == "duluth") {
   var groupedOverlays = {
     "DECC": {
   	   "&nbsp;1st Floor (Ground)": groundFloor,
-  	    "&nbsp;2nd Floor (Skyway)": deccSkyway,
-        "&nbsp;3rd Floor (Harbor Ballroom)": deccThirdFloor
+  	   "&nbsp;2nd Floor (Skyway)": secondFloor,
+       "&nbsp;3rd Floor (Harbor Ballroom)": deccThirdFloor
     },
     "Places of Interest": {
   		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
@@ -1077,6 +1089,10 @@ if (conferenceCity == "duluth") {
   };
 } else if (conferenceCity == "bemidji") {
   var groupedOverlays = {
+    "Sanford Center": {
+       "&nbsp;1st Floor (Ground)": groundFloor,
+       "&nbsp;2nd Floor": secondFloor
+    },
     "Places of Interest": {
   		  "&nbsp;5k Fun Run/Walk Route": funRunWalkRoute,
   		  "<span class='fa-stack fa-lg'><i class='fa fa-square fa-stack-2x' style='color: #406573;'></i><i class='fa fa-bed fa-stack-1x' style='color: white;'></i></span>&nbsp;Hotels": hotelsLayer,
@@ -1092,7 +1108,7 @@ if (conferenceCity == "duluth") {
   		collapsed: isCollapsed
   };
 } else if (conferenceCity = "bemidji") {
-  var options = {
+  var options = { exclusiveGroups: ["Sanford Center"],
   		collapsed: isCollapsed
   };
 } else {
@@ -1303,22 +1319,22 @@ map.on('zoomend overlayadd', function () {
   if (map.getZoom() >= 18) {
     if (map.hasLayer(groundFloor)) {
       if (map.hasLayer(groundFloorLabels) == false) { map.addLayer(groundFloorLabels); }
-      if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
+      if (map.hasLayer(secondFloorLabels)) { map.removeLayer(secondFloorLabels); }
       if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
-    } else if (map.hasLayer(deccSkyway)) {
-      if (map.hasLayer(deccSkywayLabels) == false) { map.addLayer(deccSkywayLabels); }
+    } else if (map.hasLayer(secondFloor)) {
+      if (map.hasLayer(secondFloorLabels) == false) { map.addLayer(secondFloorLabels); }
       if (map.hasLayer(groundFloorLabels)) { map.removeLayer(groundFloorLabels); }
       if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
   } else if (map.hasLayer(deccThirdFloor)) {
       if (map.hasLayer(deccThirdFloorLabels) == false) { map.addLayer(deccThirdFloorLabels); }
       if (map.hasLayer(groundFloorLabels)) { map.removeLayer(groundFloorLabels); }
-      if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
+      if (map.hasLayer(secondFloorLabels)) { map.removeLayer(secondFloorLabels); }
   } else {
     // Do nothing
   }
 } else {
   if (map.hasLayer(groundFloorLabels)) { map.removeLayer(groundFloorLabels); }
-  if (map.hasLayer(deccSkywayLabels)) { map.removeLayer(deccSkywayLabels); }
+  if (map.hasLayer(secondFloorLabels)) { map.removeLayer(secondFloorLabels); }
   if (map.hasLayer(deccThirdFloorLabels)) { map.removeLayer(deccThirdFloorLabels); }
 }
 });

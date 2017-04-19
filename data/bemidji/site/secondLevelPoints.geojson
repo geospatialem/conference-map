@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Geolounge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.85410630702972,
+          47.462942383152090
+        ]
+      }
+    }
+  ]
+}
