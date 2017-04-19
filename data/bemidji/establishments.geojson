@@ -5,24 +5,6 @@
       "type": "Feature",
       "id": 0,
       "properties": {
-        "NAME": "Bemidji Brewing",
-        "ADDRESS": "211 America Ave NW",
-        "HOURS": "4:00 pm - 10:00 pm",
-        "URL": "//bemidjibeer.com",
-        "DISCOUNT_NOTES": "No GIS/LIS discount available."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.884803,
-          47.469900
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 1,
-      "properties": {
         "NAME": "Bar 209",
         "ADDRESS": "209 Minnesota Ave NW",
         "HOURS": "11:00 am - 1:00 am",
@@ -39,7 +21,7 @@
     },
     {
       "type": "Feature",
-      "id": 2,
+      "id": 1,
       "properties": {
         "NAME": "Sparkling Waters",
         "ADDRESS": "824 Paul Bunyan Dr SE",
@@ -57,7 +39,7 @@
     },
     {
       "type": "Feature",
-      "id": 3,
+      "id": 2,
       "properties": {
         "NAME": "Keg N' Cork Pub",
         "ADDRESS": "310 Beltrami Ave NW",
@@ -75,7 +57,7 @@
     },
     {
       "type": "Feature",
-      "id": 4,
+      "id": 3,
       "properties": {
         "NAME": "Corner Bar",
         "ADDRESS": "602 2nd St SE",
@@ -93,7 +75,7 @@
     },
     {
       "type": "Feature",
-      "id": 5,
+      "id": 4,
       "properties": {
         "NAME": "Garden Grill & Pub",
         "ADDRESS": "111 Central Ave SE",
@@ -111,7 +93,7 @@
     },
     {
       "type": "Feature",
-      "id": 6,
+      "id": 5,
       "properties": {
         "NAME": "Brigid's Cross Irish Pub",
         "ADDRESS": "317 Beltrami Ave NW",
@@ -129,7 +111,7 @@
     },
     {
       "type": "Feature",
-      "id": 7,
+      "id": 6,
       "properties": {
         "NAME": "Toddy's Pub and Grub",
         "ADDRESS": "119 3rd St NW",
@@ -147,7 +129,7 @@
     },
     {
       "type": "Feature",
-      "id": 8,
+      "id": 7,
       "properties": {
         "NAME": "Slim's Bar & Grill",
         "ADDRESS": "142 Anne St NW",
@@ -165,7 +147,7 @@
     },
     {
       "type": "Feature",
-      "id": 9,
+      "id": 8,
       "properties": {
         "NAME": "Lazy Jack's",
         "ADDRESS": "6735 Frontage Rd NW",
@@ -183,7 +165,7 @@
     },
     {
       "type": "Feature",
-      "id": 10,
+      "id": 9,
       "properties": {
         "NAME": "Tara Bemidji - Thai Food & Craft Beer",
         "ADDRESS": "401 Beltrami Ave NW",
@@ -201,25 +183,7 @@
     },
     {
       "type": "Feature",
-      "id": 11,
-      "properties": {
-        "NAME": "J.J.’s Dockside Restaurant & Tavern",
-        "ADDRESS": "929 Lake Shore Dr NE",
-        "HOURS": "11:00 am - 12:00 am",
-        "URL": "//jjsdockside.com",
-        "DISCOUNT_NOTES": "No GIS/LIS discount available."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -94.855242,
-          47.463561
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 12,
+      "id": 10,
       "properties": {
         "NAME": "Green Mill Restaurant & Bar",
         "ADDRESS": "1025 Paul Bunyan Dr SE",
@@ -237,7 +201,7 @@
     },
     {
       "type": "Feature",
-      "id": 13,
+      "id": 11,
       "properties": {
         "NAME": "Minnesota Nice Cafe",
         "ADDRESS": "315 Irvine Ave NW",
@@ -255,7 +219,7 @@
     },
     {
       "type": "Feature",
-      "id": 14,
+      "id": 12,
       "properties": {
         "NAME": "Tutto Bene",
         "ADDRESS": "300 Beltrami Ave NW",
@@ -273,7 +237,7 @@
     },
     {
       "type": "Feature",
-      "id": 15,
+      "id": 13,
       "properties": {
         "NAME": "Paul Bunyan Sub Shop",
         "ADDRESS": "119 2nd St NW",
@@ -291,7 +255,7 @@
     },
     {
       "type": "Feature",
-      "id": 16,
+      "id": 14,
       "properties": {
         "NAME": "Keith's Pizza",
         "ADDRESS": "110 Paul Bunyan Dr SE",
