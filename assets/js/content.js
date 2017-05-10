@@ -97,7 +97,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 5:00 pm<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:00 am - 7:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 10:00 am<\/th><td>Conference Welcome &amp; Keynote<\/td><td>Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 10:00 am<\/th><td>Conference Welcome &amp; Keynote&#58; The Great River Road, Mississippi River Parkway Commission<\/td><td>Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">10:30 am - 12:00 pm<\/th><td>Conference Sessions<\/td><td>Sanford Center Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 1:00 pm<\/th><td>Awards Luncheon<\/td><td>Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:30 pm - 3:00 pm<\/th><td>Conference Sessions<\/td><td>Sanford Center Rooms<\/td><\/tr>";
@@ -115,7 +115,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 12:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:30 am - 10:00 am<\/th><td>Conference Sessions<\/td><td>Sanford Center Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">10:30 pm - 12:00 pm<\/th><td>Conference Sessions<\/td><td>Sanford Center Rooms<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 2:30 pm<\/th><td>Closing Keynote &amp; Luncheon<\/td><td>Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 2:30 pm<\/th><td>Closing Keynote &amp; Luncheon&#58; The History of the Leech Lake-Red Lake Trail, Beltrami County Historical Society Representatives<\/td><td>Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
 
