@@ -85,10 +85,10 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 5:00 pm<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">9:00 am - 12:15 pm<\/th><td>Morning Workshops<\/td><td>Sanford Center Rooms<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote &amp; Luncheon<\/td><td>Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote &amp; Luncheon&#58; Kyle Tredinnick &#40;Omaha Public Schools&#41;<\/td><td>Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:15 pm - 4:30 pm<\/th><td>Afternoon Workshops<\/td><td>Sanford Center Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">2:00 pm - 5:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 9:30 pm<\/th><td>Wednesday Welcome Reception<\/td><td>J.J.'s Dockside Restaurant & Tavern<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 9:30 pm<\/th><td>Wednesday Welcome Reception<\/td><td>J.J.'s Dockside Restaurant &amp; Tavern<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Thursday
