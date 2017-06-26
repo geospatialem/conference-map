@@ -23,19 +23,19 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "J.J.'s Dockside Restaurant & Tavern",
-        "ADDRESS": "929 Lake Shore Dr NE",
+        "NAME": "Hampton Inn",
+        "ADDRESS": "1019 Paul Bunyan Dr SE",
         "DETAILS": "Wednesday Welcome Reception",
         "EVENTHOURS": "7:00 pm - 9:30 pm",
-        "HOURS": "11:00 am - 12:00 am",
+        "HOURS": "12:00 am - 12:00 am",
         "DISCOUNT_NOTES": "TBA",
-        "URL": "//jjsdockside.com"
+        "URL": "https://hamptoninn3.hilton.com/en/hotels/minnesota/hampton-inn-and-suites-bemidji-BJIMNHX/index.html"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -94.855242,
-          47.463561
+          -94.866882,
+          47.463872
         ]
       }
     },
