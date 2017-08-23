@@ -45,7 +45,7 @@
         "ADDRESS": "310 Beltrami Ave NW",
         "HOURS": "11:00 am - 1:00 am",
         "URL": "//kegncorkbemidjimn.com",
-        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+        "DISCOUNT_NOTES": "Free side of french fries with entree purchase"
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +63,7 @@
         "ADDRESS": "602 2nd St SE",
         "HOURS": "11:00 am - 2:00 am",
         "URL": "//cornerbarbemidji.com",
-        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+        "DISCOUNT_NOTES": "$5 pitchers (Thursday night only)"
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +135,7 @@
         "ADDRESS": "142 Anne St NW",
         "HOURS": "11:00 am - 1:00 am",
         "URL": "//slimsbarandgrill.com",
-        "DISCOUNT_NOTES": "No GIS/LIS discount available."
+        "DISCOUNT_NOTES": "Free cup soup/chili with purchase of burger and beverage (one time use)"
       },
       "geometry": {
         "type": "Point",
