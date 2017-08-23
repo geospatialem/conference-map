@@ -270,6 +270,24 @@
           47.460206
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "NAME": "Book World",
+        "ADDRESS": "316 Beltrami Ave NW",
+        "HOURS": "9:00 am - 8:00 pm",
+        "URL": "//bookworldstores.com",
+        "DISCOUNT_NOTES": "$2 off any 1 book of at least $9.99"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.880793,
+          47.471276
+        ]
+      }
     }
   ]
 }
