@@ -288,6 +288,42 @@
           47.471276
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "NAME": "Bemidji Downtown Meats",
+        "ADDRESS": "207 America Ave NW",
+        "HOURS": "9:00 am - 6:00 pm",
+        "URL": "//downtownmeats.com",
+        "DISCOUNT_NOTES": "$1 off pack of Jerky or snack sticks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.884682,
+          47.469674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "NAME": "Buffalo Wild Wings",
+        "ADDRESS": "225 Paul Bunyan Dr NW",
+        "HOURS": "11:00 am - 12:00 am",
+        "URL": "//buffalowildwings.com",
+        "DISCOUNT_NOTES": "10% off purchase"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.883189,
+          47.491435
+        ]
+      }
+    }    
   ]
 }
