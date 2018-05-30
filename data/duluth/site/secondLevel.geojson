@@ -57,12 +57,12 @@
      "properties": {
        "NAME": "St. Louis River",
        "polyType": "AM Workshop",
-       "workshopAMnumber": "WK0006",
-       "workshopAM": "Designing a Long-Term GIS Vision & Implementation Plan",
-       "workshopAMspeakers": "Kim Sundeen",
-       "thursdaySession1": "Session 37: Web Map Creation I",
-       "thursdaySession2": "Session 41: Undergraduate Student Competition I",
-       "thursdaySession3": "Session 45: Undergraduate Student Competition II"
+       "workshopAMnumber": "TBA",
+       "workshopAM": "TBA",
+       "workshopAMspeakers": "TBA",
+       "thursdaySession1": "TBA",
+       "thursdaySession2": "TBA",
+       "thursdaySession3": "TBA"
      },
      "geometry": {
        "type": "Polygon",
@@ -91,15 +91,15 @@
       "properties": {
         "NAME": "French River 1",
         "polyType": "No Friday sessions",
-        "workshopAMnumber": "WK0004",
-        "workshopAM": "Parcel Fabric 101: Introduction to the Parcel Fabric",
-        "workshopAMspeakers": "Frank Conkling",
-        "workshopPMnumber": "WK0013",
-        "workshopPM": "Parcel Fabric 601: Advanced Techniques",
-        "workshopPMspeakers": "Frank Conkling",
-        "thursdaySession1": "Session 38: LiDAR/Hydrology",
-        "thursdaySession2": "Session 42: Minnesota Geospatial Advisory Council",
-        "thursdaySession3": "Session 46: Graduate Student Competition"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -119,12 +119,12 @@
       "properties": {
         "NAME": "French River 2",
         "polyType": "No sessions",
-        "workshopAMnumber": "WK0005",
-        "workshopAM": "Making a Web Map Like That",
-        "workshopAMspeakers": "Kitty Hurley",
-        "workshopPMnumber": "WK0014",
-        "workshopPM": "Q is the Bees Knees",
-        "workshopPMspeakers": "Cory Richter"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -143,17 +143,17 @@
       "type": "Feature",
       "properties": {
         "NAME": "Lake Superior L",
-        "workshopAMnumber": "WK0001",
-        "workshopAM": "Intro to Collector for ArcGIS",
-        "workshopAMspeakers": "Chris Pouliot",
-        "workshopPMnumber": "WK0010",
-        "workshopPM": "Intermediate Collector for ArcGIS",
-        "workshopPMspeakers": "Chris Pouliot",
-        "thursdaySession1": "Session 6: Crowd Sourcing",
-        "thursdaySession2": "Session 13: Product Demonstrations II",
-        "thursdaySession3": "TBD",
-        "fridaySession1": "Session 27: Photogrammetry Panel",
-        "fridaySession2": "Session 34: Remote Sensing Landcover"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -172,17 +172,17 @@
       "type": "Feature",
       "properties": {
         "NAME": "Lake Superior MN",
-        "workshopAMnumber": "WK0002",
-        "workshopAM": "Get Started Using Python with GIS",
-        "workshopAMspeakers": "Zeb Thomas & Jessica Schuler",
-        "workshopPMnumber": "WK0011",
-        "workshopPM": "Advanced Python: Build Your Own Classes and Modules",
-        "workshopPMspeakers": "Zeb Thomas",
-        "thursdaySession1": "Session 7: Great Lakes I",
-        "thursdaySession2": "Session 14: Great Lakes II",
-        "thursdaySession3": "Session 21: Great Lakes III",
-        "fridaySession1": "Session 28: Interviewing Panel",
-        "fridaySession2": "Session 35: ArcGIS Online"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -202,15 +202,15 @@
       "properties": {
         "NAME": "Lake Superior O",
         "polyType": "No Friday sessions",
-        "workshopAMnumber": "WK0003",
-        "workshopAM": "Using Geoprocessing Services with the JavaScript API",
-        "workshopAMspeakers": "Caleb Mackey & Nate Christ",
-        "workshopPMnumber": "WK0012",
-        "workshopPM": "ArcGIS Web AppBuilder: Basics of Creating Custom Themes and Widgets",
-        "workshopPMspeakers": "Vikrant Krishna",
-        "thursdaySession1": "Session 36: Remote Sensing",
-        "thursdaySession2": "Session 40: Open Source",
-        "thursdaySession3": "Session 44: Web Map Creation II"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -230,13 +230,13 @@
       "properties": {
         "NAME": "Horizon 202",
         "polyType": "One Thursday User Group",
-        "workshopAMnumber": "WK0007",
-        "workshopAM": "Creating Simple GIS Applications with Python",
-        "workshopAMspeakers": "Sam Giebner",
-        "workshopPMnumber": "WK0015",
-        "workshopPM": "SQL 101: Spatial Data Revealed",
-        "workshopPMspeakers": "Len Kne",
-        "thursdaySession1": "Arrowhead Ownership Collaborative"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA",
+        "thursdaySession1": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -256,14 +256,14 @@
       "properties": {
         "NAME": "Horizon 203",
         "polyType": "Two Thursday User Groups",
-        "workshopAMnumber": "WK0008",
-        "workshopAM": "CAD and GIS Collaboration",
-        "workshopAMspeakers": "Kyle Heideman",
-        "workshopPMnumber": "WK0016",
-        "workshopPM": "Open Data Portals: What, Why, How?",
-        "workshopPMspeakers": "Kyle Wikstrom",
-        "thursdaySession1": "Trimble Geospatial Solutions",
-        "thursdaySession2": "Pictometry User Group"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -285,12 +285,12 @@
       "properties": {
         "NAME": "Horizon 204",
         "polyType": "No sessions",
-        "workshopAMnumber": "WK0009",
-        "workshopAM": "Running Enterprise GIS Systems in God Mode",
-        "workshopAMspeakers": "Jessica Fendos",
-        "workshopPMnumber": "WK0017",
-        "workshopPM": "ArcGIS for Server: Administration and Advanced Topics",
-        "workshopPMspeakers": "Justin Hansen"
+        "workshopAMnumber": "TBA",
+        "workshopAM": "TBA",
+        "workshopAMspeakers": "TBA",
+        "workshopPMnumber": "TBA",
+        "workshopPM": "TBA",
+        "workshopPMspeakers": "TBA"
       },
       "geometry": {
         "type": "Polygon",

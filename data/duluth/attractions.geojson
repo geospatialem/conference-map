@@ -240,9 +240,9 @@
       "id": 13,
       "properties": {
         "NAME": "Jay Cooke State Park",
-        "ADDRESS": "3980 E Skyline Pkwy",
+        "ADDRESS": "780 Highway 210, Carlton",
         "HOURS": "10:00 am - 9:00 pm",
-        "COST": "Free",
+        "COST": "Free, park pass needed to access park",
         "WEBSITE": "//www.dnr.state.mn.us/state_parks/jay_cooke/index.html"
       },
       "geometry": {

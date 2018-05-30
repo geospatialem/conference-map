@@ -25,9 +25,9 @@ $('#conference-extent-btn').html(conferenceExtentListItem); //Link the content t
 var aboutConferenceText = "";
 
     //TODO: Change annually
-    aboutConferenceText += "<p>The official conference map for the 27th Annual Minnesota GIS\/LIS Conference held Wednesday, October 4th through Friday, October 6th, 2017 in Bemidji.<\/p>";
+    aboutConferenceText += "<p>The official conference map for the 28th Annual Minnesota GIS\/LIS Conference held Wednesday, October 3rd through Friday, October 5th, 2018 in Duluth.<\/p>";
     aboutConferenceText += "<p>What is the conference schedule? What workshops and sessions are offered? Where are the rooms? Where can one grab dinner or a #geobeer? What other great things can you do while visiting? All of these questions, and more can be answered in one place!<\/p>";
-    aboutConferenceText += "<p>For more information, please visit the official <a href=\"http:\/\/www.mngislis.org?page=27annual_conference\" target=\"_blank\"> Minnesota GIS\/LIS Conference website (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a>.<\/p>";
+    aboutConferenceText += "<p>For more information, please visit the official <a href=\"https:\/\/www.mngislis.org\/page\/Conference_2018\" target=\"_blank\"> Minnesota GIS\/LIS Conference website (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a>.<\/p>";
 
     aboutConferenceText += "<div class=\"panel panel-primary\">";
     aboutConferenceText += "<div class=\"panel-heading\">Additional Information:<\/div>";
@@ -42,11 +42,11 @@ var aboutConferenceText = "";
         aboutConferenceText += "<li class=\"list-group-item\">Check out <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis-onsite-2016.pdf\" target=\"_blank\">last year's on-site program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
 
     } else if (conferenceCity == "duluth") {
-      aboutConferenceText += "<li class=\"list-group-item\">View the <a href=\"\/\/www.mngislis.org\/resource\/resmgr\/Docs\/2016_Rates.pdf\" target=\"_blank\">2016 conference rates (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a><\/li>";
+      aboutConferenceText += "<li class=\"list-group-item\">View the <a href=\"\/\/www.mngislis.org\/page\/2018_conf_rates\" target=\"_blank\">2018 conference rates (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a><\/li>";
       /* TODO: Open registration */
       aboutConferenceText += "<!--<li class=\"list-group-item\">Ready to go? <a href=\"\/\/www.mngislis.org\/event\/26th_Annual_Conference\" target=\"_blank\">Register for the annual conference! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>-->";
-      aboutConferenceText += "<li class=\"list-group-item\">View the official <a href=\"docs\/2016_FunRunMap.pdf\" download=\"2016_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>";
-      aboutConferenceText += "<li class=\"list-group-item\">Check out our <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis_preliminary_program.pdf\" target=\"_blank\">preliminary program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
+      aboutConferenceText += "<li class=\"list-group-item\">View the official <a href=\"docs\/2018_FunRunMap.pdf\" download=\"2018_FunRunMap.pdf\" target=\"_blank\">5k Fun Run\/Walk Map (download) <i class=\"fa fa-download\" aria-hidden=\"true\"><\/i><\/a> (PDF).<\/li>";
+      //aboutConferenceText += "<li class=\"list-group-item\">Check out our <a href=\"\/\/c.ymcdn.com\/sites\/www.mngislis.org\/resource\/resmgr\/conf2016\/mngislis_preliminary_program.pdf\" target=\"_blank\">preliminary program! (new window) <i class=\"fa fa-external-link-square\" aria-hidden=\"true\"><\/i><\/a> <\/li>";
 
     } else { console.log("Add '" + conferenceCity + "' to the aboutConferenceText js/content.js file."); }
 
@@ -63,10 +63,10 @@ var scheduleModalDialogText = "";
 
     //TODO: Change annually
     scheduleModalDialogText += "<ul class=\"nav nav-tabs nav nav-justified\" id=\"scheduleTabs\">";
-    scheduleModalDialogText += "<li class=\"active\"><a href=\"#tuesday\" data-toggle=\"tab\">Tuesday, Oct. 3<\/a><\/li>";
-    scheduleModalDialogText += "<li><a href=\"#wednesday\" data-toggle=\"tab\">Wednesday, Oct. 4<\/a><\/li>";
-    scheduleModalDialogText += "<li><a href=\"#thursday\" data-toggle=\"tab\">Thursday, Oct. 5<\/a><\/li>";
-    scheduleModalDialogText += "<li><a href=\"#friday\" data-toggle=\"tab\">Friday, Oct. 6<\/a><\/li>";
+    scheduleModalDialogText += "<li class=\"active\"><a href=\"#tuesday\" data-toggle=\"tab\">Tuesday, Oct. 2<\/a><\/li>";
+    scheduleModalDialogText += "<li><a href=\"#wednesday\" data-toggle=\"tab\">Wednesday, Oct. 3<\/a><\/li>";
+    scheduleModalDialogText += "<li><a href=\"#thursday\" data-toggle=\"tab\">Thursday, Oct. 4<\/a><\/li>";
+    scheduleModalDialogText += "<li><a href=\"#friday\" data-toggle=\"tab\">Friday, Oct. 5<\/a><\/li>";
     scheduleModalDialogText += "<\/ul>";
     scheduleModalDialogText += "<div class=\"tab-content\" id=\"aboutTabsContent\">";
 
@@ -124,7 +124,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<div class=\"tab-pane fade active in\" id=\"tuesday\">";
       scheduleModalDialogText += "<table class=\"table table-striped table-bordered table-condensed\">";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>7 West Taphouse<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>TBA<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Wednesday
@@ -133,11 +133,11 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 5:00 pm<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">9:00 am - 12:15 pm<\/th><td>Morning Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote Denfeld High School &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote TBA &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:15 pm - 4:30 pm<\/th><td>Afternoon Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">2:00 pm - 5:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 6:00 pm<\/th><td>Wednesday Welcome Reception<\/td><td>Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued<\/td><td>Grandma's Saloon<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued<\/td><td>TBA<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Thursday
@@ -146,13 +146,13 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 5:00 pm<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:00 am - 7:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 10:00 am<\/th><td>Conference Welcome &amp; Keynote Carrie Sowden<\/td><td>Harbor Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 10:00 am<\/th><td>Conference Welcome &amp; Keynote TBA<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">10:30 am - 12:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 1:00 pm<\/th><td>Awards Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:30 pm - 3:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">3:30 pm - 5:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 7:00 pm<\/th><td>Vendor Reception<\/td><td>Exhibit Hall<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">7:15 pm - 10:00 pm<\/th><td>Thursday Night Social Event<\/td><td>Holiday Inn<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:15 pm - 10:00 pm<\/th><td>Thursday Night Social Event<\/td><td>TBA<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Friday
@@ -164,7 +164,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 12:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:30 am - 10:00 am<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">10:30 pm - 12:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 2:30 pm<\/th><td>Closing Keynote Dana Starkell &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 2:30 pm<\/th><td>Closing Keynote TBA &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
 
@@ -185,7 +185,7 @@ var attributionDialogText = "";
     attributionDialogText += "<\/div>";
     attributionDialogText += "<div class=\"modal-body\">";
     attributionDialogText += "<ul>";
-    attributionDialogText += "<li>Basemap tiles 2017 &copy; <a href=\"\/\/developer.mapquest.com\" target=\"_blank\">Mapquest<\/a>, <a href=\"\/\/mapbox.com\" target=\"_blank\">Mapbox<\/a>, <a href=\"\/\/tomtom.com\" target=\"_blank\">TomTom<\/a>.<\/li>";
+    attributionDialogText += "<li>Basemap tiles 2018 &copy; <a href=\"\/\/developer.mapquest.com\" target=\"_blank\">Mapquest<\/a>, <a href=\"\/\/mapbox.com\" target=\"_blank\">Mapbox<\/a>, <a href=\"\/\/tomtom.com\" target=\"_blank\">TomTom<\/a>.<\/li>";
     attributionDialogText += "<li>Bootleaf Template Developed by <a target=\"_blank\" href=\"\/\/bryanmcbride.com\">Bryan McBride<\/a><\/li>";
     attributionDialogText += "<li>Map Content and Design by <a target=\"_blank\" href=\"\/\/geospatialem.github.io\">Kitty Hurley<\/a><\/li>";
     attributionDialogText += "<li>5k Fun Run\/Walk Route Coordination and Map Design by Geoff Maas<\/li>";

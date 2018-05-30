@@ -6,12 +6,12 @@
       "properties": {
         "NAME": "Harbor Ballroom",
         "activityWed1": "Luncheon",
-        "activityWed2": "Keynote: Denfeld High School",
+        "activityWed2": "Keynote: TBA",
         "activityThurs1": "Conference Welcome",
-        "activityThurs2": "Keynote: Carrie Sowden",
+        "activityThurs2": "Keynote: TBA",
         "activityThurs3": "Awards Luncheon",
         "activityFri1": "Luncheon",
-        "activityFri2": "Keynote: Dana Starkell"
+        "activityFri2": "Keynote: TBA"
       },
       "geometry": {
         "type": "Polygon",

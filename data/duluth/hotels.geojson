@@ -8,9 +8,9 @@
         "NAME": "Holiday Inn Hotel & Suites",
         "ADDRESS": "200 West First Street",
         "PHONE": "218-722-1202",
-        "COST": "$84/night",
-        "URL": "//www.holidayinn.com/redirect?path=hd&brandCode=hi&localeCode=en&regionCode=1&hotelCode=DULMN&_PMID=99801505&GPC=GIS",
-        "GROUPCODE": "GIS"
+        "COST": "$94/night",
+        "URL": "www.ihg.com/holidayinn/hotels/us/en/duluth/dulmn/hoteldetail",
+        "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
       },
       "geometry": {
         "type": "Point",
@@ -27,9 +27,9 @@
         "NAME": "The Inn on Lake Superior",
         "ADDRESS": "350 Canal Park Drive",
         "PHONE": "218-279-6000",
-        "COST": "$125/night",
-        "URL": "//reservations.theinnonlakesuperior.com/V1WebControls/GroupComments.aspx",
-        "GROUPCODE": "Group ID: 4621, Password: 37000033"
+        "COST": "$135-$185/night",
+        "URL": "www.theinnonlakesuperior.com/",
+        "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
       },
       "geometry": {
         "type": "Point",
@@ -46,9 +46,9 @@
         "NAME": "Canal Park Lodge",
         "ADDRESS": "250 Canal Park Drive",
         "PHONE": "218-279-6000",
-        "COST": "$99/night",
+        "COST": "$109/night",
         "URL": "//www.thebookingbutton.co.uk/properties/canalparklodgedirect",
-        "GROUPCODE": "Must call 218/279-6000 to reserve at the conference rate."
+        "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
       },
       "geometry": {
         "type": "Point",
@@ -65,7 +65,7 @@
         "NAME": "Edgewater Hotel & Waterpark",
         "ADDRESS": "2400 London Rd",
         "PHONE": "(800) 777-7925",
-        "COST": "$98/night",
+        "COST": "$88/night",
         "URL": "//duluthwaterpark.com",
         "GROUPCODE": "None"
       },
@@ -84,7 +84,7 @@
         "NAME": "Downtown Duluth Motel",
         "ADDRESS": "131 W 2nd St",
         "PHONE": "218-727-6851",
-        "COST": "$67/night",
+        "COST": "$88/night",
         "URL": "//downtownduluthmotel.com",
         "GROUPCODE": "None"
       },
@@ -103,7 +103,7 @@
         "NAME": "Fitgers Inn",
         "ADDRESS": "600 E Superior St",
         "PHONE": "218-722-8862",
-        "COST": "$124/night",
+        "COST": "$189/night",
         "URL": "//fitgers.com",
         "GROUPCODE": "None"
       },
