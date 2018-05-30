@@ -1,7 +1,7 @@
 MN GIS/LIS Conference Map  
 ==============
 
-Contribute to the official [27th Annual Conference Map](//geospatialem.github.io/conference-map) held in Bemidji, Minnesota this October!  
+Contribute to the official [28th Annual Conference Map](https://geospatialem.github.io/conference-map) held in Duluth, Minnesota this October!  
 
 The map includes:  
 * The conference host site  
@@ -11,9 +11,9 @@ The map includes:
 * Area attractions  
 
 ## Frameworks/Libraries  
-* [Bootleaf](//github.com/bmcbride/bootleaf), a compilation of the [Bootstrap](//github.com/twbs/bootstrap) and [Leaflet](//github.com/Leaflet/Leaflet) libraries.  
-* [Leaflet.awesome-markers](//github.com/lvoogdt/Leaflet.awesome-markers); a colorful iconic & retina-proof markers for Leaflet, based on the Glyphicons / Font-Awesome icons.  
-* [Leaflet.AlmostOver](//github.com/makinacorpus/Leaflet.AlmostOver) plugin, allowing the detection of mouse click and overing events on lines, with a tolerance distance. It is useful if paths are drawn with a very small weight, or for clicks detection on mobile devices, for which finger precision can be a problem.  
+* [Bootleaf](https://github.com/bmcbride/bootleaf), a compilation of the [Bootstrap](https://github.com/twbs/bootstrap) and [Leaflet](https://github.com/Leaflet/Leaflet) libraries.  
+* [Leaflet.awesome-markers](https://github.com/lvoogdt/Leaflet.awesome-markers); a colorful iconic & retina-proof markers for Leaflet, based on the Glyphicons / Font-Awesome icons.  
+* [Leaflet.AlmostOver](https://github.com/makinacorpus/Leaflet.AlmostOver) plugin, allowing the detection of mouse click and overing events on lines, with a tolerance distance. It is useful if paths are drawn with a very small weight, or for clicks detection on mobile devices, for which finger precision can be a problem.  
 
 ## Conference location  
 The conference moves around the state of Minnesota, and has previously been located in Bemidji, Duluth, Rochester, St. Cloud, and St. Paul.
