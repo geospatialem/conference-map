@@ -9,7 +9,7 @@
         "ADDRESS": "200 West First Street",
         "PHONE": "218-722-1202",
         "COST": "$94/night",
-        "URL": "www.ihg.com/holidayinn/hotels/us/en/duluth/dulmn/hoteldetail",
+        "URL": "https://www.ihg.com/holidayinn/hotels/us/en/duluth/dulmn/hoteldetail",
         "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
       },
       "geometry": {
@@ -28,7 +28,7 @@
         "ADDRESS": "350 Canal Park Drive",
         "PHONE": "218-279-6000",
         "COST": "$135-$185/night",
-        "URL": "www.theinnonlakesuperior.com/",
+        "URL": "https://www.theinnonlakesuperior.com/",
         "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
       },
       "geometry": {
@@ -47,7 +47,7 @@
         "ADDRESS": "250 Canal Park Drive",
         "PHONE": "218-279-6000",
         "COST": "$109/night",
-        "URL": "//www.thebookingbutton.co.uk/properties/canalparklodgedirect",
+        "URL": "https://www.thebookingbutton.co.uk/properties/canalparklodgedirect",
         "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
       },
       "geometry": {
@@ -66,7 +66,7 @@
         "ADDRESS": "2400 London Rd",
         "PHONE": "(800) 777-7925",
         "COST": "$88/night",
-        "URL": "//duluthwaterpark.com",
+        "URL": "https://duluthwaterpark.com",
         "GROUPCODE": "None"
       },
       "geometry": {
@@ -85,7 +85,7 @@
         "ADDRESS": "131 W 2nd St",
         "PHONE": "218-727-6851",
         "COST": "$88/night",
-        "URL": "//downtownduluthmotel.com",
+        "URL": "http://downtownduluthmotel.com",
         "GROUPCODE": "None"
       },
       "geometry": {
@@ -104,7 +104,7 @@
         "ADDRESS": "600 E Superior St",
         "PHONE": "218-722-8862",
         "COST": "$189/night",
-        "URL": "//fitgers.com",
+        "URL": "https://fitgers.com",
         "GROUPCODE": "None"
       },
       "geometry": {
