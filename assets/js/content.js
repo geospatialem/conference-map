@@ -124,7 +124,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<div class=\"tab-pane fade active in\" id=\"tuesday\">";
       scheduleModalDialogText += "<table class=\"table table-striped table-bordered table-condensed\">";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>Hoops<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>Hoops Brewing Company<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Wednesday
