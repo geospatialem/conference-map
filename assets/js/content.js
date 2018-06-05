@@ -133,11 +133,11 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 5:00 pm<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">9:00 am - 12:15 pm<\/th><td>Morning Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote TBA &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote Matthew Winbigler &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:15 pm - 4:30 pm<\/th><td>Afternoon Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">2:00 pm - 5:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 6:00 pm<\/th><td>Wednesday Welcome Reception<\/td><td>Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued<\/td><td>TBA<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued<\/td><td>Hoops<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Thursday
@@ -146,13 +146,13 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:30 am - 5:00 pm<\/th><td>Registration<\/td><td>Registration Desk<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">7:00 am - 7:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 10:00 am<\/th><td>Conference Welcome &amp; Keynote TBA<\/td><td>Harbor Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 10:00 am<\/th><td>Conference Welcome &amp; Keynote Caroline Torkildson<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">10:30 am - 12:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 1:00 pm<\/th><td>Awards Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:30 pm - 3:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">3:30 pm - 5:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 7:00 pm<\/th><td>Vendor Reception<\/td><td>Exhibit Hall<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">7:15 pm - 10:00 pm<\/th><td>Thursday Night Social Event<\/td><td>TBA<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:15 pm - 10:00 pm<\/th><td>Thursday Night Social Event<\/td><td>Grandmas Sports Garden<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Friday
@@ -164,7 +164,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:00 am - 12:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">8:30 am - 10:00 am<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">10:30 pm - 12:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 2:30 pm<\/th><td>Closing Keynote TBA &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">12:00 pm - 2:30 pm<\/th><td>Closing Keynote Sam Cook &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
 
