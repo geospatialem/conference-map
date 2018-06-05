@@ -4,19 +4,19 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "7 West Taphouse",
-        "ADDRESS": "7 W Superior St",
+        "NAME": "Hoops Brewing Company",
+        "ADDRESS": "325 S Lake Ave",
         "DETAILS": "Tuesday Night Social Event",
         "EVENTHOURS": "5:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
-        "DISCOUNT_NOTES": "$2 off any regular priced burgers throughout conference.",
-        "URL": "//7westtaphouse.com"
+        "DISCOUNT_NOTES": "TBA",
+        "URL": "//hoopsbrewing.com"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -92.0986,
-          46.7867
+          -92.0961,
+          46.7835
         ]
       }
     },
@@ -25,10 +25,10 @@
       "properties": {
         "NAME": "Grandma's Saloon and Grill",
         "ADDRESS": "522 S Lake Ave",
-        "DETAILS": "Wednesday Welcome Reception",
+        "DETAILS": "Thursday Social Event",
         "EVENTHOURS": "6:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
-        "DISCOUNT_NOTES": "Free app (up to $6.99) with 2 entree & 2 beverage purchase (not valid with other offers or discounts, one-time use only).",
+        "DISCOUNT_NOTES": "TBA",
         "URL": "//grandmasrestaurants.com"
       },
       "geometry": {
