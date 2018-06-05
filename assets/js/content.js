@@ -124,7 +124,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<div class=\"tab-pane fade active in\" id=\"tuesday\">";
       scheduleModalDialogText += "<table class=\"table table-striped table-bordered table-condensed\">";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>TBA<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>Hoops<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Wednesday
@@ -137,7 +137,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:15 pm - 4:30 pm<\/th><td>Afternoon Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">2:00 pm - 5:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 6:00 pm<\/th><td>Wednesday Welcome Reception<\/td><td>Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued<\/td><td>Hoops<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued<\/td><td>TBA<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Thursday
