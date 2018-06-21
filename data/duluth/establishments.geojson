@@ -27,7 +27,7 @@
         "ADDRESS": "394 Lake Ave S, Suite 106",
         "HOURS": "10:00 am - 8:00 pm",
         "URL": "//www.northernwaterssmokehaus.com",
-        "DISCOUNT_NOTES": "10% off any purchase through the duration of the conference"
+        "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
         "type": "Point",
@@ -45,7 +45,7 @@
         "ADDRESS": "300 Canal Park Dr",
         "HOURS": "11:00 am - 11:00 pm",
         "URL": "//www.canalparkbrewery.com",
-        "DISCOUNT_NOTES": "10% off food purchase."
+        "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +171,7 @@
         "ADDRESS": "11 East Buchanan Street",
         "HOURS": "11:00 am - 1:00 am",
         "URL": "//littleangiescantina.com",
-        "DISCOUNT_NOTES": "$2.50 off medium-sized margarita (one-time use only)"
+        "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
         "type": "Point",
@@ -189,7 +189,7 @@
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "11:00 am - 11:00 pm",
         "URL": "//lakeavenuerestaurantandbar.com",
-        "DISCOUNT_NOTES": "10% off order (limit one per customer per day)"
+        "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
         "type": "Point",
@@ -243,7 +243,7 @@
         "ADDRESS": "308 S Lake Ave",
         "HOURS": "11:30 am - 9:30 pm",
         "URL": "//cloud9asianbistro.com",
-        "DISCOUNT_NOTES": "$5 off w/ purchase of $30 or more. Does not include happy hour menu and drinks. One-time use only."
+        "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
         "type": "Point",
@@ -261,7 +261,7 @@
         "ADDRESS": "525 S Lake Ave",
         "HOURS": "2:00 pm - 11:00 pm",
         "URL": "//vikredistillery.com",
-        "DISCOUNT_NOTES": "$5 Gin and Tonics"
+        "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
         "type": "Point",
