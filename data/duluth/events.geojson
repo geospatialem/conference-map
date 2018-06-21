@@ -23,6 +23,25 @@
     {
       "type": "Feature",
       "properties": {
+        "NAME": "Great Lakes Aquarium",
+        "ADDRESS": "353 Harbor Dr",
+        "DETAILS": "Wednesday Welcome Reception",
+        "EVENTHOURS": "6:00 pm - 8:00 pm",
+        "HOURS": "10:00 am - 6:00 pm",
+        "DISCOUNT_NOTES": "TBA",
+        "URL": "//glaquarium.org"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.1001,
+          46.7789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "NAME": "Grandma's Saloon and Grill",
         "ADDRESS": "522 S Lake Ave",
         "DETAILS": "Thursday Social Event",
