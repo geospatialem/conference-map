@@ -42,8 +42,8 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Grandma's Saloon and Grill",
-        "ADDRESS": "522 S Lake Ave",
+        "NAME": "Grandma's Sports Grill",
+        "ADDRESS": "425 S Lake Ave",
         "DETAILS": "Thursday Social Event",
         "EVENTHOURS": "6:00 pm - 8:00 pm",
         "HOURS": "11:00 am - 1:00 am",
@@ -53,8 +53,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -92.0933,
-          46.7801
+          -92.0947,
+          46.7812
         ]
       }
     }
