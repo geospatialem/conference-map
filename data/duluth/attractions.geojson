@@ -131,24 +131,6 @@
       "type": "Feature",
       "id": 7,
       "properties": {
-        "NAME": "Great Lakes Aquarium",
-        "ADDRESS": "353 Harbor Dr",
-        "HOURS": "10:00 am - 6:00 pm",
-        "COST": "$18",
-        "WEBSITE": "//www.glaquarium.org"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.100309,
-          46.779278
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 8,
-      "properties": {
         "NAME": "Lake Superior Zoo",
         "ADDRESS": "7210 Fremont St",
         "HOURS": "10:00 am - 5:00 pm",
@@ -165,7 +147,7 @@
     },
     {
       "type": "Feature",
-      "id": 9,
+      "id": 8,
       "properties": {
         "NAME": "Thompson Hill Information Center",
         "ADDRESS": "8525 W Skyline Pkwy",
@@ -183,7 +165,7 @@
     },
     {
       "type": "Feature",
-      "id": 10,
+      "id": 9,
       "properties": {
         "NAME": "Park Point",
         "ADDRESS": "45th St & Minnesota Ave",
@@ -201,7 +183,7 @@
     },
     {
       "type": "Feature",
-      "id": 11,
+      "id": 10,
       "properties": {
         "NAME": "S.S. William A. Irvin Ore Boat Museum",
         "ADDRESS": "350 Harbor Drive",
@@ -219,7 +201,7 @@
     },
     {
       "type": "Feature",
-      "id": 12,
+      "id": 11,
       "properties": {
         "NAME": "Hawk Ridge Bird Observatory",
         "ADDRESS": "3980 E Skyline Pkwy",
@@ -237,7 +219,7 @@
     },
     {
       "type": "Feature",
-      "id": 13,
+      "id": 12,
       "properties": {
         "NAME": "Jay Cooke State Park",
         "ADDRESS": "780 Highway 210, Carlton",
