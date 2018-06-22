@@ -42,13 +42,13 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Grandma's Sports Grill",
+        "NAME": "Grandma's Sports Garden",
         "ADDRESS": "425 S Lake Ave",
         "DETAILS": "Thursday Social Event",
-        "EVENTHOURS": "7:00 pm - 9:00 pm",
+        "EVENTHOURS": "7:00 pm - 10:00 pm",
         "HOURS": "11:00 am - 1:00 am",
         "DISCOUNT_NOTES": "TBA",
-        "URL": "//grandmasrestaurants.com"
+        "URL": "//thesportsgarden.com/"
       },
       "geometry": {
         "type": "Point",
