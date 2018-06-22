@@ -7,7 +7,7 @@
         "NAME": "Hoops Brewing Company",
         "ADDRESS": "325 S Lake Ave",
         "DETAILS": "Tuesday Night Social Event",
-        "EVENTHOURS": "5:00 pm - 8:00 pm",
+        "EVENTHOURS": "7:00 pm - 9:30 pm",
         "HOURS": "11:00 am - 1:00 am",
         "DISCOUNT_NOTES": "TBA",
         "URL": "//hoopsbrewing.com"
@@ -26,7 +26,7 @@
         "NAME": "Great Lakes Aquarium",
         "ADDRESS": "353 Harbor Dr",
         "DETAILS": "Wednesday Welcome Reception",
-        "EVENTHOURS": "6:00 pm - 8:00 pm",
+        "EVENTHOURS": "7:00 pm - 10:00 pm",
         "HOURS": "10:00 am - 6:00 pm",
         "DISCOUNT_NOTES": "TBA",
         "URL": "//glaquarium.org"
@@ -45,7 +45,7 @@
         "NAME": "Grandma's Sports Grill",
         "ADDRESS": "425 S Lake Ave",
         "DETAILS": "Thursday Social Event",
-        "EVENTHOURS": "6:00 pm - 8:00 pm",
+        "EVENTHOURS": "7:00 pm - 9:00 pm",
         "HOURS": "11:00 am - 1:00 am",
         "DISCOUNT_NOTES": "TBA",
         "URL": "//grandmasrestaurants.com"
