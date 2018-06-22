@@ -124,7 +124,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<div class=\"tab-pane fade active in\" id=\"tuesday\">";
       scheduleModalDialogText += "<table class=\"table table-striped table-bordered table-condensed\">";
       scheduleModalDialogText += "<tr><th scope=\"col\">Time<\/th><th scope=\"col\">Activity<\/th><th scope=\"col\">Location<\/th><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 8:00 pm<\/th><td>Tuesday Night Social Event<\/td><td>Hoops Brewing Company<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 9:30 pm<\/th><td>Tuesday Night Social Event<\/td><td>Hoops Brewing Company<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Wednesday
@@ -136,8 +136,8 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote Matthew Winbigler &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:15 pm - 4:30 pm<\/th><td>Afternoon Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">2:00 pm - 5:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 6:00 pm<\/th><td>Wednesday Welcome Reception<\/td><td>Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">6:00 pm - 8:00 pm<\/th><td>Wednesday Welcome Reception Continued &#40;with NSGIC&#41;<\/td><td>Great Lakes Aquarium<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 7:00 pm<\/th><td>Wednesday Welcome Reception<\/td><td>Geolounge<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 10:00 pm<\/th><td>Wednesday Welcome Reception Continued &#40;with NSGIC&#41;<\/td><td>Great Lakes Aquarium<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Thursday
@@ -152,7 +152,7 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:30 pm - 3:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">3:30 pm - 5:00 pm<\/th><td>Conference Sessions<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">5:00 pm - 7:00 pm<\/th><td>Vendor Reception<\/td><td>Exhibit Hall<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">7:15 pm - 10:00 pm<\/th><td>Thursday Night Social Event<\/td><td>Grandmas Sports Garden<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 10:00 pm<\/th><td>Thursday Night Social Event<\/td><td>Grandmas Sports Garden<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Friday
