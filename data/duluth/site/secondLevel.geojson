@@ -212,7 +212,9 @@
         "workshopPMspeakers": "Sharvari Sangle",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA"
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",
