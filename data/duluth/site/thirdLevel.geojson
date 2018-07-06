@@ -6,12 +6,12 @@
       "properties": {
         "NAME": "Harbor Ballroom",
         "activityWed1": "Luncheon",
-        "activityWed2": "Keynote: TBA",
+        "activityWed2": "Keynote: Matthew Winbigler",
         "activityThurs1": "Conference Welcome",
-        "activityThurs2": "Keynote: TBA",
+        "activityThurs2": "Keynote: Caroline Torkildson",
         "activityThurs3": "Awards Luncheon",
         "activityFri1": "Luncheon",
-        "activityFri2": "Keynote: TBA"
+        "activityFri2": "Keynote: Sam Cook"
       },
       "geometry": {
         "type": "Polygon",
