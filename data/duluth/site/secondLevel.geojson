@@ -56,10 +56,12 @@
    "type": "Feature",
      "properties": {
        "NAME": "St. Louis River",
-       "polyType": "AM Workshop",
-       "workshopAMnumber": "TBA",
-       "workshopAM": "TBA",
-       "workshopAMspeakers": "TBA",
+       "workshopAMnumber": "3",
+       "workshopAM": "Story Maps 101",
+       "workshopAMspeakers": "John Nerge",
+       "workshopPMnumber": "9",
+       "workshopPM": "Leaflet: Make a Web Map in a Snap",
+       "workshopPMspeakers": "Kitty Hurley & Jessica Schuler",
        "thursdaySession1": "TBA",
        "thursdaySession2": "TBA",
        "thursdaySession3": "TBA"
@@ -91,12 +93,12 @@
       "properties": {
         "NAME": "French River 1",
         "polyType": "No Friday sessions",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA",
+        "workshopAMnumber": "1",
+        "workshopAM": "Introduction to Collector for ArcGIS",
+        "workshopAMspeakers": "Chris Pouliot & Mike Tronrud",
+        "workshopPMnumber": "10",
+        "workshopPM": "Intermediate Collector for ArcGIS Concepts",
+        "workshopPMspeakers": "Chris Pouliot & Mike Tronrud",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA"
@@ -119,12 +121,12 @@
       "properties": {
         "NAME": "French River 2",
         "polyType": "No sessions",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA"
+        "workshopAMnumber": "2",
+        "workshopAM": "Esri Mobile Hands-On Workshop",
+        "workshopAMspeakers": "Mitchell Winiecki",
+        "workshopPMnumber": "15",
+        "workshopPM": "Web AppBuilder for ArcGIS: Knowing Your Options",
+        "workshopPMspeakers": "Chad Nunemacher"
       },
       "geometry": {
         "type": "Polygon",
@@ -201,13 +203,13 @@
       "type": "Feature",
       "properties": {
         "NAME": "Lake Superior O",
-        "polyType": "No Friday sessions",
+        "polyType": "PM Workshop",
         "workshopAMnumber": "TBA",
         "workshopAM": "TBA",
         "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA",
+        "workshopPMnumber": "12",
+        "workshopPM": "Introduction to ArcGIS Online and more",
+        "workshopPMspeakers": "Sharvari Sangle",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA"
