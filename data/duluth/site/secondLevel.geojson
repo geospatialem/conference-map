@@ -145,12 +145,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Lake Superior L",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA",
+        "polyType": "Sessions only",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -174,12 +169,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Lake Superior MN",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA",
+        "polyType": "Sessions only",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
         "thursdaySession3": "TBA",
@@ -259,15 +249,14 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 203",
-        "polyType": "Two Thursday User Groups",
+        "polyType": "One Thursday User Group",
         "workshopAMnumber": "TBA",
         "workshopAM": "TBA",
         "workshopAMspeakers": "TBA",
         "workshopPMnumber": "TBA",
         "workshopPM": "TBA",
         "workshopPMspeakers": "TBA",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA"
+        "thursdaySession1": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -288,13 +277,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 204",
-        "polyType": "No sessions",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA"
+        "polyType": "No values"
       },
       "geometry": {
         "type": "Polygon",
