@@ -136,8 +136,8 @@ var scheduleModalDialogText = "";
       scheduleModalDialogText += "<tr><th scope=\"row\">12:15 pm - 1:15 pm<\/th><td>Opening Keynote Matthew Winbigler &amp; Luncheon<\/td><td>Harbor Ballroom<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">1:15 pm - 4:30 pm<\/th><td>Afternoon Workshops<\/td><td>DECC Rooms<\/td><\/tr>";
       scheduleModalDialogText += "<tr><th scope=\"row\">2:00 pm - 5:00 pm<\/th><td>Exhibit Hall &amp; Geolounge Open<\/td><td>Exhibit Hall\/Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 7:00 pm<\/th><td>Wednesday Welcome Reception<\/td><td>Geolounge<\/td><\/tr>";
-      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 10:00 pm<\/th><td>Wednesday Welcome Reception Continued &#40;with NSGIC&#41;<\/td><td>Great Lakes Aquarium<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">4:00 pm - 7:00 pm<\/th><td>Wednesday Evening Social<\/td><td>Geolounge<\/td><\/tr>";
+      scheduleModalDialogText += "<tr><th scope=\"row\">7:00 pm - 10:00 pm<\/th><td>Wednesday Evening Social Continued &#40;hosted by NSGIC&#41;<\/td><td>Great Lakes Aquarium<\/td><\/tr>";
       scheduleModalDialogText += "<\/table>";
       scheduleModalDialogText += "<\/div>";
       //Thursday
