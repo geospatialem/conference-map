@@ -10,7 +10,7 @@
         "EVENTHOURS": "7:00 pm - 9:00 pm",
         "HOURS": "4:00 pm - 10:00 pm",
         "DISCOUNT_NOTES": "TBA",
-        "URL": "//bemidjibeer.com"
+        "URL": "https://bemidjibeer.com"
       },
       "geometry": {
         "type": "Point",
@@ -29,7 +29,7 @@
         "EVENTHOURS": "7:00 pm - 9:30 pm",
         "HOURS": "12:00 am - 12:00 am",
         "DISCOUNT_NOTES": "TBA",
-        "URL": "//hamptoninn3.hilton.com/en/hotels/minnesota/hampton-inn-and-suites-bemidji-BJIMNHX/index.html"
+        "URL": "https://hamptoninn3.hilton.com/en/hotels/minnesota/hampton-inn-and-suites-bemidji-BJIMNHX/index.html"
       },
       "geometry": {
         "type": "Point",
@@ -48,7 +48,7 @@
         "EVENTHOURS": "7:00 pm - 10:00 pm; Shuttle hours: 6:45 pm - 10:15 pm",
         "HOURS": "6:00 am - 12:00 am",
         "DISCOUNT_NOTES": "TBA",
-        "URL": "//minnesotaeagles.com/"
+        "URL": "https://minnesotaeagles.com/"
       },
       "geometry": {
         "type": "Point",
