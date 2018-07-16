@@ -67,7 +67,9 @@
        "workshopPMspeakers": "Kitty Hurley & Jessica Schuler",
        "thursdaySession1": "TBA",
        "thursdaySession2": "TBA",
-       "thursdaySession3": "TBA"
+       "thursdaySession3": "TBA",
+       "fridaySession1": "TBA",
+       "fridaySession2": "TBA"
      },
      "geometry": {
        "type": "Polygon",
@@ -95,7 +97,6 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River 1",
-        "polyType": "No Friday sessions",
         "workshopAMnumber": "WK001",
         "workshopAM": "Introduction to Collector for ArcGIS",
         "workshopAMspeakers": "Chris Pouliot & Mike Tronrud",
@@ -104,7 +105,9 @@
         "workshopPMspeakers": "Chris Pouliot & Mike Tronrud",
         "thursdaySession1": "TBA",
         "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA"
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",
@@ -123,13 +126,17 @@
       "type": "Feature",
       "properties": {
         "NAME": "French River 2",
-        "polyType": "No sessions",
         "workshopAMnumber": "WK002",
         "workshopAM": "Esri Mobile Hands-On Workshop",
         "workshopAMspeakers": "Mitchell Winiecki",
         "workshopPMnumber": "WK0015",
         "workshopPM": "Web AppBuilder for ArcGIS: Knowing Your Options",
-        "workshopPMspeakers": "Chad Nunemacher"
+        "workshopPMspeakers": "Chad Nunemacher",
+        "thursdaySession1": "TBA",
+        "thursdaySession2": "TBA",
+        "thursdaySession3": "TBA",
+        "fridaySession1": "TBA",
+        "fridaySession2": "TBA"
       },
       "geometry": {
         "type": "Polygon",

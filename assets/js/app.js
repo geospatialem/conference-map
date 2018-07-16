@@ -166,31 +166,19 @@ style: function (feature) {
           "</div>" +
           "</div>" +
           "</div>"
-      } else if (feature.properties.polyType === "Hours") { //Exhibit Hall & Geolounge (Duluth)
+      } else if (feature.properties.polyType === "Hours") { //Exhibit Hall
          var content =
            "<ul class='nav nav-tabs nav nav-justified' id='hoursOnlyContent'>" +
-             "<li class='active'><a href='#wed' data-toggle='tab'>Wednesday</a></li>" +
-             "<li><a href='#thurs' data-toggle='tab'>Thursday</a></li>" +
-             "<li><a href='#fri' data-toggle='tab'>Friday</a></li>" +
+             "<li class='active'><a href='#hours' data-toggle='tab'>Exhibit Hall Hours</a></li>" +
            "</ul>" +
            "<div class='tab-content' id='hoursOnlyContent'>" +
-             "<div class='tab-pane fade active in' id='wed'>" +
+             "<div class='tab-pane fade active in' id='hours'>" +
                "<div class='modal-body'>" +
                  "<table class='table table-striped table-bordered table-condensed'>" +
-                 "<tr><th scope='row'>Hours</th><td>" + feature.properties.wedHours + "</td></tr></table><br/>" +
-               "</div>" +
-             "</div>" +
-             "<div class='tab-pane fade' id='thurs'>" +
-               "<div class='modal-body'>" +
-                 "<table class='table table-striped table-bordered table-condensed'>" +
-                 "<tr><th scope='row'>Hours</th><td>" + feature.properties.thursHours + "</td></tr>" +
-                 "<tr><th scope='row'>Exhibitor Reception</th><td>" + feature.properties.eventHours + "</td></tr></table><br/>" +
-               "</div>" +
-             "</div>" +
-             "<div class='tab-pane fade' id='fri'>" +
-               "<div class='modal-body'>" +
-                 "<table class='table table-striped table-bordered table-condensed'>" +
-                 "<tr><th scope='row'>Hours</th><td>" + feature.properties.friHours + "</td></tr></table>" +
+                 "<tr><th scope='row'>Wednesday</th><td>" + feature.properties.wedHours + "</td></tr>" +
+                 "<tr><th scope='row'>Thursday</th><td>" + feature.properties.thursHours + "</td></tr>" +
+                 "<tr><th scope='row'>Exhibitor Reception</th><td>" + feature.properties.eventHours + "</td></tr>" +
+                 "<tr><th scope='row'>Friday</th><td>" + feature.properties.friHours + "</td></tr></table>" +
                "</div>" +
              "</div>" +
            "</div>"
