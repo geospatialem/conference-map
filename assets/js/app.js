@@ -463,6 +463,19 @@ style: function (feature) {
                       "</div>" +
                     "</div>" +
                "</div>"
+             } else if (feature.properties.polyType === "NSGIC") { //NSGIC conference
+                var content =
+                "<ul class='nav nav-tabs nav nav-justified' id='nsgicValuesContent'>" +
+                  "<li class='active'><a href='#nsgicNotAvailable' data-toggle='tab'>NSGIC Conference</a></li>" +
+                "</ul>" +
+                "<div class='tab-content' id='nsgicValuesContent'>" +
+                  "<div class='tab-pane fade active in' id='nsgicNotAvailable'>" +
+                    "<div class='modal-body'>" +
+                      "<table class='table table-striped table-bordered table-condensed'>" +
+                        "<tr><th scope='row'>NSGIC Conference</th><td>This room is reserved for the NSGIC Conference. No GIS/LIS workshops and/or sessions offered.</td></tr></table>";
+                  "</div>" +
+                "</div>" +
+             "</div>"
              } else if (feature.properties.polyType === "No values") { //No values
             var content =
             "<ul class='nav nav-tabs nav nav-justified' id='noValuesContent'>" +

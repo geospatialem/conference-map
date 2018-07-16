@@ -56,10 +56,10 @@
    "type": "Feature",
      "properties": {
        "NAME": "St. Louis River",
-       "workshopAMnumber": "3",
+       "workshopAMnumber": "WK003",
        "workshopAM": "Story Maps 101",
        "workshopAMspeakers": "John Nerge",
-       "workshopPMnumber": "9",
+       "workshopPMnumber": "WK009",
        "workshopPM": "Leaflet: Make a Web Map in a Snap",
        "workshopPMspeakers": "Kitty Hurley & Jessica Schuler",
        "thursdaySession1": "TBA",
@@ -93,10 +93,10 @@
       "properties": {
         "NAME": "French River 1",
         "polyType": "No Friday sessions",
-        "workshopAMnumber": "1",
+        "workshopAMnumber": "WK001",
         "workshopAM": "Introduction to Collector for ArcGIS",
         "workshopAMspeakers": "Chris Pouliot & Mike Tronrud",
-        "workshopPMnumber": "10",
+        "workshopPMnumber": "WK010",
         "workshopPM": "Intermediate Collector for ArcGIS Concepts",
         "workshopPMspeakers": "Chris Pouliot & Mike Tronrud",
         "thursdaySession1": "TBA",
@@ -121,10 +121,10 @@
       "properties": {
         "NAME": "French River 2",
         "polyType": "No sessions",
-        "workshopAMnumber": "2",
+        "workshopAMnumber": "WK002",
         "workshopAM": "Esri Mobile Hands-On Workshop",
         "workshopAMspeakers": "Mitchell Winiecki",
-        "workshopPMnumber": "15",
+        "workshopPMnumber": "WK0015",
         "workshopPM": "Web AppBuilder for ArcGIS: Knowing Your Options",
         "workshopPMspeakers": "Chad Nunemacher"
       },
@@ -197,7 +197,7 @@
         "workshopAMnumber": "TBA",
         "workshopAM": "TBA",
         "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "12",
+        "workshopPMnumber": "WK012",
         "workshopPM": "Introduction to ArcGIS Online and more",
         "workshopPMspeakers": "Sharvari Sangle",
         "thursdaySession1": "TBA",
@@ -223,14 +223,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 202",
-        "polyType": "One Thursday User Group",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA",
-        "thursdaySession1": "TBA"
+        "polyType": "NSGIC"
       },
       "geometry": {
         "type": "Polygon",
@@ -249,14 +242,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 203",
-        "polyType": "One Thursday User Group",
-        "workshopAMnumber": "TBA",
-        "workshopAM": "TBA",
-        "workshopAMspeakers": "TBA",
-        "workshopPMnumber": "TBA",
-        "workshopPM": "TBA",
-        "workshopPMspeakers": "TBA",
-        "thursdaySession1": "TBA"
+        "polyType": "NSGIC"
       },
       "geometry": {
         "type": "Polygon",
@@ -277,7 +263,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 204",
-        "polyType": "No values"
+        "polyType": "NSGIC"
       },
       "geometry": {
         "type": "Polygon",
@@ -297,7 +283,7 @@
       "type": "Feature",
       "properties": {
         "NAME": "Horizon 205",
-        "polyType": "No values"
+        "polyType": "NSGIC"
       },
       "geometry": {
         "type": "Polygon",
