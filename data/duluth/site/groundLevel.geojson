@@ -4,6 +4,29 @@
     {
       "type": "Feature",
       "properties": {
+        "NAME": "Exhibit Hall",
+        "polyType": "Hours",
+        "wedHours": "2:00 pm - 5:00 pm",
+        "thursHours": "7:30 am - 7:00 pm",
+        "eventHours": "5:00 pm - 7:00 pm (Raffle: 6:45 pm)",
+        "friHours": "7:30 am - 12:00 pm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-92.09813386201859,46.781045146097355],
+            [-92.09770739078522,46.781368412275334],
+            [-92.09801584482192,46.78156310574147],
+            [-92.09843695163725,46.78124351420938],
+            [-92.09813386201859,46.781045146097355]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "NAME": "Split Rock 1",
         "workshopAMnumber": "WK007",
         "workshopAM": "Introduction to Remote Sensing in a QGIS",

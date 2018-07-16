@@ -4,6 +4,19 @@
     {
       "type": "Feature",
       "properties": {
+        "NAME": "Exhibit Hall"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0982277393341,
+          46.78129126938645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "NAME": "Split Rock 2"
       },
       "geometry": {

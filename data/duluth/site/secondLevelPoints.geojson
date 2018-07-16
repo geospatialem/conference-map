@@ -43,7 +43,7 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Exhibit Hall / Geolounge"
+        "NAME": "Keynotes & Geolounge"
       },
       "geometry": {
         "type": "Point",

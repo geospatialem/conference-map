@@ -4,12 +4,15 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Exhibit Hall & Geolounge",
-        "polyType": "Hours",
+        "NAME": "Keynotes & Geolounge",
+        "polyType": "Geolounge",
         "wedHours": "2:00 pm - 5:00 pm",
         "thursHours": "7:30 am - 7:00 pm",
-        "eventHours": "5:00 pm - 7:00 pm (Raffle: 6:45 pm)",
-        "friHours": "7:30 am - 12:00 pm"
+        "friHours": "7:30 am - 12:00 pm",
+        "activityWed": "The Evolution of Geospatial Thinking in School: How Students Investigating Place Has Changed, Matt Winbigler & Gabe Zago",
+        "activityThurs": "Reinventing My Life Through GIS, Caroline Torkildson",
+        "activityThurs2": "Awards Luncheon",
+        "activityFri": "Outdoor Activities of the North, Sam Cook"
       },
       "geometry": {
         "type": "Polygon",
