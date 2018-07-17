@@ -9,8 +9,8 @@
         "ADDRESS": "200 West First Street",
         "PHONE": "218-722-1202",
         "COST": "$94/night",
-        "URL": "https://www.ihg.com/holidayinn/hotels/us/en/duluth/dulmn/hoteldetail",
-        "GROUPCODE": "Call to reference the Minnesota GIS/LIS Consortium Room Rate."
+        "URL": "https://www.holidayinn.com/redirect?path=hd&brandCode=HI&localeCode=en&regionCode=1&hotelCode=DULMN&_PMID=99801505&GPC=MNG&viewfullsite=true",
+        "GROUPCODE": "MNG"
       },
       "geometry": {
         "type": "Point",
