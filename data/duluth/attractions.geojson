@@ -9,7 +9,7 @@
         "ADDRESS": "601 S Lake Ave",
         "HOURS": "10:00 am - 4:00 pm",
         "COST": "Free",
-        "WEBSITE": "//duluthmn.gov"
+        "WEBSITE": "http://duluthmn.gov"
       },
       "geometry": {
         "type": "Point",
@@ -27,7 +27,7 @@
         "ADDRESS": "16th Ave W & Skyline Drive",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": "//www.engertowerduluth.com"
+        "WEBSITE": "http://www.engertowerduluth.com"
       },
       "geometry": {
         "type": "Point",
@@ -45,7 +45,7 @@
         "ADDRESS": "12th Ave E & London Road",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": "//www.duluthmn.gov/parks"
+        "WEBSITE": "http://www.duluthmn.gov/parks"
       },
       "geometry": {
         "type": "Point",
@@ -63,7 +63,7 @@
         "ADDRESS": "3300 London Rd",
         "HOURS": "9:30 am - 4:00 pm",
         "COST": "$15 (Classic tour), $26 (Full mansion tour)",
-        "WEBSITE": "//glensheen.wp.d.umn.edu"
+        "WEBSITE": "https://glensheen.org"
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +81,7 @@
         "ADDRESS": "600 S Lake Ave",
         "HOURS": "10:00 am - 4:00 pm",
         "COST": "Free",
-        "WEBSITE": "//www.lsmma.com"
+        "WEBSITE": "https://www.lsmma.com/"
       },
       "geometry": {
         "type": "Point",
@@ -99,7 +99,7 @@
         "ADDRESS": "506 W Michigan St",
         "HOURS": "9:00 am - 6:00 pm",
         "COST": "$12",
-        "WEBSITE": "//lsrm.org"
+        "WEBSITE": "http://lsrm.org"
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +117,7 @@
         "ADDRESS": "9500 Spirit Mountain Pl",
         "HOURS": "11:00 am - 7:00 pm",
         "COST": "Varies, based on activity.",
-        "WEBSITE": "//spiritmt.com"
+        "WEBSITE": "https://www.spiritmt.com"
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +135,7 @@
         "ADDRESS": "7210 Fremont St",
         "HOURS": "10:00 am - 5:00 pm",
         "COST": "$10",
-        "WEBSITE": "//www.lszooduluth.org"
+        "WEBSITE": "https://www.lszooduluth.org"
       },
       "geometry": {
         "type": "Point",
@@ -153,7 +153,7 @@
         "ADDRESS": "8525 W Skyline Pkwy",
         "HOURS": "9:00 am - 5:00 pm",
         "COST": "Free",
-        "WEBSITE": "//www.tripadvisor.com/Attraction_Review-g43018-d2290252-Reviews-Thompson_Hill_Information_Center-Duluth_Minnesota.html"
+        "WEBSITE": "https://www.tripadvisor.com/Attraction_Review-g43018-d2290252-Reviews-Thompson_Hill_Information_Center-Duluth_Minnesota.html"
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +171,7 @@
         "ADDRESS": "45th St & Minnesota Ave",
         "HOURS": "6:00 am - 10:00 pm",
         "COST": "Free",
-        "WEBSITE": "//parkpointbeach.org"
+        "WEBSITE": "http://www.parkpointbeach.org"
       },
       "geometry": {
         "type": "Point",
@@ -189,7 +189,7 @@
         "ADDRESS": "350 Harbor Drive",
         "HOURS": "6:30 pm - 10:00 pm",
         "COST": "$12 (Cash/check only)",
-        "WEBSITE": "//duluthhauntedship.com"
+        "WEBSITE": "https://duluthhauntedship.com"
       },
       "geometry": {
         "type": "Point",
@@ -207,7 +207,7 @@
         "ADDRESS": "3980 E Skyline Pkwy",
         "HOURS": "9:00 am - 4:00 pm",
         "COST": "Free, donations welcome.",
-        "WEBSITE": "//www.hawkridge.org"
+        "WEBSITE": "https://www.hawkridge.org"
       },
       "geometry": {
         "type": "Point",
@@ -225,7 +225,7 @@
         "ADDRESS": "780 Highway 210, Carlton",
         "HOURS": "10:00 am - 9:00 pm",
         "COST": "Free, park pass needed to access park",
-        "WEBSITE": "//www.dnr.state.mn.us/state_parks/jay_cooke/index.html"
+        "WEBSITE": "https://www.dnr.state.mn.us/state_parks/jay_cooke/index.html"
       },
       "geometry": {
         "type": "Point",
