@@ -44,7 +44,7 @@
         "NAME": "Canal Park Brewing Company",
         "ADDRESS": "300 Canal Park Dr",
         "HOURS": "11:00 am - 11:00 pm",
-        "URL": "https://www.canalparkbrewery.com",
+        "URL": "http://www.canalparkbrewery.com",
         "DISCOUNT_NOTES": "10% off any food purchase (Duration of conference and through the weekend)"
       },
       "geometry": {
@@ -62,7 +62,7 @@
         "NAME": "Fitgers Brewhouse Brewery",
         "ADDRESS": "600 E Superior St",
         "HOURS": "11:00 am - 1:00 am",
-        "URL": "https://brewhouse.net",
+        "URL": "http://brewhouse.net",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -80,7 +80,7 @@
         "NAME": "Bent Paddle Brewing Company",
         "ADDRESS": "1912 W Michigan St",
         "HOURS": "3:00 pm - 10:00 pm",
-        "URL": "https://www.bentpaddlebrewing.com",
+        "URL": "http://www.bentpaddlebrewing.com",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -98,7 +98,7 @@
         "NAME": "Lake Superior Brewing Company",
         "ADDRESS": "2711 W Superior St",
         "HOURS": "4:00 pm - 9:00 pm",
-        "URL": "https://www.lakesuperiorbrewing.com",
+        "URL": "http://www.lakesuperiorbrewing.com",
         "DISCOUNT_NOTES": "No GIS/LIS discount available."
       },
       "geometry": {
@@ -131,24 +131,6 @@
       "type": "Feature",
       "id": 7,
       "properties": {
-        "NAME": "Tycoons Zenith Alehouse",
-        "ADDRESS": "132 E Superior St",
-        "HOURS": "11:00 am - 1:00 am",
-        "URL": "https://tycoonsalehouse.com",
-        "DISCOUNT_NOTES": "No GIS/LIS discount available."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -92.0955,
-          46.7885
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": 8,
-      "properties": {
         "NAME": "Grizzly's Wood-fire Grill Canal Park",
         "ADDRESS": "310 S Lake Ave",
         "HOURS": "11:00 am - 2:00 am",
@@ -165,12 +147,12 @@
     },
     {
       "type": "Feature",
-      "id": 9,
+      "id": 8,
       "properties": {
         "NAME": "Little Angie's Cantina and Grill",
         "ADDRESS": "11 East Buchanan Street",
         "HOURS": "11:00 am - 1:00 am",
-        "URL": "https://littleangiescantina.com",
+        "URL": "http://www.littleangies.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -183,7 +165,7 @@
     },
     {
       "type": "Feature",
-      "id": 10,
+      "id": 9,
       "properties": {
         "NAME": "Lake Avenue Restaurant and Bar",
         "ADDRESS": "394 S Lake Ave",
@@ -201,12 +183,12 @@
     },
     {
       "type": "Feature",
-      "id": 11,
+      "id": 10,
       "properties": {
         "NAME": "Amazing Grace Bakery & Cafe",
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "7:00 am - 8:00 pm",
-        "URL": "https://amazinggraceduluth.com",
+        "URL": "http://amazinggraceduluth.com",
         "DISCOUNT_NOTES": "10% off 12oz or 16oz regular drip coffee"
       },
       "geometry": {
@@ -219,12 +201,12 @@
     },
     {
       "type": "Feature",
-      "id": 12,
+      "id": 11,
       "properties": {
         "NAME": "Hepzibah's Sweet Shoppe",
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "10:00 am - 9:00 pm",
-        "URL": "https://chocolatesduluth.com",
+        "URL": "http://chocolatesduluth.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -237,12 +219,12 @@
     },
     {
       "type": "Feature",
-      "id": 13,
+      "id": 12,
       "properties": {
         "NAME": "Cloud 9 Asian Bistro",
         "ADDRESS": "308 S Lake Ave",
         "HOURS": "11:30 am - 9:30 pm",
-        "URL": "https://cloud9asianbistro.com",
+        "URL": "http://cloud9asianbistro.com",
         "DISCOUNT_NOTES": "TBA"
       },
       "geometry": {
@@ -255,7 +237,7 @@
     },
     {
       "type": "Feature",
-      "id": 14,
+      "id": 13,
       "properties": {
         "NAME": "Vikre Distillery",
         "ADDRESS": "525 S Lake Ave",
@@ -273,7 +255,7 @@
     },
     {
       "type": "Feature",
-      "id": 15,
+      "id": 14,
       "properties": {
         "NAME": "Blacklist Artisan Ales",
         "ADDRESS": "120 E Superior St",
@@ -291,7 +273,7 @@
     },
     {
       "type": "Feature",
-      "id": 16,
+      "id": 15,
       "properties": {
         "NAME": "Restaurant 301",
         "ADDRESS": "301 E Superior St",
