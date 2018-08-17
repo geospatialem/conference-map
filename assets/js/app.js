@@ -899,7 +899,7 @@ var attractions = L.geoJson(null, {
       "<tr><th scope='row'>Address</th><td>" + feature.properties.ADDRESS + "</td></tr>" +
       "<tr><th scope='row'>Hours</th><td>" + feature.properties.HOURS + "</td></tr>" +
       "<tr><th scope='row'>Cost</th><td>" + feature.properties.COST + "</td></tr>" +
-   	  "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>https:" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
+   	  "<tr><th scope='row'>Website</th><td><a class='url-break' href='" + feature.properties.WEBSITE + "' target='_blank'>" + feature.properties.WEBSITE + " (new window) <i class='fa fa-external-link-square'></i></a></td></tr>" + "<table>";
       layer.on({
         click: function (e) {
 	      $("#feature-title").html(feature.properties.NAME);
