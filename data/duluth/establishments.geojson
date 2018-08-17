@@ -45,7 +45,7 @@
         "ADDRESS": "300 Canal Park Dr",
         "HOURS": "11:00 am - 11:00 pm",
         "URL": "//www.canalparkbrewery.com",
-        "DISCOUNT_NOTES": "TBA"
+        "DISCOUNT_NOTES": "10% off any food purchase (Duration of conference and through the weekend)"
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +117,7 @@
         "ADDRESS": "109 W Superior St",
         "HOURS": "11:00 am - 2:00 am",
         "URL": "//www.dubhlinnpub.com",
-        "DISCOUNT_NOTES": "TBA"
+        "DISCOUNT_NOTES": "1/2 priced pint (one-time use only)"
       },
       "geometry": {
         "type": "Point",
@@ -207,7 +207,7 @@
         "ADDRESS": "394 S Lake Ave",
         "HOURS": "7:00 am - 8:00 pm",
         "URL": "//amazinggraceduluth.com",
-        "DISCOUNT_NOTES": "TBA"
+        "DISCOUNT_NOTES": "10% off 12oz or 16oz regular drip coffee"
       },
       "geometry": {
         "type": "Point",
@@ -261,13 +261,49 @@
         "ADDRESS": "525 S Lake Ave",
         "HOURS": "2:00 pm - 11:00 pm",
         "URL": "//vikredistillery.com",
-        "DISCOUNT_NOTES": "TBA"
+        "DISCOUNT_NOTES": "$5 gin and tonics"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -92.0937,
           46.7801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "NAME": "Blacklist Artisan Ales",
+        "ADDRESS": "120 E Superior St",
+        "HOURS": "3:00 pm - 12:00 am",
+        "URL": "//blacklistbeer.com",
+        "DISCOUNT_NOTES": "$1.50 off 16oz beer & $0.75 off 10oz beer (Duration of conference and through the weekend)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0959,
+          46.7882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "NAME": "Restaurant 301",
+        "ADDRESS": "301 E Superior St",
+        "HOURS": "6:30 am - 10:00 pm",
+        "URL": "http://restaurant301.com",
+        "DISCOUNT_NOTES": "10% off any purchase (one-time use only)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.0941,
+          46.7902
         ]
       }
     }
