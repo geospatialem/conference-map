@@ -59,17 +59,18 @@
    "type": "Feature",
      "properties": {
        "NAME": "St. Louis River",
+       "polyType": "No sessions",
        "workshopAMnumber": "WK003",
        "workshopAM": "Story Maps 101",
        "workshopAMspeakers": "John Nerge",
        "workshopPMnumber": "WK009",
        "workshopPM": "Leaflet: Make a Web Map in a Snap",
        "workshopPMspeakers": "Kitty Hurley & Jessica Schuler",
-       "thursdaySession1": "TBA",
-       "thursdaySession2": "TBA",
-       "thursdaySession3": "TBA",
-       "fridaySession1": "TBA",
-       "fridaySession2": "TBA"
+       "thursdaySession1": "No session",
+       "thursdaySession2": "No session",
+       "thursdaySession3": "No session",
+       "fridaySession1": "No session",
+       "fridaySession2": "No session"
      },
      "geometry": {
        "type": "Polygon",
@@ -103,11 +104,11 @@
         "workshopPMnumber": "WK010",
         "workshopPM": "Intermediate Collector for ArcGIS Concepts",
         "workshopPMspeakers": "Chris Pouliot & Mike Tronrud",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 6: Architecture/Infrastructure",
+        "thursdaySession2": "Session 9: Story Maps",
+        "thursdaySession3": "Session 24: Esri Applications",
+        "fridaySession1": "Session 31: Crowdsourcing",
+        "fridaySession2": "Session 37: Emergency Management/Response"
       },
       "geometry": {
         "type": "Polygon",
@@ -132,11 +133,11 @@
         "workshopPMnumber": "WK0015",
         "workshopPM": "Web AppBuilder for ArcGIS: Knowing Your Options",
         "workshopPMspeakers": "Chad Nunemacher",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 6: Architecture/Infrastructure",
+        "thursdaySession2": "Session 9: Story Maps",
+        "thursdaySession3": "Session 24: Esri Applications",
+        "fridaySession1": "Session 31: Crowdsourcing",
+        "fridaySession2": "Session 37: Emergency Management/Response"
       },
       "geometry": {
         "type": "Polygon",
@@ -161,11 +162,11 @@
         "workshopPMnumber": "EDU",
         "workshopPM": "Educator Day",
         "workshopPMspeakers": "Scott Freburg",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 4: Field Data Collection",
+        "thursdaySession2": "Session 13: Asset & Work Management",
+        "thursdaySession3": "Session 19: Open Source & Web Mapping",
+        "fridaySession1": "Session 28: Natural Resources",
+        "fridaySession2": "Session 35: Grab Bag"
       },
       "geometry": {
         "type": "Polygon",
@@ -190,11 +191,11 @@
         "workshopPMnumber": "EDU",
         "workshopPM": "Educator Day",
         "workshopPMspeakers": "Scott Freburg",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 1: Project Management",
+        "thursdaySession2": "Session 12: Collaboration",
+        "thursdaySession3": "Session 18: Data/Metadata",
+        "fridaySession1": "Session 25: GIS Leadership",
+        "fridaySession2": "Session 34: Mobile GIS"
       },
       "geometry": {
         "type": "Polygon",
@@ -220,11 +221,11 @@
         "workshopPMnumber": "WK012",
         "workshopPM": "Introduction to ArcGIS Online and more",
         "workshopPMspeakers": "Sharvari Sangle",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 2: 3D Geomatics Committee",
+        "thursdaySession2": "Session 11: Methods & Tools",
+        "thursdaySession3": "Session 17: Drones & Imagery",
+        "fridaySession1": "Session 30: Utilities",
+        "fridaySession2": "Session 33: Remote Sensing"
       },
       "geometry": {
         "type": "Polygon",
