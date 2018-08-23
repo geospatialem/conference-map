@@ -34,11 +34,11 @@
         "workshopPMnumber": "WK011",
         "workshopPM": "An Introduction to QGIS 3",
         "workshopPMspeakers": "David Bitner",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 7: Undergraduate Student Competition",
+        "thursdaySession2": "Session 14: Undergraduate Student Competition",
+        "thursdaySession3": "Session 22: Mapping Phenology",
+        "fridaySession1": "Session 31: Crowdsourcing",
+        "fridaySession2": "Session 38: Product Demonstration"
       },
       "geometry": {
         "type": "Polygon",
@@ -63,11 +63,11 @@
         "workshopPMnumber": "WK017",
         "workshopPM": "Parcel Editing with ArcGIS Pro (Non-Parcel Fabric)",
         "workshopPMspeakers": "Frank Conkling",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "No session",
+        "thursdaySession2": "Session 15: Graduate Student Competition",
+        "thursdaySession3": "Session 23: Job Panel",
+        "fridaySession1": "No session",
+        "fridaySession2": "No session"
       },
       "geometry": {
         "type": "Polygon",
@@ -92,11 +92,11 @@
         "workshopPMnumber": "WK014",
         "workshopPM": "Full Stack Application Development",
         "workshopPMspeakers": "Caleb Mackey",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "No session",
+        "thursdaySession2": "No session",
+        "thursdaySession3": "Session 20: Survey123",
+        "fridaySession1": "Session 26: Map Accessibility",
+        "fridaySession2": "Session 36: Transportation"
       },
       "geometry": {
         "type": "Polygon",
@@ -121,11 +121,11 @@
         "workshopPMnumber": "WK016",
         "workshopPM": "Cartographic Skillsets in ArcGIS Pro ",
         "workshopPMspeakers": "Rebecca Barney",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 5: Teaching and Learning",
+        "thursdaySession2": "Session 8: Lightning Presentations",
+        "thursdaySession3": "Session 16: PLSS Panel",
+        "fridaySession1": "Session 27: LiDAR",
+        "fridaySession2": "Session 32: Community Maps Panel"
       },
       "geometry": {
         "type": "Polygon",
@@ -150,11 +150,11 @@
         "workshopPMnumber": "WK013",
         "workshopPM": "ArcGIS Server: Administration and Advanced Topics",
         "workshopPMspeakers": "Justin Hansen",
-        "thursdaySession1": "TBA",
-        "thursdaySession2": "TBA",
-        "thursdaySession3": "TBA",
-        "fridaySession1": "TBA",
-        "fridaySession2": "TBA"
+        "thursdaySession1": "Session 3: Cadastral",
+        "thursdaySession2": "Session 10: Forestry",
+        "thursdaySession3": "Session 21: Hydrology",
+        "fridaySession1": "Session 29: Project Management",
+        "fridaySession2": "Session 38: Product Demonstration"
       },
       "geometry": {
         "type": "Polygon",
