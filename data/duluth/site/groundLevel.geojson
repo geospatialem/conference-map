@@ -96,7 +96,7 @@
         "thursdaySession2": "No session",
         "thursdaySession3": "Session 20: Survey123",
         "fridaySession1": "Session 26: Map Accessibility",
-        "fridaySession2": "Session 36: Transportation"
+        "fridaySession2": "Session 36: Construction/ArcGIS Online"
       },
       "geometry": {
         "type": "Polygon",
